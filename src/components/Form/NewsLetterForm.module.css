@@ -1,0 +1,114 @@
+@font-face {
+  font-family: AmiaFont;
+  src: url(../../assets/Arima-VariableFont_wght.ttf);
+}
+
+.form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 3rem;
+  margin-top: 2%;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #c7d3a5;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.form-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.form-control img {
+  width: 60px;
+  height: 60px;
+  margin-right: 1rem;
+}
+
+label {
+  margin: 0 1rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 50%;
+  text-align: center;
+}
+
+input:hover {
+  border-color: #007bff;
+  outline: none;
+}
+
+.invalid input {
+  border-color: #ff4d4d;
+}
+
+.error-text {
+  color: #ff4d4d;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  text-align: center;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.button {
+  background-color: #ef4636;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 0.1rem;
+  height: 3rem;
+  width: 7rem;
+  font-size: medium;
+}
+
+.button:hover {
+  background-color: #d83830;
+}
+
+h2 {
+  font-family: AmiaFont;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: AmiaFont;
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 10rem;
+  width: 10rem;
+}

@@ -4,7 +4,7 @@
 }
 
 .summary {
-  text-align: center;
+  text-align: left;
   max-width: 45rem;
   width: 90%;
   margin: auto;
@@ -13,22 +13,95 @@
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   border-radius: 14px;
-  padding: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 .summary h2 {
-  font-size: 4rem;
+  font-size: 2rem;
   margin-top: 0;
   font-family: Greeting;
+  text-align: left;
+}
+
+.content {
+  flex: 1;
+  padding-right: 2rem;
+  max-width: 60%;
 }
 
 .homePhotoContainer {
   display: flex;
-  justify-content: center; 
-  margin-bottom: 20px; 
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
 .homePhoto {
-  max-width: 75%; 
-  height: auto; 
+  max-width: 100%;
+}
+
+.hollyHocksPhoto {
+  max-width: 80%;
+}
+
+.outdoorPhoto {
+  width: 20%;
+}
+
+.p {
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 0;
+  font-size: 15px;
+}
+
+.imageRow {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .summary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .summary h2 {
+    font-size: 3rem;
+    margin-top: 0;
+    font-family: Greeting;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .p {
+    padding-left: 20px;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .imageRow {
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+
+  .imageRow .homePhotoContainer {
+    width: 100%;
+    padding-top: 95px;
+  }
+
+  .homePhoto {
+    max-width: 100%;
+    padding-left: 15px;
+  }
 }

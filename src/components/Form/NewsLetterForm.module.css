@@ -65,6 +65,8 @@ input:hover {
   font-size: 0.875rem;
   margin-top: 0.25rem;
   text-align: center;
+  background-color:#daf09d;
+  border-radius: 20px;
 }
 
 .form-actions {

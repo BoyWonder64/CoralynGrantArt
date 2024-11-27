@@ -1,4 +1,4 @@
-import classes from "./NewsLetterSummary.module.css";
+import classes from "./Home.module.css";
 
 //Photos in order
 import venicePhoto from "../../assets/HomePage/VeniceSquare.jpg";

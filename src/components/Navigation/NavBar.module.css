@@ -20,6 +20,21 @@ body {
   height: 8rem;
   width: 8rem;
 }
+
+
+
+.logoContainer img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.logoContainer img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+}
+
+
+
 .menu {
   width: 100%;
   display: flex;
@@ -103,84 +118,3 @@ li {
   }
 }
 
-@font-face {
-  font-family: DigitalFont;
-  src: url(../../assets/Vonique_43_D.woff) format("woff"),
-    url(../../assets/Vonique_43_D.woff2) format("woff2");
-}
-
-.logoContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.logo {
-  height: 8rem;
-  width: 8rem;
-}
-
-body {
-  font-family: DigitalFont, sans-serif;
-}
-
-.menu {
-  grid-area: menu;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  font-size: 14px;
-  margin-top: 20px;
-}
-
-.menu .nav {
-  margin: 0 auto;
-  padding: 30px;
-  display: flex;
-  gap: 30px;
-  justify-content: space-around;
-  border-top: 6px solid #afbfaa;
-  border-bottom: 6px solid #afbfaa;
-  justify-content: center;
-}
-
-
-.menu .nav li {
-  color: #1f2140; 
-  cursor: pointer;
-}
-
-
-.menu .nav li a {
-  text-decoration: none; 
-  color: #1f2140; 
-  display: inline-block; 
-  transition: all 0.3s ease;
-  padding: 5px 10px; 
-  border-radius: 12px; 
-}
-
-
-.menu .nav li a:hover {
-  color: #5892cc; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  border-radius: 12px; 
-  text-decoration: none; 
-}
-
-.menu .nav li a:visited {
-  color: #1f2140; 
-}
-
-
-.menu .nav li a.active {
-  color: #0c0c0c; 
-  text-decoration: underline; 
-}
-
-
-li {
-  display: inline;
-}

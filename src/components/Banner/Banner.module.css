@@ -1,0 +1,25 @@
+.bannerImg {
+ position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: rgb(255, 255, 255); 
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+  z-index: 1000; 
+}
+
+.bannerImg img {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.bannerImg img:hover {
+  transform: scale(1.1);
+  border-radius: 30px;
+}

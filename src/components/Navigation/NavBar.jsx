@@ -1,21 +1,26 @@
 import { NavLink } from "react-router-dom";
-import styles from "./NavBar.module.css";
+import classes from "./NavBar.module.css";
 import logo from "../../assets/logo.png";
 
 const NavBar = () => {
   return (
     <>
-      <div className={styles.logoContainer}>
-        <img src={logo} alt="Poppy Lane Designs" className={styles.logo} />
+      <div className={classes.logoContainer}>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? classes.active : undefined)}
+        >
+          <img src={logo} alt="Poppy Lane Designs" className={classes.logo} />
+        </NavLink>
       </div>
 
-      <div className={styles.menu}>
-        <ul className={styles.nav}>
+      <div className={classes.menu}>
+        <ul className={classes.nav}>
           <li>
             <NavLink
               to="/"
               className={({ isActive }) =>
-                isActive ? styles.active : undefined
+                isActive ? classes.active : undefined
               }
             >
               HOME
@@ -25,7 +30,7 @@ const NavBar = () => {
             <NavLink
               to="/digital-art"
               className={({ isActive }) =>
-                isActive ? styles.active : undefined
+                isActive ? classes.active : undefined
               }
             >
               DIGITAL
@@ -37,7 +42,7 @@ const NavBar = () => {
             <NavLink
               to="/graphic-design"
               className={({ isActive }) =>
-                isActive ? styles.active : undefined
+                isActive ? classes.active : undefined
               }
             >
               GRAPHIC
@@ -51,7 +56,7 @@ const NavBar = () => {
             <NavLink
               to="/fine-art"
               className={({ isActive }) =>
-                isActive ? styles.active : undefined
+                isActive ? classes.active : undefined
               }
             >
               FINE
@@ -63,7 +68,7 @@ const NavBar = () => {
             <NavLink
               to="/freebies"
               className={({ isActive }) =>
-                isActive ? styles.active : undefined
+                isActive ? classes.active : undefined
               }
             >
               FREEBIES
@@ -73,7 +78,7 @@ const NavBar = () => {
             <NavLink
               to="/contact-about"
               className={({ isActive }) =>
-                isActive ? styles.active : undefined
+                isActive ? classes.active : undefined
               }
             >
               CONTACT/ABOUT

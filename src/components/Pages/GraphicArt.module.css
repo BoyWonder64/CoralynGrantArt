@@ -24,6 +24,17 @@
   text-align: center; 
 }
 
+.item img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.item img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+
 .column img {
   width: 70%; 
   height: auto;

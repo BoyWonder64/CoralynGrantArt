@@ -4,7 +4,7 @@ import Banner from "../Banner/Banner";
 import classes from "./Root.module.css";
  
 /*
-The purpose of this page is to establish the main layout of the page */
+The purpose of this page is to establish the main layout of every page */
 function RootLayout() {
   return (
     <>

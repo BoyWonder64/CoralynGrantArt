@@ -2,6 +2,12 @@ import { NavLink } from "react-router-dom";
 import classes from "./NavBar.module.css";
 import logo from "../../assets/logo.png";
 
+/* 
+  this navbar componet is what setups both the navigation and the 
+  the logo at the top. If we need to add or remove pages it would be done here
+  also notice that home isnt "/home" its "/"
+*/
+
 const NavBar = () => {
   return (
     <>

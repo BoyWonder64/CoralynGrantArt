@@ -7,6 +7,12 @@ import utSticker from "../../assets/DigitalArt/UtahSticker.png";
 import beachSticker from "../../assets/DigitalArt/12x12beach.png";
 import morecomingsoonImage from "../../assets/HomePage/morecomingsoon.png"
 
+/*
+  In order to add a new photo, you will need to import the file 
+  then you will need to copy and paste a div that has the classes.column
+  and then make sure to update the src with the name of the file import you added
+*/
+
 function DigitalArt() {
   return (
     <div>

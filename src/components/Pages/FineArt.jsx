@@ -9,13 +9,17 @@ import train from "../../assets/FineArt/Train.jpg";
 import travel from "../../assets/FineArt/travel.jpg";
 
 function GraphicArt() {
-
   const [showInfo, setShowInfo] = useState(false);
 
-
-  const handleImageClick = () => {
-    setShowInfo(true); 
+  const handleImageClick = () => { //The purpose of this is when the user clicks on a fine art image it displays a message
+    setShowInfo(true);
   };
+
+  /*
+  In order to add a new photo, you will need to import the file 
+  then you will need to copy and paste a div that has the classes.column
+  and then make sure to update the src with the name of the file import you added
+*/
 
   return (
     <div>
@@ -68,9 +72,9 @@ function GraphicArt() {
       {showInfo && (
         <p className={classes.p}>
           Please contact me at{" "}
-          <a href="mailto:corgrant5@gmail.com">corgrant5@gmail.com</a> if you are
-          interested in original art or prints. All gallery-wrapped canvas are
-          giclee prints. Paper prints are on fine art textured paper.
+          <a href="mailto:corgrant5@gmail.com">corgrant5@gmail.com</a> if you
+          are interested in original art or prints. All gallery-wrapped canvas
+          are giclee prints. Paper prints are on fine art textured paper.
         </p>
       )}
     </div>

@@ -6,6 +6,13 @@ import corporatebranding from "../../assets/GraphicDesign/stationarykit.png";
 import poppysquare from "../../assets/GraphicDesign/PoppySquare.png";
 import newsLetter from "../../assets/GraphicDesign/NewsletterCropped.jpg";
 
+
+/*
+  In order to add a new photo, you will need to import the file 
+  then you will need to copy and paste a div that has the classes.column
+  and then make sure to update the src with the name of the file import you added
+*/
+
 function GraphicArt() {
   return (
     <div>

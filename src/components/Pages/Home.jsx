@@ -11,12 +11,14 @@ import bakinglifePhoto from "../../assets/HomePage/BakingLife.jpg"
 import paintingPhoto from "../../assets/HomePage/PaintingPhoto.png"
 import picnicBasketPhoto from "../../assets/HomePage/PicnicBasket.jpg"
 
-//This is broken into three sections the each section contains a row of images, to update them
-// you will need to import them with a name, and a file path
-// then use update the image you want to replace with a name
-// the images animatons will remain
+/*
+  In order to add a new photo, you will need to import the file 
+  then you will need to copy and paste a div that has the classes.column
+  and then make sure to update the src with the name of the file import you added
+*/
 
-const NewsLetterSummary = () => {
+
+const Home = () => {
   return (
     <div className={classes.mainPage}>
       <section className={classes.summary}>
@@ -97,4 +99,4 @@ const NewsLetterSummary = () => {
 };
 
 
-export default NewsLetterSummary;
+export default Home;

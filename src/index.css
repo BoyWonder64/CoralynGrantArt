@@ -1,13 +1,13 @@
-/* This css takes care of the main background and layout */
+/* This css takes care of the main background and */
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"); */
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: "Noto Sans JP", sans-serif;
+  /* font-family: "Noto Sans JP", sans-serif; */
 }
 
 body {

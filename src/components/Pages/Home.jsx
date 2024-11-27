@@ -23,13 +23,11 @@ const Home = () => {
     <div className={classes.mainPage}>
       <section className={classes.summary}>
         <div className={classes.content}>
-          <h2>&nbsp;&nbsp;&nbsp; Hi &nbsp; There!</h2>
+          <h2>Hi There!</h2>
           <p className={classes.p}>
-            I am Coralyn Grant, a graphic designer and
-            fine artist. I combine my love of nature,
-             and history, into my artwork.
-             If you like what you see, sign up for my 
-            monthly newsletter I’d love to hear from you!
+            I am Coralyn Grant, a graphic designer and fine artist. I combine my
+            love of travel, nature, and history into my artwork. If you like what you
+            see, sign up for my monthly newsletter I’d love to hear from you!
           </p>
         </div>
         <div className={classes.homePhotoContainer}>
@@ -54,7 +52,7 @@ const Home = () => {
             <img
               src={vwBusPhoto}
               alt="Coralyn Grant Art - VW Bus"
-              className={classes.formImage}
+              className={classes.vwBusPhoto}
             />
           </div>
 

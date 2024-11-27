@@ -28,7 +28,7 @@ function GraphicArt() {
         <div className={classes.column}>
           <div className={classes.item}>
             <img src={poppysquare} alt="Poppy Design" />
-            <label>Poppy Design</label>
+            <label>Package Design</label>
           </div>
         </div>
 

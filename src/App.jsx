@@ -5,6 +5,7 @@ import ErrorPage from "./components/Error/Error";
 import RootLayout from "./components/Pages/Root";
 import AboutPage from "./components/Pages/About"
 import DigitalArtPage from "./components/Pages/DigitalArt";
+import GraphicArtPage from "./components/Pages/GraphicArt";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <NewsLetterSummary /> },
       { path: "digital-art", element: <DigitalArtPage /> },
-      { path: "graphic-design", element: <AboutPage /> },
+      { path: "graphic-design", element: <GraphicArtPage /> },
       { path: "fine-art", element: <AboutPage /> },
       { path: "freebies-art", element: <AboutPage /> },
       { path: "contact-about", element: <NewsLetterForm /> },

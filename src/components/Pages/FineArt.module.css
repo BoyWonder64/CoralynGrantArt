@@ -1,27 +1,28 @@
 @font-face {
   font-family: Roboto;
-  src: url(../../assets/Roboto-Thin.ttf)
+  src: url(../../assets/Roboto-Thin.ttf);
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;  
-  gap: 3px; 
+  justify-content: center;
+  gap: 3px;
   padding: 8px 0;
+  padding-top: 2%;
 }
 
 .column {
-  flex: 1 1 30%; 
-  max-width: 40%; 
-  text-align: center; 
+  flex: 1 1 30%;
+  max-width: 40%;
+  text-align: center;
 }
 
 .item {
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  text-align: center; 
+  align-items: center;
+  text-align: center;
   padding: auto;
 }
 
@@ -36,7 +37,7 @@
 }
 
 .column img {
-  width: 75%;  
+  width: 75%;
   height: auto;
   margin-top: 8px;
   padding: 18px;

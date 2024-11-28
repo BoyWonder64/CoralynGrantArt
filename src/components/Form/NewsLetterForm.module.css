@@ -3,6 +3,7 @@
   src: url(../../assets/Arima-VariableFont_wght.ttf);
 }
 
+
 .form {
   max-width: 600px;
   margin: 2rem auto;
@@ -13,6 +14,7 @@
   background-color: #c7d3a5;
   display: flex;
   flex-direction: column;
+  
 }
 
 .form-actions {

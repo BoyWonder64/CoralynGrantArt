@@ -87,7 +87,7 @@ const NavBar = () => {
                 isActive ? classes.active : undefined
               }
             >
-              CONTACT/ABOUT
+              CONTACT & ABOUT
             </NavLink>
           </li>
         </ul>

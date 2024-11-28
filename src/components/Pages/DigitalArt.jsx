@@ -18,22 +18,22 @@ function DigitalArt() {
       <div className={classes.row}>
         <div className={classes.column}>
           <div className={classes.item}>
-            <img src={bakingLifePhoto} alt="BakingLife" />
-            <label>Baking Life</label>
+            <img src={beachSticker} alt="Paper Collections" />
+            <label>Paper Collections</label>
           </div>
         </div>
 
         <div className={classes.column}>
           <div className={classes.item}>
-            <img src={picnicPhoto} alt="Still Life" />
-            <label>Picnic</label>
+            <img src={bakingLifePhoto} alt="Illustrations" />
+            <label>Illustrations</label>
           </div>
         </div>
 
         <div className={classes.column}>
           <div className={classes.vwBusPhoto}>
-            <img src={vwBusPhoto} />
-            <label>VW Bus</label>
+            <img src={vwBusPhoto} alt="Illustrations" />
+            <label>.SVG Files</label>
           </div>
         </div>
       </div>
@@ -41,15 +41,15 @@ function DigitalArt() {
       <div className={classes.row}>
         <div className={classes.column}>
           <div className={classes.item}>
-            <img src={utSticker} alt="Seasonal" />
-            <label>Utah Sticker</label>
+            <img src={utSticker} alt="Stickers" />
+            <label>Stickers</label>
           </div>
         </div>
 
         <div className={classes.column}>
           <div className={classes.item}>
-            <img src={beachSticker} alt="Landscape" />
-            <label>Beach</label>
+            <img src={picnicPhoto} alt="Clip Art" />
+            <label>Clip Art</label>
           </div>
         </div>
       </div>

@@ -89,6 +89,7 @@
   justify-content: center;
   gap: 26px;
   padding: 8px 0;
+  padding-top: 2%;
 }
 
 .column {
@@ -125,7 +126,7 @@
 .column label {
   margin-top: 8px;
   font-family: Roboto;
-  font-size: 25px;
+  font-size: 18px;
   padding-top: 20px;
   text-align: center;
   color: #333;

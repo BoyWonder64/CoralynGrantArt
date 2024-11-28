@@ -58,6 +58,7 @@ body {
   margin-top: 5px;
   font-family: CursiveGreeting;
   text-align: center;
+  padding-bottom: 6%; /* Used to adjust the space between the h2 and the text*/
 }
 
 .content {
@@ -109,6 +110,7 @@ body {
   padding: 25px;
 }
 
+
 .imageRowContainer img {
   width: 250px;
   height: auto;
@@ -122,29 +124,23 @@ body {
   border-radius: 15px;
 }
 
-.hollyHocksPhoto {
-  max-width: 90%;
+  .vwBusPhoto{
+  max-width: 80%;
+  min-width: 80%;
+  height: auto;
 }
 
-.outdoorPhoto {
-  width: 20%;
-}
 
-.vwBusPhoto{
-  max-width: 70%;
-}
-
-.formImage {
-  max-width: 100%;
-}
-
-.homePhoto{
-  max-width: 50%;
-}
 
 
 
 @media (max-width: 768px) {
+
+  .vwBusPhoto{
+  max-width: 70%;
+  min-width: 70%;
+}
+
   .summary {
     flex-direction: column;
     align-items: flex-start;
@@ -153,14 +149,21 @@ body {
   .summary h2 {
     font-size: 3rem;
     margin-top: 0;
-    font-family: Greeting;
-    text-align: left;
+    font-family: CursiveGreeting;
+    text-align: center;
     padding-left: 20px;
   }
 
   .p {
     padding-left: 20px;
   }
+
+  .vwBusPhoto{
+  max-width: 80%;
+  min-width: 80%;
+  height: auto;
+} 
+
 
   .content {
     max-width: 100%;
@@ -188,9 +191,6 @@ body {
     border-radius: 15px;
   }
 
-  .imageRowContainer img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-  }
+ 
+
 }

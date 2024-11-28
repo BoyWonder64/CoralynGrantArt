@@ -1,5 +1,5 @@
 import useInput from "../../hooks/useInput";
-import styles from "./NewsLetterForm.module.css";
+import classes from "./NewsLetterForm.module.css";
 import logo from "../../assets/logo.png";
 
 const NewsLetterForm = () => {
@@ -71,9 +71,9 @@ const NewsLetterForm = () => {
 
   return (
     <>
-      <form className={styles.form} onSubmit={formSubmissionHandler}>
-        <div className={styles.logoContainer}>
-          <img src={logo} alt="Poppy Lane Designs" className={styles.logo} />
+      <form className={classes.form} onSubmit={formSubmissionHandler}>
+        <div className={classes.logoContainer}>
+          <img src={logo} alt="Poppy Lane Designs" className={classes.logo} />
         </div>
         <h2>Sign Up For Our Newsletter</h2>
         <p>
@@ -81,7 +81,7 @@ const NewsLetterForm = () => {
           <br /> filed with inside scoops, freebies, & inspiration
         </p>
         <div className={firstNameInputClasses}>
-          <div className={`${styles["form-control"]}`}>
+          <div className={`${classes["form-control"]}`}>
             <input
               type="text"
               id="firstName"
@@ -92,12 +92,14 @@ const NewsLetterForm = () => {
             />
           </div>
           {firstNameInputHasError && (
-            <p className={styles["error-text"]}>Please enter your first name</p>
+            <p className={classes["error-text"]}>
+              Please enter your first name
+            </p>
           )}
         </div>
 
         <div className={emailInputClasses}>
-          <div className={`${styles["form-control"]}`}>
+          <div className={`${classes["form-control"]}`}>
             <input
               type="email"
               id="email"
@@ -108,12 +110,12 @@ const NewsLetterForm = () => {
             />
           </div>
           {emailInputHasError && (
-            <p className={styles["error-text"]}>Please enter your email</p>
+            <p className={classes["error-text"]}>Please enter your email</p>
           )}
         </div>
 
-        <div className={styles["form-actions"]}>
-          <button className={styles.button}>Sign Up</button>
+        <div className={classes["form-actions"]}>
+          <button className={classes.button}>Sign Up</button>
         </div>
       </form>
       <p></p>

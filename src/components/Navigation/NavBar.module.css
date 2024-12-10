@@ -4,8 +4,17 @@
     url(../../assets/Vonique_43_D.woff2) format("woff2");
 }
 
+@font-face {
+  font-family: Helvita;
+  src: url(../../assets/Helvita-Regular.ttf) format("truetype");
+}
+
 body {
-  font-family: DigitalFont, sans-serif;
+  font-family: DigitalFont, Helvetica, sans-serif;
+}
+
+.slash{
+  font-family:Helvita ;
 }
 
 .logoContainer {

@@ -70,7 +70,7 @@ const NavBar = () => {
               <span style={{ textAlign: "center", display: "block" }}>ART</span>
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/freebies"
               className={({ isActive }) =>
@@ -79,7 +79,7 @@ const NavBar = () => {
             >
               FREEBIES
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink
               to="/contact-about"
@@ -87,7 +87,7 @@ const NavBar = () => {
                 isActive ? classes.active : undefined
               }
             >
-              CONTACT & ABOUT
+              CONTACT <slash className={classes.slash}>/</slash> ABOUT
             </NavLink>
           </li>
         </ul>

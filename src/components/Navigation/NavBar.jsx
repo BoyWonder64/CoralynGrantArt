@@ -21,7 +21,15 @@ const NavBar = () => {
       </div> */}
 
       <div className={classes.menu}>
-      <img src={logo} alt="Poppy Lane Designs" className={classes.logo} />
+
+      <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? classes.active : undefined)}
+        >
+          <img src={logo} alt="Poppy Lane Designs" className={classes.logo}/>
+        </NavLink>
+    
+      
         <ul className={classes.nav}>
           <li>
             <NavLink

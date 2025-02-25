@@ -113,7 +113,7 @@ const Home = () => {
             <div className={classes.formHeader}>
               <img src={leafIllustration} alt="LeafIllustration" />
               <div className={classes.headerTextContainer}>
-                <h3>Sign Up for Our Newsletter</h3>
+                <h3>Sign Up for My Newsletter</h3>
                 <p>
                   Sign up to get access to our newsletter filled with
                   inspiration, freebies, printables and more!

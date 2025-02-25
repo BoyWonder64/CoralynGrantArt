@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import classes from "./NavBar.module.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/SiteLogo.png";
 
 /* 
   this navbar componet is what setups both the navigation and the 
@@ -11,16 +11,17 @@ import logo from "../../assets/logo.png";
 const NavBar = () => {
   return (
     <>
-      <div className={classes.logoContainer}>
+      {/* <div className={classes.logoContainer}>
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? classes.active : undefined)}
         >
           <img src={logo} alt="Poppy Lane Designs" className={classes.logo} />
         </NavLink>
-      </div>
+      </div> */}
 
       <div className={classes.menu}>
+      <img src={logo} alt="Poppy Lane Designs" className={classes.logo} />
         <ul className={classes.nav}>
           <li>
             <NavLink
@@ -39,9 +40,9 @@ const NavBar = () => {
                 isActive ? classes.active : undefined
               }
             >
-              DIGITAL
+              CRAFT & FABRIC
               <br />
-              <span style={{ textAlign: "center", display: "block" }}>ART</span>
+              {/* <span style={{ textAlign: "center", display: "block" }}> & FABRIC</span> */}
             </NavLink>
           </li>
           <li>
@@ -51,11 +52,11 @@ const NavBar = () => {
                 isActive ? classes.active : undefined
               }
             >
-              GRAPHIC
+              GRAPHIC DESIGN
               <br />
-              <span style={{ textAlign: "center", display: "block" }}>
+              {/* <span style={{ textAlign: "center", display: "block" }}>
                 DESIGN
-              </span>
+              </span> */}
             </NavLink>
           </li>
           <li>
@@ -65,9 +66,8 @@ const NavBar = () => {
                 isActive ? classes.active : undefined
               }
             >
-              FINE
+              PAINTINGS
               <br />
-              <span style={{ textAlign: "center", display: "block" }}>ART</span>
             </NavLink>
           </li>
           {/* <li>
@@ -87,7 +87,7 @@ const NavBar = () => {
                 isActive ? classes.active : undefined
               }
             >
-              CONTACT <slash className={classes.slash}>/</slash> ABOUT
+              ABOUT
             </NavLink>
           </li>
         </ul>

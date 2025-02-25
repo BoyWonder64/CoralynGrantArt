@@ -1,6 +1,6 @@
 import useInput from "../../hooks/useInput";
 import classes from "./NewsLetterForm.module.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/SiteLogo.png";
 
 const NewsLetterForm = () => {
   const {

@@ -36,7 +36,6 @@ body {
 
 .summary {
   text-align: left;
-  max-width: 45;
   margin: auto;
   margin-top: 3px;
   position: relative;
@@ -47,8 +46,8 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  padding-left: 15%; /* I use these to help move the text closer to the venice image  */
-  padding-right: 15%; /* same here  */
+  padding-left: 15%;  
+  padding-right: 15%; 
 }
 
 .summary h2 {

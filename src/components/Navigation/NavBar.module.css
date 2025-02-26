@@ -120,29 +120,34 @@ li {
 @media (max-width: 768px) {
   .menu {
     padding: 10px;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text */
   }
 
   .menu .nav {
     flex-direction: column; 
     gap: 10px;
-    text-align: center;
-    padding-left: 5%;
-    justify-content: center;
-    align-items: center;
+    width: 100%; /* Full width for mobile */
   }
 
   .menu .nav li {
     display: block;
-    text-align: center;
+    width: auto; /* Auto width to prevent stretching */
   }
 
   .menu .nav li a {
-    padding: 5px 5px;
-    font-size: 15px;
+    padding: 10px; /* Increase padding for touch targets */
+    font-size: 16px; /* Slightly larger font size for readability */
+    display: block; /* Make link block-level for full clickable area */
   }
 
   .logoContainer {
     margin: 10px 0;
+    justify-content: center; /* Center the logo */
+  }
+
+  .logo {
+    margin-left: 0; /* Remove left margin for centering */
   }
 }
-

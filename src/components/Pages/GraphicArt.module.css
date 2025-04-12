@@ -2,6 +2,12 @@
   font-family: Roboto;
   src: url(../../assets/Roboto-Thin.ttf)
 }
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(../../assets/Roboto-Medium.ttf) format("truetype");
+}
+
 /*
 .row {
   display: flex;
@@ -54,13 +60,16 @@
   font-family: Roboto;
 }
  */
-
+.body{
+  font-family: Roboto-Medium;
+}
  .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   padding: 20px;
   background-color: white;
+  font-family: Roboto-Medium;
 }
 
 .item {
@@ -68,6 +77,22 @@
   overflow: hidden;
   width: 100%;
   cursor: pointer;
+  font-family: Roboto-Medium;
+}
+
+.item::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  font-family: Roboto-Medium;
+}
+
+.item:hover::before {
+  opacity: 1;
+  font-family: Roboto-Medium;
 }
 
 .item img {
@@ -76,14 +101,16 @@
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease, filter 0.3s ease;
+  position: relative;
+  z-index: 0;
 }
 
 .item:hover img {
   transform: scale(1.05);
-  filter: brightness(0.85) sepia(0.3) hue-rotate(-15deg) saturate(1.5);
+
 }
 
-/* Label overlay */
+/* Label overlay - positioned at the bottom */
 .item label {
   position: absolute;
   bottom: 0;
@@ -96,17 +123,22 @@
   opacity: 0;
   transform: translateY(100%);
   transition: all 0.3s ease;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a darker strip behind text */
+  white-space: nowrap; /* keep text on one line */
 }
 
 .item:hover label {
   opacity: 1;
   transform: translateY(0);
+  
+  
 }
-
 
 @media screen and (max-width: 768px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  
   }
 }
 

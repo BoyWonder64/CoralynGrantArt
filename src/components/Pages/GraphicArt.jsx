@@ -1,70 +1,6 @@
-/*import classes from "./GraphicArt.module.css";
 
-import annualMockup from "../../assets/GraphicDesign/AnnualReportMockup.png";
-import brochureMockup from "../../assets/GraphicDesign/BrochureMockup.png";
-import corporatebranding from "../../assets/GraphicDesign/stationarykit.png";
-import poppysquare from "../../assets/GraphicDesign/PoppySquare.png";
-import newsLetter from "../../assets/GraphicDesign/NewsletterCropped.jpg";
-
-
-/*
-  In order to add a new photo, you will need to import the file 
-  then you will need to copy and paste a div that has the classes.column
-  and then make sure to update the src with the name of the file import you added
-*/
-
-/*
-
-function GraphicArt() {
-  return (
-    <div>
-
-      <div className={classes.row}>
-        <div className={classes.column}>
-          <div className={classes.item}>
-            <img src={corporatebranding} alt="Corporate Branding" />
-            <label>Corporate Branding</label>
-          </div>
-        </div>
-
-        <div className={classes.column}>
-          <div className={classes.item}>
-            <img src={poppysquare} alt="Poppy Design" />
-            <label>Package Design</label>
-          </div>
-        </div>
-
-        <div className={classes.column}>
-          <div className={classes.item}>
-            <img src={newsLetter} alt="Newsletter" />
-            <label>Newsletter</label>
-          </div>
-        </div>
-      </div>
-
-      <div className={classes.row}>
-        <div className={classes.column}>
-          <div className={classes.item}>
-            <img src={annualMockup} alt="Annual Report" />
-            <label>Annual Report</label>
-          </div>
-        </div>
-
-        <div className={classes.column}>
-          <div className={classes.item}>
-            <img src={brochureMockup} alt="Brochure" />
-            <label>Brochure</label>
-          </div>
-        </div>
-      </div>
-      </div>
-
-  );
-}
-
-export default GraphicArt;
-*/
 import classes from "./GraphicArt.module.css";
+import { Link } from "react-router-dom";
 
 import pizzaCrustFig from "../../assets/GraphicDesign/NewPage/CylinderThumbnailFinal.jpg";
 import digitalBikeWinner from "../../assets/GraphicDesign/NewPage/BikewFlowersThumbnail.jpg";
@@ -88,7 +24,7 @@ import Village from "../../assets/GraphicDesign/NewPage/WinterVillageThumbnail.j
 
 function GraphicArt() {
   const graphics = [
-    { src: pizzaCrustFig, alt: "Crust", label: "Marco’s Artisan Pizza Crust Mix" },
+    { src: pizzaCrustFig, alt: "Crust", label: "Marco’s Artisan Pizza Crust Mix", link: "/graphic-design/pizza-crust" },
     { src: digitalBikeWinner, alt: "Digital Bike", label: "The Flower Peddler" },
     { src: phoneCase, alt: "Phone Case", label: "iPhone Case Design" },
     { src: Brochure, alt: "Brochure", label: "The Seat Brochure" },
@@ -110,15 +46,29 @@ function GraphicArt() {
   ];
 
   return (
-    <div className={classes.grid}>
-      {graphics.map((item, index) => (
-        <div key={index} className={classes.item}>
-          <img src={item.src} alt={item.alt} />
-          <label>{item.label}</label> {/* Add label here */}
-        </div>
-      ))}
+    <div className={classes.page}>
+      <div className={classes.gallery}>
+        {graphics.map((item, index) =>
+          item.link ? (
+            <Link
+              to={item.link}
+              key={index}
+              className={classes.item}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <img src={item.src} alt={item.alt} />
+              <label>{item.label}</label>
+            </Link>
+          ) : (
+            <div key={index} className={classes.item}>
+              <img src={item.src} alt={item.alt} />
+              <label>{item.label}</label>
+            </div>
+          )
+        )}
+      </div>
     </div>
   );
-}
+};
 
 export default GraphicArt;

@@ -37,6 +37,11 @@
   text-align: left;
 }
 
+.card h3{
+  color: #9c1d20;
+  font-size: 25px;
+}
+
 .card p {
   text-align: left;
   margin-right: 25%;

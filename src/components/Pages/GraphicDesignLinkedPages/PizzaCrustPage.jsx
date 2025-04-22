@@ -1,13 +1,13 @@
 import classes from "./PizzaCrustPage.module.css";
-import backgroundGrunge from "../../assets/PizzaCrust/grunge-wall.jpg";
-import MarcosLogo from "../../assets/PizzaCrust/MarcosLogo.png";
-import FrontCan from "../../assets/PizzaCrust/Front.png";
-import CylSide1 from "../../assets/PizzaCrust/CylinderSide1.jpg";
-import CylSide2 from "../../assets/PizzaCrust/CylinderSide2.jpg";
-import Brainstorming from "../../assets/PizzaCrust/Brainstorming.jpg";
-import Brainstorming2 from "../../assets/PizzaCrust/S&D.jpg";
-import Mockup from "../../assets/PizzaCrust/FullSized.jpg";
-import CylinderComposite from "../../assets/PizzaCrust/CylinderComposite.jpg";
+import backgroundGrunge from "../../../assets/PizzaCrust/grunge-wall.jpg";
+import MarcosLogo from "../../../assets/PizzaCrust/MarcosLogo.png";
+import FrontCan from "../../../assets/PizzaCrust/Front.png";
+import CylSide1 from "../../../assets/PizzaCrust/CylinderSide1.jpg";
+import CylSide2 from "../../../assets/PizzaCrust/CylinderSide2.jpg";
+import Brainstorming from "../../../assets/PizzaCrust/Brainstorming.jpg";
+import Brainstorming2 from "../../../assets/PizzaCrust/S&D.jpg";
+import Mockup from "../../../assets/PizzaCrust/FullSized.jpg";
+import CylinderComposite from "../../../assets/PizzaCrust/CylinderComposite.jpg";
 
 function PizzaCrustPage() {
   return (

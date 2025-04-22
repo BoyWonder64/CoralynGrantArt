@@ -17,18 +17,27 @@ import FineArtPage from "./components/Pages/FineArt";
 import Freebies from "./components/Pages/Freebies";
 
 // Pages linked from GraphicArtPage
-import PizzaCrustPage from "./components/Pages/PizzaCrustPage";
-import PoppyLaneBrandingPage from "./components/Pages/PoppyLaneBrandingPage";
-import TheSeatBrandingPage from "./components/Pages/TheSeatBrandingPage";
-import DigitalIllustrationPage from "./components/Pages/DigitalIllustrationPage";
-import ColorMyDreamPage from "./components/Pages/ColorMyDreamPage";
+import PizzaCrustPage from "./components/Pages/GraphicDesignLinkedPages/PizzaCrustPage";
+import PoppyLaneBrandingPage from "./components/Pages/GraphicDesignLinkedPages/PoppyLaneBrandingPage";
+import TheSeatBrandingPage from "./components/Pages/GraphicDesignLinkedPages/TheSeatBrandingPage";
+import DigitalIllustrationPage from "./components/Pages/GraphicDesignLinkedPages/DigitalIllustrationPage";
+import ColorMyDreamPage from "./components/Pages/GraphicDesignLinkedPages/ColorMyDreamPage";
+import ZinePage from "./components/Pages/GraphicDesignLinkedPages/ZinePage";
 
 
 
 /*Here is where we setup the paths for each of the pages
 the path name is from the Nav bar componet and the element is
 the component that we imported. This is what ties everything together
+
+
+ADDING A PAGE:
+
+In order to add a page, you will need to import the page above, add
+a path below, and then update the Graphic Design page to include the link
+
 */
+
 
 const router = createBrowserRouter([
   {
@@ -46,6 +55,7 @@ const router = createBrowserRouter([
       { path: "graphic-design/seating-branding", element: <TheSeatBrandingPage /> },
       { path: "graphic-design/digital-illustration", element: <DigitalIllustrationPage /> },
       { path: "graphic-design/color-my-dream", element: <ColorMyDreamPage /> },
+      { path: "graphic-design/zine", element: <ZinePage /> },
 
 
 

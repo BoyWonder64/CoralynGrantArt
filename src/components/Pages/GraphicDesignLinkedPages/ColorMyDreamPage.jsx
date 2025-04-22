@@ -1,14 +1,12 @@
 import classes from "./ColorMyDreamPage.module.css";
 
-import Back from "../../assets/ColorMyDreamBox/Back.jpg";
-import CMDLOGO from "../../assets/ColorMyDreamBox/CMDLOGO.png";
-import CompositeWeb from "../../assets/ColorMyDreamBox/CompositeWeb.jpg";
-import FrontWCrayonsCropped from "../../assets/ColorMyDreamBox/FrontWCrayonsCropped.jpg";
-import SandBackground from "../../assets/ColorMyDreamBox/SandBackground.jpg";
-import Side1 from "../../assets/ColorMyDreamBox/Side1.jpg";
-import Side2 from "../../assets/ColorMyDreamBox/Side2.jpg";
-import MiniBack from "../../assets/ColorMyDreamBox/MiniBack.jpg";
-import MiniFront from "../../assets/ColorMyDreamBox/MiniFront.jpg";
+import CMDLOGO from "../../../assets/ColorMyDreamBox/CMDLOGO.png";
+import CompositeWeb from "../../../assets/ColorMyDreamBox/CompositeWeb.jpg";
+import FrontWCrayonsCropped from "../../../assets/ColorMyDreamBox/FrontWCrayonsCropped.jpg";
+import Side1 from "../../../assets/ColorMyDreamBox/Side1.jpg";
+import Side2 from "../../../assets/ColorMyDreamBox/Side2.jpg";
+import MiniBack from "../../../assets/ColorMyDreamBox/MiniBack.jpg";
+import MiniFront from "../../../assets/ColorMyDreamBox/MiniFront.jpg";
 
 
 function ColorMyDreamPage() {

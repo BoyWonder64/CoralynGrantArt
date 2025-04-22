@@ -40,7 +40,12 @@ function GraphicArt() {
     { src: Brochure, alt: "Brochure", label: "The Seat Brochure" },
 
     { src: BedThumbnail, alt: "Bed", label: "Apple Blossom Collection" },
-    { src: HemlockInk, alt: "Hemlock Ink", label: "Hemlock Ink Branding" },
+    {
+      src: HemlockInk,
+      alt: "Hemlock Ink",
+      label: "Hemlock Ink Branding",
+      link: "/graphic-design/hemlockink",
+    },
     { src: StickerSheet, alt: "Stickers", label: "Sticker Sheet" },
     {
       src: GableBox,

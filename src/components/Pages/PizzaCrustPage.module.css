@@ -31,3 +31,13 @@
   display: block;
   margin: 0 auto;
 }
+
+.card h1{
+  color: #9c1d20;
+  text-align: left;
+}
+
+.card p {
+  text-align: left;
+  margin-right: 25%;
+}

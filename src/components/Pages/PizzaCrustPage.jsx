@@ -7,6 +7,7 @@ import CylSide2 from "../../assets/PizzaCrust/CylinderSide2.jpg";
 import Brainstorming from "../../assets/PizzaCrust/Brainstorming.jpg";
 import Brainstorming2 from "../../assets/PizzaCrust/S&D.jpg";
 import Mockup from "../../assets/PizzaCrust/FullSized.jpg";
+import CylinderComposite from "../../assets/PizzaCrust/CylinderComposite.jpg";
 
 function PizzaCrustPage() {
   return (
@@ -67,18 +68,6 @@ function PizzaCrustPage() {
         </p>
       </div>
 
-      <div className={classes.imageGrid}>
-        {/* Image cards */}
-
-        <div className={classes.card}>
-          <img src={CylSide1} alt="Side 1 of Can" />
-        </div>
-
-        <div className={classes.card}>
-          <img src={CylSide2} alt="Side 2 of Can" />
-        </div>
-      </div>
-
       <div className={classes.card}>
         <h3>Process Images</h3>
       </div>
@@ -95,6 +84,10 @@ function PizzaCrustPage() {
 
       <div className={classes.card}>
         <img src={Mockup} alt="Other Brainstorming Session" />
+      </div>
+
+      <div className={classes.card}>
+        <img src={CylinderComposite} alt="Final Product" />
       </div>
     </div>
   );

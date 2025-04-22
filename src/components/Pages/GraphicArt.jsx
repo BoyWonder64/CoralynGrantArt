@@ -32,7 +32,7 @@ function GraphicArt() {
     { src: BedThumbnail, alt: "Bed", label: "Apple Blossom Collection" },
     { src: HemlockInk, alt: "Hemlock Ink", label: "Hemlock Ink Branding" },
     { src: StickerSheet, alt: "Stickers", label: "Sticker Sheet" },
-    { src: GableBox, alt: "Gable Box", label: "Color My Dreams Pajama Box" },
+    { src: GableBox, alt: "Gable Box", label: "Color My Dreams Pajama Box",link: "/graphic-design/color-my-dream" },
 
     { src: AnnualReport, alt: "Annual Report", label: "The Seat Annual Report" },
     { src: Baking, alt: "Baking Illustration", label: "In The Making" },

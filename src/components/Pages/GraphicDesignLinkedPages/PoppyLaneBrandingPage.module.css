@@ -24,6 +24,12 @@
   text-align: center;
 }
 
+.triplecard {
+  padding: 16px;
+  border-radius: 8px;
+  text-align: left;
+}
+
 .card img {
   width: 100%;
   height: auto;
@@ -46,3 +52,5 @@
   text-align: left;
   margin-right: 25%;
 }
+
+

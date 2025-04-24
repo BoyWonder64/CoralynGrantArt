@@ -29,6 +29,8 @@ function TheSeatBrandingPage() {
         <div className={classes.card}>
           <img src={BCseatback} alt="Seat Book w Logo" />
         </div>
+
+        
       </div>
       <div className={classes.card}>
         <img src={folderBrandingMockup} alt="Seat Logo" />

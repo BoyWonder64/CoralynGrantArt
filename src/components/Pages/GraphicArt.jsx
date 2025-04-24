@@ -1,4 +1,3 @@
-
 import classes from "./GraphicArt.module.css";
 import { Link } from "react-router-dom";
 
@@ -21,7 +20,6 @@ import Zine from "../../assets/GraphicDesign/NewPage/ZineThumbnail.jpg";
 import Dress from "../../assets/GraphicDesign/NewPage/Dress.jpg";
 import Barn from "../../assets/GraphicDesign/NewPage/Barn3DThumbnail.jpg";
 import Village from "../../assets/GraphicDesign/NewPage/WinterVillageThumbnail.jpg";
-
 
 function GraphicArt() {
   const graphics = [
@@ -66,7 +64,12 @@ function GraphicArt() {
       link: "/graphic-design/seating-branding",
     },
     { src: Baking, alt: "Baking Illustration", label: "In The Making" },
-    { src: PoppyLane, alt: "Branding", label: "Personal Branding" },
+    {
+      src: PoppyLane,
+      alt: "Branding",
+      label: "Personal Branding",
+      link: "/graphic-design/poppylanebranding",
+    },
     { src: BabyShirt, alt: "Baby Shirt", label: "Apple Blossom Collection" },
 
     {
@@ -104,6 +107,6 @@ function GraphicArt() {
       </div>
     </div>
   );
-};
+}
 
 export default GraphicArt;

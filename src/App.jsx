@@ -58,6 +58,10 @@ const router = createBrowserRouter([
         path: "graphic-design/digital-illustration",
         element: <DigitalIllustrationPage />,
       },
+      {
+        path: "graphic-design/poppylanebranding",
+        element: <PoppyLaneBrandingPage />,
+      },
       { path: "graphic-design/color-my-dream", element: <ColorMyDreamPage /> },
       { path: "graphic-design/zine", element: <ZinePage /> },
       { path: "graphic-design/hemlockink", element: <HemlockInkPage /> },

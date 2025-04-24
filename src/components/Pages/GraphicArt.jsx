@@ -37,7 +37,12 @@ function GraphicArt() {
       label: "The Flower Peddler",
     },
     { src: phoneCase, alt: "Phone Case", label: "iPhone Case Design" },
-    { src: Brochure, alt: "Brochure", label: "The Seat Brochure" },
+    {
+      src: Brochure,
+      alt: "Brochure",
+      label: "The Seat Brochure",
+      link: "/graphic-design/seating-branding",
+    },
 
     { src: BedThumbnail, alt: "Bed", label: "Apple Blossom Collection" },
     {
@@ -58,6 +63,7 @@ function GraphicArt() {
       src: AnnualReport,
       alt: "Annual Report",
       label: "The Seat Annual Report",
+      link: "/graphic-design/seating-branding",
     },
     { src: Baking, alt: "Baking Illustration", label: "In The Making" },
     { src: PoppyLane, alt: "Branding", label: "Personal Branding" },

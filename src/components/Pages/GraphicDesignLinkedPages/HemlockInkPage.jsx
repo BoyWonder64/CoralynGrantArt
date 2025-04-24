@@ -9,6 +9,7 @@ import GDiamond from "../../../assets/HemlockInk/GDiamond.png";
 import Main from "../../../assets/HemlockInk/Main.png";
 import Reversed from "../../../assets/HemlockInk/Reversed.png";
 import Secondary from "../../../assets/HemlockInk/Secondary.png";
+import Words from "../../../assets/HemlockInk/BRIEF.png";
 
 function HemlockInkPage() {
   return (
@@ -17,10 +18,10 @@ function HemlockInkPage() {
       style={{
         backgroundImage: `url(${PatternFinal})`,
         backgroundColor: "#89AEE3", // fallback color
-        backgroundSize: "contain",
+        backgroundSize: "contain", //can also try auto if this doesnt work
         backgroundPosition: "right center",
         backgroundRepeat: "no-repeat",
-        minHeight: "100vh", // makes it fill the screen height
+  
       }}
     >
       <div className={classes.card}>
@@ -35,19 +36,40 @@ function HemlockInkPage() {
         </p>
       </div> */}
 
-      <div className={classes.imageGrid}>
+  
         {/* Image cards */}
         <div className={classes.card}>
           <h3>SECONDARY LOGO</h3>
           <img src={Secondary} alt="Secondary" />
         </div>
+   
+
+      <div className={classes.imageGrid}>
+        <img src={BCards} alt="Secondary" />
+        <div className={classes.card}>
+          <h3>DESIGN BRIEF</h3>
+          <img src={Words} alt="Word Description" />
+        </div>
       </div>
 
       <div className={classes.imageGrid}>
-         <img src={BCards} alt="Secondary" />
+        <img src={GDiamond} alt="Diamond" />
+      </div>
+
+      <div className={classes.imageGrid}>
+        <img src={brandcolors} alt="Secondary" />
+      </div>
+
+      <div className={classes.card}>
+        <img src={Reversed} alt="ReversedColor" />
+        <img src={Clearspace} alt="Clearspace" />
+      </div>
+
+      <div className={classes.imageGrid}>
+        {/* Image cards */}
         <div className={classes.card}>
-          <h3>Design Brief</h3>
-        
+          <h3>TYPEFACE</h3>
+          <img src={FANG} alt="Secondary" />
         </div>
       </div>
     </div>

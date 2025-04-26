@@ -18,7 +18,7 @@ function HemlockInkPage() {
       style={{
         backgroundImage: `url(${PatternFinal})`,
         backgroundColor: "#89AEE3", // fallback color
-        backgroundSize: "40%",
+        // backgroundSize: "40%",
         backgroundRepeat: "repeat-y",
         backgroundPosition: "right top",
         backgroundSize: "auto",

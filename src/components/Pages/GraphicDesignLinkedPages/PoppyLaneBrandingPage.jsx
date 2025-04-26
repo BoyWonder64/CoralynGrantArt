@@ -70,7 +70,7 @@ function PoppyLaneBrandingPage() {
         </div>
       </div>
       {/* Row 3 */}
-      <div className={classes.imageGridLeft}>
+      <div className={classes.imageGridLeftTypeface}>
         <img src={TYPEFACES} alt="Typefaces Overview" />
       </div>
 

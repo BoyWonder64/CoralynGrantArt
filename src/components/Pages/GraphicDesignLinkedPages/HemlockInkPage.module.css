@@ -23,7 +23,13 @@
   border-radius: 8px;
   text-align: center;
   padding-bottom: 5%;
-  background-color: rgba(255, 255, 255, 0.7); /* white with 70% opacity */
+  transform: translateX(-200px);
+  /* background-color: rgba(255, 255, 255, 0.7); white with 70% opacity */
+}
+
+.cardWBack h3 {
+  color: #4a6b9b;
+  font-size: 35px;
 }
 
 .card {
@@ -104,4 +110,116 @@
   margin-left: 10%;
   width: 75%;
   height: auto;
+}
+
+/* Mobile-responsive styles using media queries */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 40px 20px; /* Less padding for smaller screens */
+  }
+
+  .imageGrid {
+    grid-template-columns: 1fr; /* Change to single column on smaller screens */
+    gap: 20px; /* Reduce gap between images */
+  }
+
+  .card img {
+    width: 90%; /* Increase image width on smaller screens */
+    height: auto;
+    margin-left: auto; /* Center image horizontally */
+    margin-right: auto; /* Center image horizontally */
+  }
+
+  .cardWBack {
+    transform: translateX(0); /* Reset translate for smaller screens */
+    padding: 10px; /* Adjust padding for small screens */
+  }
+
+  .cardWBack h3 {
+    font-size: 28px; /* Smaller text size for smaller screens */
+  }
+
+  .h3Left {
+    font-size: 28px; /* Smaller text size for smaller screens */
+  }
+
+  .card h3 {
+    font-size: 28px; /* Smaller text size for smaller screens */
+  }
+
+  .h2 {
+    font-size: 22px; /* Smaller text size for smaller screens */
+  }
+
+  .twinkleImg {
+    width: 60%; /* Smaller twinkle image on mobile */
+    left: 50%; /* Adjust to center */
+    transform: translateX(-50%); /* Center the image */
+    top: 150px; /* Adjust position */
+  }
+
+  .leftShift {
+    transform: translateX(0); /* Remove shift for mobile */
+  }
+
+  .largerTopImg {
+    width: 90%; /* Adjust the image width for mobile */
+    margin-left: auto; /* Center image horizontally */
+    margin-right: auto; /* Center image horizontally */
+  }
+
+  .smallerGreenImg {
+    width: 90%; /* Adjust the image width for mobile */
+    margin-left: auto; /* Center image horizontally */
+    margin-right: auto; /* Center image horizontally */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 30px 10px; /* Further reduce padding on very small screens */
+  }
+
+  .card img {
+    width: 100%; /* Make images fit the screen */
+    margin-left: auto; /* Center image horizontally */
+    margin-right: auto; /* Center image horizontally */
+  }
+
+  .cardWBack {
+    padding: 5px; /* Adjust padding for even smaller screens */
+  }
+
+  .cardWBack h3 {
+    font-size: 24px; /* Adjust font size */
+  }
+
+  .h3Left {
+    font-size: 24px; /* Adjust font size */
+  }
+
+  .card h3 {
+    font-size: 24px; /* Adjust font size */
+  }
+
+  .h2 {
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .twinkleImg {
+    width: 50%; /* Adjust twinkle image for very small screens */
+    top: 100px; /* Adjust position for small screens */
+  }
+
+  .largerTopImg {
+    width: 100%; /* Ensure top image fits on smaller screens */
+    margin-left: auto; /* Center image horizontally */
+    margin-right: auto; /* Center image horizontally */
+  }
+
+  .smallerGreenImg {
+    width: 100%; /* Ensure green image fits on smaller screens */
+    margin-left: auto; /* Center image horizontally */
+    margin-right: auto; /* Center image horizontally */
+  }
 }

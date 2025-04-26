@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom"; // Don't forget to import useLocation
 import classes from "./ZinePage.module.css";
 
 import Back1 from "../../../assets/Zine/Back1.jpg";
@@ -11,6 +13,7 @@ import Spread9 from "../../../assets/Zine/Spread9.jpg";
 import ZineMockCover from "../../../assets/Zine/ZINEMockupCoverCropped.jpg";
 
 function ZinePage() {
+
   return (
     <div className={classes.container}>
       <div className={classes.card}>

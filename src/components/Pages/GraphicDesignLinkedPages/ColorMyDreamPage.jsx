@@ -21,6 +21,7 @@ function ColorMyDreamPage() {
         </div>
 
         <div className={classes.card}>
+          <div style={{ height: "60px" }}></div> {/*Spacer*/}
           <img src={FrontWCrayonsCropped} alt="Front of Box" />
         </div>
 

@@ -21,7 +21,7 @@ function TheSeatBrandingPage() {
     <div className={classes.container}>
       <div className={classes.imageGrid}>
         {/* Image cards */}
-        <div className={classes.card}>
+        <div className={classes.customCard}>
           <img src={SeatLogo} alt="Seat Logo" />
           <h2>The Seat Corporate Branding</h2>
         </div>

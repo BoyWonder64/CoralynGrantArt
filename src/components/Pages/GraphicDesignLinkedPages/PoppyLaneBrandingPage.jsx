@@ -19,6 +19,7 @@ function PoppyLaneBrandingPage() {
   return (
     <div className={classes.container}>
       {/* Row 1 */}
+
       <div className={classes.imageGrid}>
         <div className={classes.card}>
           <img src={PrimaryLogo} alt="Primary Logo" />
@@ -46,9 +47,12 @@ function PoppyLaneBrandingPage() {
         </div>
       </div>
       {/* Row 2 */}
+
+      <div className={classes.imageGridLeft}>
+        <img src={BRANDMARKS} alt="Business Logo" />
+      </div>
       <div className={classes.imageGrid}>
         <div className={classes.card}>
-          <img src={BRANDMARKS} alt="Business Logo" />
           <div
             style={{ display: "flex", justifyContent: "center", gap: "20px" }}
           >
@@ -66,36 +70,21 @@ function PoppyLaneBrandingPage() {
         </div>
       </div>
       {/* Row 3 */}
-      <div className={classes.imageGrid}>
+      <div className={classes.imageGridLeft}>
         <img src={TYPEFACES} alt="Typefaces Overview" />
-        <div className={classes.card}>
+      </div>
+
+      <div className={classes.card}>
+        <div className={classes.fullRow}>
           <img src={Neato} alt="Neato Font" />
           <img src={BigCaslon} alt="Big Caslon Font" />
           <img src={Adelle} alt="Adelle Font" />
         </div>
       </div>
-      {/* Text card */}
-      <div className={classes.card}>
-        <h1>Challenge</h1>
-        <p>
-          Carson and Cole requested a gable box package design for their
-          colorable children’s sleepwear line that was both functional and
-          visually engaging. The package needed to clearly convey that the
-          pajamas could be colored in by kids, while also embracing a fun,
-          whimsical aesthetic which would appeal to a young audience.
-        </p>
-      </div>
 
-      {/* Text card */}
-      <div className={classes.card}>
-        <h1>Solution</h1>
-        <p>
-          I took a playful, colorful approach to the design in order to engage
-          both children and their caregivers. By combining vibrant and fun
-          colored images with black and white line art, I visually communicated
-          that the pajama fabric could be colored. This highlighted the unique
-          and exciting opportunity for kids to personalize their clothing.
-        </p>
+      <div className={classes.fullRowColors}>
+        <img src={LogoColors} alt="Logo Colors" />
+        <img src={BRANDING} alt="Branding Colors" />
       </div>
     </div>
   );

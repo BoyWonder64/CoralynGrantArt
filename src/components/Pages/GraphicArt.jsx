@@ -33,6 +33,7 @@ function GraphicArt() {
       src: digitalBikeWinner,
       alt: "Digital Bike",
       label: "The Flower Peddler",
+      link: "/graphic-design/digital-illustration",
     },
     { src: phoneCase, alt: "Phone Case", label: "iPhone Case Design" },
     {
@@ -63,7 +64,12 @@ function GraphicArt() {
       label: "The Seat Annual Report",
       link: "/graphic-design/seating-branding",
     },
-    { src: Baking, alt: "Baking Illustration", label: "In The Making" },
+    {
+      src: Baking,
+      alt: "Baking Illustration",
+      label: "In The Making",
+      link: "/graphic-design/digital-illustration",
+    },
     {
       src: PoppyLane,
       alt: "Branding",
@@ -80,7 +86,12 @@ function GraphicArt() {
     },
     { src: Dress, alt: "Dress", label: "Apple Blossom Collection" },
     { src: Barn, alt: "Barn", label: "3D Barn Box " },
-    { src: Village, alt: "Village", label: "German Christmas Village" },
+    {
+      src: Village,
+      alt: "Village",
+      label: "German Christmas Village",
+      link: "/graphic-design/digital-illustration",
+    },
   ];
 
   return (

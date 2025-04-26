@@ -15,14 +15,6 @@ function PizzaCrustPage() {
       className={classes.container}
       style={{ backgroundImage: `url(${backgroundGrunge})` }}
     >
-      {/* <div className={classes.card}>
-        <h3>Front Packaging</h3>
-        <p>
-          This is the final packaging with a clean, modern feel while preserving
-          an artisan touch.
-        </p>
-      </div> */}
-
       <div className={classes.imageGrid}>
         {/* Image cards */}
         <div className={classes.card}>

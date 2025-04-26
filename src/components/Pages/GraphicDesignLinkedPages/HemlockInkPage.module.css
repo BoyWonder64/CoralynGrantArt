@@ -18,31 +18,90 @@
   max-width: 1000px;
 }
 
+.cardWBack {
+  padding: 2px;
+  border-radius: 8px;
+  text-align: center;
+  padding-bottom: 5%;
+  background-color: rgba(255, 255, 255, 0.7); /* white with 70% opacity */
+}
+
 .card {
   padding: 16px;
   border-radius: 8px;
   text-align: center;
+  padding-bottom: 2%;
 }
 
 .card img {
-  width: 100%;
+  width: 75%;
   height: auto;
   border-radius: 6px;
   display: block;
   margin: 0 auto;
 }
 
-.card h1{
-  color: #9c1d20;
+.h3Left {
   text-align: left;
+  color: #4a6b9b;
+  font-size: 35px;
 }
 
-.card h3{
-  color: #4A6B9B;
+.card h3 {
+  color: #4a6b9b;
+  font-size: 35px;
+}
+
+.h2{
   font-size: 25px;
 }
 
 .card p {
   text-align: left;
   margin-right: 25%;
+}
+
+.twinkle {
+  align-items: left;
+  padding-top: -15;
+  margin-left: 2;
+}
+
+
+.overlapWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.bcardsImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.twinkleImg {
+  position: absolute;
+  top: 250px;     /* adjust as needed */
+  right: -5px;
+  left: 275px;   /* or 'left' if needed */
+  width: 75%;    /* adjust based on look */
+  height: auto;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.leftShift {
+  transform: translateX(-200px); /* adjust value as needed */
+}
+
+.largerTopImg{
+  width: 75%;
+  height: auto;
+}
+
+.smallerGreenImg{
+  margin-left: 10%;
+  width: 75%;
+  height: auto;
 }

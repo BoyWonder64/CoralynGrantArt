@@ -10,18 +10,19 @@ import Main from "../../../assets/HemlockInk/Main.png";
 import Reversed from "../../../assets/HemlockInk/Reversed.png";
 import Secondary from "../../../assets/HemlockInk/Secondary.png";
 import Words from "../../../assets/HemlockInk/BRIEF.png";
+import NewBack from "../../../assets/HemlockInk/WebPattern.png";
 
 function HemlockInkPage() {
   return (
     <div
       className={classes.container}
       style={{
-        backgroundImage: `url(${PatternFinal})`,
+        backgroundImage: `url(${NewBack})`,
         backgroundColor: "#89AEE3", // fallback color
-        // backgroundSize: "40%",
+        backgroundSize: "40%",
         backgroundRepeat: "repeat-y",
         backgroundPosition: "right top",
-        backgroundSize: "auto",
+        // backgroundSize: "auto",
       }}
     >
       {/*First row*/}

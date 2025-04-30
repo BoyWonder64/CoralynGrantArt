@@ -6,6 +6,8 @@ import HEADER from "../../../assets/PoppyLane2/HEADER.png";
 import LogoColors2 from "../../../assets/PoppyLane2/LogoColors.png";
 import Secondary from "../../../assets/PoppyLane2/SECONDARY LOGO.png";
 import Stationary from "../../../assets/PoppyLane2/Stationary Mockup.png";
+import Typefaces from "../../../assets/PoppyLane2/Typefaces.png";
+
 
 function PoppyLaneBrandingPage() {
   return (
@@ -34,10 +36,17 @@ function PoppyLaneBrandingPage() {
         <img src={Stationary} alt="Primary Logo" />
       </div>
 
+      {/* Row 4 */}
+
+      <div className={classes.card}>
+        <img src={Typefaces} alt="Primary Logo" />
+      </div>
+
+      {/* Row 5 */}
+
       <div className={classes.card}>
         <img src={LogoColors2} alt="Primary Logo" />
       </div>
-
     </div>
   );
 }

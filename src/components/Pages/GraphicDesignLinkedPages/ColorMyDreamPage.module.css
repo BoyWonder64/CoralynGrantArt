@@ -1,5 +1,5 @@
-body{
-  color:#D9EAEF
+body {
+  color: #d9eaef;
 }
 
 .container {
@@ -36,13 +36,20 @@ body{
   margin: 0 auto;
 }
 
-.card h1{
-  color: #E84A70;
+.logoImage {
+  width: 30%; /* Adjust this as needed (e.g., 40%, 30%, etc.) */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.card h1 {
+  color: #e84a70;
   text-align: left;
 }
 
-.card h3{
-  color: #E84A70;
+.card h3 {
+  color: #e84a70;
   font-size: 25px;
 }
 

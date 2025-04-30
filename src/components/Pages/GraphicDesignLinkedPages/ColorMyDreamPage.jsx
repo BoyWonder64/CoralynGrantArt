@@ -8,14 +8,17 @@ import Side2 from "../../../assets/ColorMyDreamBox/Side2.jpg";
 import MiniBack from "../../../assets/ColorMyDreamBox/MiniBack.jpg";
 import MiniFront from "../../../assets/ColorMyDreamBox/MiniFront.jpg";
 
-
 function ColorMyDreamPage() {
   return (
     <div className={classes.container} style={{ backgroundColor: "#D9EAEF" }}>
       <div className={classes.imageGrid}>
         {/* Image cards */}
         <div className={classes.card}>
-          <img src={CMDLOGO} alt="Color Dream Logo" />
+          <img
+            src={CMDLOGO}
+            alt="Color Dream Logo"
+            className={classes.logoImage}
+          />
           <h2>Color MY Dreams Colorable Box Set</h2>
           <h2>GABLE BOX PACKAGE DESIGN</h2>
         </div>

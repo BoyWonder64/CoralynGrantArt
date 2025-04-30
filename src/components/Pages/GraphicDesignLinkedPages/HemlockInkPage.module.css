@@ -3,7 +3,7 @@
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-  padding: 60px 40px;
+  padding: 10px 40px;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  width: 100%;
+  width: 75%;
   max-width: 1000px;
 }
 
@@ -101,10 +101,10 @@
   transform: translateX(-200px); /* adjust value as needed */
 }
 
-.largerTopImg{
+/* .largerTopImg{
   width: 75%;
   height: auto;
-}
+} */
 
 .smallerGreenImg{
   margin-left: 10%;
@@ -181,7 +181,7 @@
   }
 
   .card img {
-    width: 100%; /* Make images fit the screen */
+    width: 75%; /* Make images fit the screen */
     margin-left: auto; /* Center image horizontally */
     margin-right: auto; /* Center image horizontally */
   }

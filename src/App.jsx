@@ -15,6 +15,7 @@ import DigitalArtPage from "./components/Pages/DigitalArt";
 import GraphicArt from "./components/Pages/GraphicArt";
 import FineArtPage from "./components/Pages/FineArt";
 import Freebies from "./components/Pages/Freebies";
+import AboutMe from "./components/Pages/AboutMe";
 
 // Pages linked from GraphicArtPage
 import PizzaCrustPage from "./components/Pages/GraphicDesignLinkedPages/PizzaCrustPage";
@@ -45,6 +46,9 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "digital-art", element: <DigitalArtPage /> },
+
+      //About Me
+      { path: "aboutme", element: <AboutMe /> },
 
       //Graphic Art Page
       { path: "graphic-design", element: <GraphicArt /> },

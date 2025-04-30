@@ -11,15 +11,7 @@ import logo from "../../assets/SiteLogo.png";
 const NavBar = () => {
   return (
     <>
-      {/* <div className={classes.logoContainer}>
-        <NavLink
-          to="/"
-          className={({ isActive }) => (isActive ? classes.active : undefined)}
-        >
-          <img src={logo} alt="Poppy Lane Designs" className={classes.logo} />
-        </NavLink>
-      </div> */}
-
+  
       <div className={classes.menu}>
 
       <NavLink
@@ -90,7 +82,7 @@ const NavBar = () => {
           </li> */}
           <li>
             <NavLink
-              to="/contact-about"
+              to="/aboutme"
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }

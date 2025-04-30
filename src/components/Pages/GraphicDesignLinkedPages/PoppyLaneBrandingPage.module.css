@@ -1,9 +1,13 @@
+body{
+  color:#D9EAEF
+}
+
 .container {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* min-height: 100vh; */
-  /* padding: 60px 40px; */
+  min-height: 100vh;
+  padding: 60px 40px;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -15,59 +19,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   width: 100%;
-  max-width: 1000px;
-}
-
-/* Move BigCaslon Image higher */
-.fullRow img:nth-child(2) {
-  position: relative;
-  top: -25px; /* Adjust this value to fine-tune the movement */
-}
-
-.imageGridLeft {
-  display: grid;
-  grid-template-columns: 1fr; /* Ensure it’s only one column for this image */
-  gap: 30px;
-  width: 100%;
-  margin-left: 35%; /* Align left */
-  text-align: left; /* Align text content left */
-}
-
-/* Move the TYPEFACE image lower */
-.imageGridLeft img {
-  margin-top: 30px; /* Move it down a bit */
-  align-self: left;
-}
-
-.imageGridLeftTypeface {
-  display: grid;
-  grid-template-columns: 1fr; /* Single column for the Typeface image */
-  gap: 10px; /* Reduce gap to bring the images closer */
-  width: 100%;
-  margin-left: 0; /* Remove or adjust left margin */
-  text-align: left; /* Keep the text aligned to the left */
-  padding-top: 100; /* Remove the top padding */
-  margin-bottom: -100px;
-}
-
-/* Specific adjustment for the Typeface image */
-.imageGridLeftTypeface img {
-  align-self: flex-start; /* Keep it aligned to the left */
-  margin-top: 0; /* Remove any additional space above */
-}
-
-
-/* Optional: Fine-tune spacing between TYPEFACE and the fonts */
-.card .fullRow {
-  margin-top: 60px; /* Add space above the font section */
-}
-
-.imageGridExtraLeft {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  width: 100%;
-  align-items: left;
+  /* max-width: 1000px; */
 }
 
 .card {
@@ -76,48 +28,21 @@
   text-align: center;
 }
 
-.fullRow {
-  display: flex;
-  width: 100vw;
-  margin-left: calc(-1 * ((100vw - 100%) / 2)); /* center align it */
-  padding: 0; /* Remove container padding for this row */
-  gap: 0;
-  box-sizing: border-box;
-}
-
-.fullRow img {
-  flex: 1;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
-
-.fullRowColors {
-  display: flex;
-  gap: 0;
-}
-
-.fullRowColors img {
-  align-items: left;
-  width: 45%;
-  height: auto;
-}
-
 .card img {
-  width: 100%;
+  width: 75%;
   height: auto;
   border-radius: 6px;
   display: block;
   margin: 0 auto;
 }
 
-.card h1 {
-  color: #9c1d20;
+.card h1{
+  color: #E84A70;
   text-align: left;
 }
 
-.card h3 {
-  color: #9c1d20;
+.card h3{
+  color: #E84A70;
   font-size: 25px;
 }
 
@@ -126,116 +51,3 @@
   margin-right: 25%;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 40px 20px; /* Less padding for smaller screens */
-  }
-
-  .imageGrid {
-    grid-template-columns: 1fr; /* Change to single column on smaller screens */
-    gap: 20px; /* Reduce gap between images */
-  }
-
-  .card img {
-    width: 90%; /* Increase image width on smaller screens */
-    height: auto;
-    margin-left: auto; /* Center image horizontally */
-    margin-right: auto; /* Center image horizontally */
-  }
-
-  .imageGridLeft {
-    margin-left: 0; /* Reset left margin for mobile */
-    text-align: center; /* Center the text */
-  }
-
-  /* Adjust fullRow and imageGridLeftTypeface for mobile */
-  .fullRow {
-    width: 100%; /* Ensure fullRow takes full width */
-    margin-left: 0; /* Reset margin for better alignment */
-  }
-
-  .imageGridLeftTypeface img {
-    width: 80%; /* Adjust the size of the typeface image for mobile */
-    margin-left: auto; /* Center horizontally */
-    margin-right: auto; /* Center horizontally */
-  }
-
-  .imageGridLeft img {
-    width: 100%; /* Ensure images within imageGridLeft fill the container */
-    margin-top: 20px;
-  }
-
-  .card h3 {
-    font-size: 22px; /* Smaller font size for mobile */
-  }
-
-  .h2 {
-    font-size: 20px; /* Adjust font size */
-  }
-
-  /* Optional: Adjust margin for better positioning */
-  .twinkleImg {
-    width: 50%; /* Adjust twinkle image for mobile */
-    left: 50%; /* Adjust to center */
-    transform: translateX(-50%); /* Center the image */
-    top: 150px; /* Adjust position */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    padding: 30px 10px; /* Further reduce padding on very small screens */
-  }
-
-  .card img {
-    width: 100%; /* Make images fit the screen */
-    margin-left: auto; /* Center image horizontally */
-    margin-right: auto; /* Center image horizontally */
-  }
-
-  .cardWBack {
-    padding: 5px; /* Adjust padding for even smaller screens */
-  }
-
-  .cardWBack h3 {
-    font-size: 24px; /* Adjust font size */
-  }
-
-  .h3Left {
-    font-size: 24px; /* Adjust font size */
-  }
-
-  .card h3 {
-    font-size: 24px; /* Adjust font size */
-  }
-
-  .h2 {
-    font-size: 20px; /* Adjust font size */
-  }
-
-  .twinkleImg {
-    width: 50%; /* Adjust twinkle image for very small screens */
-    top: 100px; /* Adjust position for small screens */
-  }
-
-  .largerTopImg {
-    width: 100%; /* Ensure top image fits on smaller screens */
-    margin-left: auto; /* Center image horizontally */
-    margin-right: auto; /* Center image horizontally */
-  }
-
-  .smallerGreenImg {
-    width: 100%; /* Ensure green image fits on smaller screens */
-    margin-left: auto; /* Center image horizontally */
-    margin-right: auto; /* Center image horizontally */
-  }
-
-  /* Stack images vertically for TYPEFACE */
-  .imageGridLeftTypeface {
-    display: block; /* Stack vertically */
-  }
-
-  .imageGridLeftTypeface img {
-    margin-bottom: 20px; /* Add margin to space images out vertically */
-  }
-}

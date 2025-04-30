@@ -110,7 +110,6 @@ function GraphicArt() {
               to={item.link}
               key={index}
               className={classes.item}
-              onClick={handleLinkClick}
               style={{ textDecoration: "none", color: "inherit" }}
             >
               <img src={item.src} alt={item.alt} />

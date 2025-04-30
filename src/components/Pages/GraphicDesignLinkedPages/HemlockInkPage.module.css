@@ -112,6 +112,8 @@
   height: auto;
 }
 
+
+
 /* Mobile-responsive styles using media queries */
 @media screen and (max-width: 768px) {
   .container {
@@ -222,4 +224,8 @@
     margin-left: auto; /* Center image horizontally */
     margin-right: auto; /* Center image horizontally */
   }
+
+  
 }
+
+

@@ -94,6 +94,13 @@ function GraphicArt() {
     },
   ];
 
+    const handleLinkClick = (e) => {
+      e.preventDefault(); // Prevent default navigation behavior
+      const href = e.target.href;
+      window.location.href = href; // Trigger the full page reload
+    };
+
+
   return (
     <div className={classes.page}>
       <div className={classes.gallery}>
@@ -103,6 +110,7 @@ function GraphicArt() {
               to={item.link}
               key={index}
               className={classes.item}
+              onClick={handleLinkClick}
               style={{ textDecoration: "none", color: "inherit" }}
             >
               <img src={item.src} alt={item.alt} />

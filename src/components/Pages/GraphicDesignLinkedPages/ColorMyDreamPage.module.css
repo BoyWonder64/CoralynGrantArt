@@ -36,21 +36,18 @@ body {
   margin: 0 auto;
 }
 
-.logoImage {
-  width: 30%; /* Adjust this as needed (e.g., 40%, 30%, etc.) */
+.card img.logoImage {
+  width: 75% !important;
   height: auto;
-  display: block;
-  margin: 0 auto;
+  margin-top: 20px;     /* lowers the logo */
+  margin-bottom: 10px;  /* brings text closer */
 }
 
-.card h1 {
-  color: #e84a70;
-  text-align: left;
-}
 
-.card h3 {
-  color: #e84a70;
-  font-size: 25px;
+.card h2 {
+  margin-top: 5px;   /* reduce space between logo and heading */
+  margin-bottom: 5px;
+  font-size: 20px;   /* optional: make headings a bit smaller */
 }
 
 .card p {

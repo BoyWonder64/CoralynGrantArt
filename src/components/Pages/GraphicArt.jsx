@@ -94,12 +94,6 @@ function GraphicArt() {
     },
   ];
 
-    const handleLinkClick = (e) => {
-      e.preventDefault(); // Prevent default navigation behavior
-      const href = e.target.href;
-      window.location.href = href; // Trigger the full page reload
-    };
-
 
   return (
     <div className={classes.page}>

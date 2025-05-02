@@ -14,7 +14,7 @@ import LogoHeader from "../../../assets/HemlockInk/Logo Header.png";
 
 function HemlockInkPage() {
   return (
-    <div className={classes.twinkleBackground}>
+    <div>
       <div
         className={classes.container}
         style={{
@@ -31,13 +31,15 @@ function HemlockInkPage() {
           <img src={LogoHeader} alt="Main Logo" />
         </div>
         {/*Second row*/}
-        <div className={classes.card + " " + classes.leftShift}>
-          <img src={Secondary} alt="Secondary" />
-        </div>
-        {/*Third row*/}
-        <div style={{ height: "90px" }}></div> {/*Spacer*/}
         <div className={classes.imageGrid}>
-          <div className={classes.overlapWrapper + " " + classes.leftShift}>
+          <div className={classes.card}>
+            <img src={Secondary} alt="Secondary" />
+          </div>
+        </div>
+
+        {/*Third row*/}
+        <div className={classes.imageGrid}>
+          <div className={classes.overlapWrapper}>
             <img
               src={BCards}
               alt="Business Cards"
@@ -49,55 +51,54 @@ function HemlockInkPage() {
               className={classes.twinkleImg}
             />
           </div>
-
-          {/*Fourth row*/}
-
-          <div className={classes.cardWBack}>
+          <div>
             <img src={Words} alt="Word Description" />
           </div>
-        </div>
-        <div style={{ height: "90px" }}></div>
-        <div className={classes.imageGrid}>
-          <img
-            src={brandcolors}
-            alt="Brand Colors"
-            className={classes.leftShift}
-          />
+
+          <div className={classes.card}>
+            <img src={brandcolors} alt="Brand Colors" className={classes} />
+          </div>
+
           <div className={classes.card + " " + classes.leftShift}>
             <div>
               <img
                 src={Reversed}
                 alt="ReversedColor"
                 style={{
-                  width: "100%",
+                  width: "50%",
                   height: "auto",
                   display: "flex",
-                  transform: "translateX(70px)", // string!
+                  transform: "translateX(70px)",
                 }}
               />
               <img
                 src={Clearspace}
                 alt="Clearspace"
                 style={{
-                  width: "150%",
+                  width: "100%",
                   height: "auto",
                   display: "block",
                   margin: "0 auto",
+                  transform: "translateX(70px)",
                 }}
               />
             </div>
           </div>
         </div>
+
         {/*Fifth row*/}
         <div className={classes.imageGrid}>
-          {/* Image cards */}
           <div className={classes.card + " " + classes.leftShift}>
-            <img src={FANG} alt="Secondary"  style={{
-                  width: "150%",
-                  height: "auto",
-                  display: "block",
-                  margin: "0 auto",
-                }}/>
+            <img
+              src={FANG}
+              alt="Secondary"
+              style={{
+                width: "100%",
+                height: "auto",
+                display: "block",
+                margin: "0 auto",
+              }}
+            />
           </div>
         </div>
       </div>

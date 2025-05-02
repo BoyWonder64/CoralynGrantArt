@@ -18,12 +18,6 @@
   max-width: 1000px;
 }
 
-.cardWBack {
-  padding: 2px;
-  border-radius: 8px;
-  padding-bottom: 5%;
-  transform: translateX(-200px);
-}
 
 .clearSpaceSizer {
   width: 150%; /* increase as needed */
@@ -32,10 +26,6 @@
   margin: 0 auto;
 }
 
-.cardWBack h3 {
-  color: #4a6b9b;
-  font-size: 35px;
-}
 
 .card {
   padding: 16px;
@@ -52,42 +42,10 @@
   margin: 0 auto;
 }
 
-.h3Left {
-  text-align: left;
-  color: #4a6b9b;
-  font-size: 35px;
-}
-
-.card h3 {
-  color: #4a6b9b;
-  font-size: 35px;
-}
-
-.h2 {
-  font-size: 25px;
-}
-
-.card p {
-  text-align: left;
-  margin-right: 25%;
-}
-
-.twinkle {
-  align-items: left;
-  padding-top: -15;
-  margin-left: 2;
-}
 
 .overlapWrapper {
   position: relative;
   width: 100%;
-}
-
-.bcardsImg {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 6px;
 }
 
 .twinkleImg {
@@ -95,15 +53,17 @@
   top: 250px; /* adjust as needed */
   right: -5px;
   left: 275px; /* or 'left' if needed */
-  width: 75%; /* adjust based on look */
+  width: 55%; /* adjust based on look */
   height: auto;
   pointer-events: none;
   z-index: 2;
 }
 
 .leftShift {
-  transform: translateX(-400px); /* adjust value as needed */
+  transform: translateX(-100px); /* adjust value as needed */
 }
+
+
 
 /* Mobile-responsive styles using media queries */
 @media screen and (max-width: 768px) {

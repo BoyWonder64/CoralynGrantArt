@@ -99,6 +99,8 @@ function GraphicArt() {
     const href = e.target.href;
     window.location.href = href; 
   };
+
+  
   return (
     <div className={classes.page}>
       <div className={classes.gallery}>

@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom"; // Don't forget to import useLocation
 import classes from "./ZinePage.module.css";
 
 import Back1 from "../../../assets/Zine/Back1.jpg";
@@ -10,36 +8,22 @@ import Spread4 from "../../../assets/Zine/Spread4.jpg";
 import Spread5 from "../../../assets/Zine/Spread5.jpg";
 import Spread7 from "../../../assets/Zine/Spread7.jpg";
 import Spread9 from "../../../assets/Zine/Spread9.jpg";
-import ZineMockCover from "../../../assets/Zine/ZINEMockupCoverCropped.jpg";
+import HEADERIMAGE from "../../../assets/Zine/HEADERIMAGE.png";
+import Text from "../../../assets/Zine/Text.png";
 
 function ZinePage() {
-
   return (
     <div className={classes.container}>
       <div className={classes.card}>
-        <img src={ZineMockCover} alt="Front Of Zine" />
-        <h2>A Suburban Mom’s Survival Guide</h2>
-        <h2>ZINE</h2>
+        <img src={HEADERIMAGE} alt="Front Of Zine" />
       </div>
 
       <div className={classes.card}>
-        <h1>Challenge</h1>
-        <p>
-          To share my experience during the Covid-19 pandemic in a zine format
-        </p>
-
-        <h1>Solution</h1>
-        <p>
-          I wanted to share my experiences and a few of the things I learned in
-          surviving the pandemic so I created a guide with stories and tips that
-          helped me mentally survive this challenging time of my life. I used
-          clear, consistent formatting and colors throughout to emphasize the
-          survival theme.
-        </p>
+        <img src={Text} alt="Front Of Zine" />
       </div>
 
+      {/* List of Images */}
       <div className={classes.imageGrid}>
-        {/* Image cards */}
         <div className={classes.card}>
           <img src={Spread1} alt="Spread 1" />
         </div>

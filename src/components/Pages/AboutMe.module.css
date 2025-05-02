@@ -22,14 +22,12 @@ body {
 }
 
 .card {
-  border-radius: 8px;
   text-align: center;
+  margin: 0;
 }
 
 .card img {
   width: 60%;
   height: auto;
-  border-radius: 6px;
-  display: block;
   margin: 0 auto;
 }

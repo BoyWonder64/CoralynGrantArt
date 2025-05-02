@@ -43,7 +43,7 @@ function GraphicArt() {
       link: "/graphic-design/seating-branding",
     },
 
-    { src: BedThumbnail, alt: "Bed", label: "Apple Blossom Collection" },
+    { src: BedThumbnail, alt: "Bed", label: "Apple Blossom Collection", link:"/graphic-design/pattern-design"},
     {
       src: HemlockInk,
       alt: "Hemlock Ink",
@@ -76,7 +76,7 @@ function GraphicArt() {
       label: "Personal Branding",
       link: "/graphic-design/poppylanebranding",
     },
-    { src: BabyShirt, alt: "Baby Shirt", label: "Apple Blossom Collection" },
+    { src: BabyShirt, alt: "Baby Shirt", label: "Apple Blossom Collection", link:"/graphic-design/pattern-design"},
 
     {
       src: Zine,
@@ -84,7 +84,7 @@ function GraphicArt() {
       label: "Zine",
       link: "/graphic-design/zine",
     },
-    { src: Dress, alt: "Dress", label: "Apple Blossom Collection" },
+    { src: Dress, alt: "Dress", label: "Apple Blossom Collection", link:"/graphic-design/pattern-design"},
     { src: Barn, alt: "Barn", label: "3D Barn Box " },
     {
       src: Village,
@@ -94,7 +94,11 @@ function GraphicArt() {
     },
   ];
 
-
+  const handleLinkClick = (e) => {
+    e.preventDefault(); 
+    const href = e.target.href;
+    window.location.href = href; 
+  };
   return (
     <div className={classes.page}>
       <div className={classes.gallery}>
@@ -105,6 +109,7 @@ function GraphicArt() {
               key={index}
               className={classes.item}
               style={{ textDecoration: "none", color: "inherit" }}
+              onClick={handleLinkClick}
             >
               <img src={item.src} alt={item.alt} />
               <label>{item.label}</label>

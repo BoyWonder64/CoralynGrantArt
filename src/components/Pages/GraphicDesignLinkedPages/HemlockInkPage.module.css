@@ -21,10 +21,15 @@
 .cardWBack {
   padding: 2px;
   border-radius: 8px;
-  text-align: center;
   padding-bottom: 5%;
   transform: translateX(-200px);
-  /* background-color: rgba(255, 255, 255, 0.7); white with 70% opacity */
+}
+
+.clearSpaceSizer {
+  width: 150%; /* increase as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .cardWBack h3 {
@@ -58,7 +63,7 @@
   font-size: 35px;
 }
 
-.h2{
+.h2 {
   font-size: 25px;
 }
 
@@ -72,7 +77,6 @@
   padding-top: -15;
   margin-left: 2;
 }
-
 
 .overlapWrapper {
   position: relative;
@@ -88,31 +92,18 @@
 
 .twinkleImg {
   position: absolute;
-  top: 250px;     /* adjust as needed */
+  top: 250px; /* adjust as needed */
   right: -5px;
-  left: 275px;   /* or 'left' if needed */
-  width: 75%;    /* adjust based on look */
+  left: 275px; /* or 'left' if needed */
+  width: 75%; /* adjust based on look */
   height: auto;
   pointer-events: none;
   z-index: 2;
 }
 
 .leftShift {
-  transform: translateX(-200px); /* adjust value as needed */
+  transform: translateX(-400px); /* adjust value as needed */
 }
-
-/* .largerTopImg{
-  width: 75%;
-  height: auto;
-} */
-
-.smallerGreenImg{
-  margin-left: 10%;
-  width: 75%;
-  height: auto;
-}
-
-
 
 /* Mobile-responsive styles using media queries */
 @media screen and (max-width: 768px) {
@@ -224,8 +215,4 @@
     margin-left: auto; /* Center image horizontally */
     margin-right: auto; /* Center image horizontally */
   }
-
-  
 }
-
-

@@ -24,7 +24,9 @@ import TheSeatBrandingPage from "./components/Pages/GraphicDesignLinkedPages/The
 import DigitalIllustrationPage from "./components/Pages/GraphicDesignLinkedPages/DigitalIllustrationPage";
 import ColorMyDreamPage from "./components/Pages/GraphicDesignLinkedPages/ColorMyDreamPage";
 import HemlockInkPage from "./components/Pages/GraphicDesignLinkedPages/HemlockInkPage";
+import PatternDesign from "./components/Pages/GraphicDesignLinkedPages/PatternDesign";
 import ZinePage from "./components/Pages/GraphicDesignLinkedPages/ZinePage";
+
 
 /*Here is where we setup the paths for each of the pages
 the path name is from the Nav bar componet and the element is
@@ -65,6 +67,10 @@ const router = createBrowserRouter([
       {
         path: "graphic-design/poppylanebranding",
         element: <PoppyLaneBrandingPage />,
+      },
+      {
+        path: "graphic-design/pattern-design",
+        element: <PatternDesign />,
       },
       { path: "graphic-design/color-my-dream", element: <ColorMyDreamPage /> },
       { path: "graphic-design/zine", element: <ZinePage /> },

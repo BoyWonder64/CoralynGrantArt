@@ -1,12 +1,13 @@
 import classes from "./ColorMyDreamPage.module.css";
 
-import CMDLOGO from "../../../assets/ColorMyDreamBox/CMDLOGO.png";
 import CompositeWeb from "../../../assets/ColorMyDreamBox/CompositeWeb.jpg";
 import FrontWCrayonsCropped from "../../../assets/ColorMyDreamBox/FrontWCrayonsCropped.jpg";
 import Side1 from "../../../assets/ColorMyDreamBox/Side1.jpg";
 import Side2 from "../../../assets/ColorMyDreamBox/Side2.jpg";
-import MiniBack from "../../../assets/ColorMyDreamBox/MiniBack.jpg";
-import MiniFront from "../../../assets/ColorMyDreamBox/MiniFront.jpg";
+import Header from "../../../assets/ColorMyDreamBox/Header.png";
+import Back from "../../../assets/ColorMyDreamBox/Back.jpg";
+import HandComp from "../../../assets/ColorMyDreamBox/HandComps.png";
+import BoxText from "../../../assets/ColorMyDreamBox/BoxText.png";
 
 function ColorMyDreamPage() {
   return (
@@ -15,14 +16,11 @@ function ColorMyDreamPage() {
         {/* Image cards */}
         <div className={classes.card}>
           <img
-            src={CMDLOGO}
+            src={Header}
             alt="Color Dream Logo"
-            className={classes.logoImage}
+            style={{ transform: "translateY(30px)" }}
           />
-          <h2>Color MY Dreams Colorable Box Set</h2>
-          <h2>GABLE BOX PACKAGE DESIGN</h2>
         </div>
-
         <div className={classes.card}>
           <div style={{ height: "60px" }}></div> {/*Spacer*/}
           <img src={FrontWCrayonsCropped} alt="Front of Box" />
@@ -37,42 +35,14 @@ function ColorMyDreamPage() {
         </div>
       </div>
 
-      {/* Text card */}
-      <div className={classes.card}>
-        <h1>Challenge</h1>
-        <p>
-          Carson and Cole requested a gable box package design for their
-          colorable children’s sleepwear line that was both functional and
-          visually engaging. The package needed to clearly convey that the
-          pajamas could be colored in by kids, while also embracing a fun,
-          whimsical aesthetic which would appeal to a young audience.
-        </p>
-      </div>
 
       {/* Text card */}
       <div className={classes.card}>
-        <h1>Solution</h1>
-        <p>
-          I took a playful, colorful approach to the design in order to engage
-          both children and their caregivers. By combining vibrant and fun
-          colored images with black and white line art, I visually communicated
-          that the pajama fabric could be colored. This highlighted the unique
-          and exciting opportunity for kids to personalize their clothing.
-        </p>
+        <img src={BoxText} alt="Side 2 of Box" />
       </div>
 
-      <div className={classes.imageGrid}>
-        <div className={classes.card}>
-          <img src={MiniBack} alt="Black and White Mockup1" />
-        </div>
-
-        <div className={classes.card}>
-          <img src={MiniFront} alt="Black and White Mockup2" />
-        </div>
-      </div>
-
-      <div className={classes.card}>
-        <h3>Hand Comps</h3>
+      <div>
+        <img src={HandComp} alt="Black and White Mockup2" style={{}} />
       </div>
 
       <div className={classes.card}>

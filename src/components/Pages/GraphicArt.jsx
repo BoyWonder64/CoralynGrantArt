@@ -35,7 +35,12 @@ function GraphicArt() {
       label: "The Flower Peddler",
       link: "/graphic-design/digital-illustration",
     },
-    { src: phoneCase, alt: "Phone Case", label: "iPhone Case Design" },
+    {
+      src: phoneCase,
+      alt: "Phone Case",
+      label: "iPhone Case Design",
+      link: "/graphic-design/pattern-design",
+    },
     {
       src: Brochure,
       alt: "Brochure",
@@ -43,7 +48,12 @@ function GraphicArt() {
       link: "/graphic-design/seating-branding",
     },
 
-    { src: BedThumbnail, alt: "Bed", label: "Apple Blossom Collection", link:"/graphic-design/pattern-design"},
+    {
+      src: BedThumbnail,
+      alt: "Bed",
+      label: "Apple Blossom Collection",
+      link: "/graphic-design/pattern-design",
+    },
     {
       src: HemlockInk,
       alt: "Hemlock Ink",
@@ -76,7 +86,12 @@ function GraphicArt() {
       label: "Personal Branding",
       link: "/graphic-design/poppylanebranding",
     },
-    { src: BabyShirt, alt: "Baby Shirt", label: "Apple Blossom Collection", link:"/graphic-design/pattern-design"},
+    {
+      src: BabyShirt,
+      alt: "Baby Shirt",
+      label: "Apple Blossom Collection",
+      link: "/graphic-design/pattern-design",
+    },
 
     {
       src: Zine,
@@ -84,7 +99,12 @@ function GraphicArt() {
       label: "Zine",
       link: "/graphic-design/zine",
     },
-    { src: Dress, alt: "Dress", label: "Apple Blossom Collection", link:"/graphic-design/pattern-design"},
+    {
+      src: Dress,
+      alt: "Dress",
+      label: "Apple Blossom Collection",
+      link: "/graphic-design/pattern-design",
+    },
     { src: Barn, alt: "Barn", label: "3D Barn Box " },
     {
       src: Village,
@@ -95,12 +115,11 @@ function GraphicArt() {
   ];
 
   const handleLinkClick = (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
     const href = e.target.href;
-    window.location.href = href; 
+    window.location.href = href;
   };
 
-  
   return (
     <div className={classes.page}>
       <div className={classes.gallery}>

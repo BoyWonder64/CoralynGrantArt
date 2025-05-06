@@ -12,7 +12,11 @@ function PatternDesign() {
       </div>
 
       <div className={classes.card}>
-        <img src={MockUps} alt="Mock up" />
+        <img
+          src={MockUps}
+          alt="Mock up"
+          style={{ transform: "translateY(-120px)" }}
+        />
       </div>
     </div>
   );

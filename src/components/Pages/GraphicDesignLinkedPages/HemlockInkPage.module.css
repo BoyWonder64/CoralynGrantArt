@@ -48,6 +48,12 @@
   width: 100%;
 }
 
+.largerSeconday{
+  width: 100%;
+  height: auto;
+  transform: translateX(-100px);
+}
+
 .twinkleImg {
   position: absolute;
   top: 250px; /* adjust as needed */

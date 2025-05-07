@@ -30,10 +30,11 @@ function HemlockInkPage() {
         <div className={classes.card + "" + classes.largerTopImg}>
           <img src={LogoHeader} alt="Main Logo" />
         </div>
+
         {/*Second row*/}
-        <div className={classes.imageGrid}>
+        <div className={classes.imageGrid + "" + classes.largerSeconday}>
           <div className={classes.card}>
-            <img src={Secondary} alt="Secondary" />
+            <img src={Secondary} alt="Secondary" className={classes.leftShift} />
           </div>
         </div>
 

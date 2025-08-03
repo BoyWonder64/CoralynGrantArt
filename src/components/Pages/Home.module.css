@@ -78,6 +78,14 @@ body {
   flex: 1;
 }
 
+.homePageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding-top: 40px;
+}
+
 .homePhotoContainer img {
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
 }

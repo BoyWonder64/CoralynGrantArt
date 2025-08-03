@@ -4,6 +4,8 @@
 //                                      //
 //////////////////////////////////////////
 
+// To start locally: npm run dev
+
 // Main pages present from Home
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";

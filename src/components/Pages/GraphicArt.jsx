@@ -10,7 +10,7 @@ import BedThumbnail from "../../assets/GraphicDesign/NewPage/BedThumbnailFinal.j
 import HemlockInk from "../../assets/GraphicDesign/NewPage/HemlockInkThumbnail.jpg";
 import StickerSheet from "../../assets/GraphicDesign/NewPage/StickerSheetThumbnail.jpg";
 //import GableBox from "../../assets/GraphicDesign/NewPage/GableBoxThumbnail.jpg";
-import GableBox from "../../assets/GraphicDesign/NewPage/Box.png"
+import GableBox from "../../assets/GraphicDesign/NewPage/Box.png";
 
 import AnnualReport from "../../assets/GraphicDesign/NewPage/AnnualReportThumbnail.jpg";
 import Baking from "../../assets/GraphicDesign/NewPage/BakingIllustrationThumbnail.jpg";
@@ -131,7 +131,6 @@ function GraphicArt() {
               key={index}
               className={classes.item}
               style={{ textDecoration: "none", color: "inherit" }}
-              onClick={handleLinkClick}
             >
               <img src={item.src} alt={item.alt} />
               <label>{item.label}</label>

@@ -6,7 +6,6 @@ import classes from "./Home.module.css";
   and then make sure to update the src with the name of the file import you added
 */
 
-
 //Previous Page Photos
 //Photos in order
 import venicePhoto from "../../assets/HomePage/VeniceSquare.jpg";
@@ -18,7 +17,6 @@ import bakinglifePhoto from "../../assets/HomePage/BakingLife.jpg";
 import paintingPhoto from "../../assets/HomePage/PaintingPhoto.png";
 import picnicBasketPhoto from "../../assets/HomePage/PicnicBasket.jpg";
 import useInput from "../../hooks/useInput";
-
 
 //New Page Photos
 import fourStripPhoto from "../../assets/HomePage/NewHomePage/4 photo strip.png";
@@ -39,7 +37,6 @@ import horizontal from "../../assets/HomePage/NewHomePage/Horizontal 150dpi.png"
 import joinNewsLetter from "../../assets/HomePage/NewHomePage/Join My Newsletter Text.png";
 import leafIllustration from "../../assets/HomePage/NewHomePage/Leaf Illustration.png";
 import redBird from "../../assets/HomePage/NewHomePage/redBird.jpeg";
-
 
 const Home = () => {
   const {
@@ -206,49 +203,129 @@ const Home = () => {
   //   </div>
   // );
 
-return (
-  <div className={classes.mainPage}>
-    {/* Row 1 */}
-    <section className={classes.homePhotoContainer}>
-      <img
-        src={headshotnIntro}
-        alt="Headshot & Intro"
-        className={classes.homePhoto}
-      />
-    </section>
-
-    {/* Row 2 */}
-    <section>
-      <div className={classes.homePhotoContainer}>
+  return (
+    <div className={classes.mainPage}>
+      {/* Row 1 */}
+      <section className={classes.homePhotoContainer}>
         <img
-          src={fourStripPhoto}
-          alt="4 Photo Strip"
+          src={headshotnIntro}
+          alt="Headshot & Intro"
           className={classes.homePhoto}
         />
-      </div>
-    </section>
+      </section>
 
-    {/* Row 3 */}
-    <section className={classes.imageRowContainer}>
-      <div className={classes.imageRow}>
-        <img src={bakinglifePhoto} alt="Baking Life" />
-      </div>
-    </section>
+      {/* Row 2 */}
+      <section>
+        <div
+          className={`${classes.homePhotoContainer} ${classes.photoStripSpacer}`}
+        >
+          <img
+            src={fourStripPhoto}
+            alt="4 Photo Strip"
+            className={classes.homePhoto}
+          />
+        </div>
+      </section>
 
-    <section className={classes.imageRowContainer}>
-      <div className={classes.imageRow}>
-        <img src={paintingPhoto} alt="Coralyn Grant Art" />
-      </div>
-    </section>
+      {/* Row 3 */}
+ 
+        <div className={classes.imageRowContainer}>
+          <img
+            src={featureArtBoard}
+            alt="Art Board Photo Mag"
+            className={classes.moveUp}
+          />
+          <img
+            src={ArtBoardMag}
+            alt="Art Board Photo Mag"
+            className={classes.artBoardMag}
+          />
+        </div>
+    
+      {/* Row 4 */}
+      <section>
+        <div className={classes.formImageRowContainer}>
+          <div className={classes.formContainer}>
+            <div className={classes.formHeader}>
+              <img src={leafIllustration} alt="LeafIllustration" />
+              <div className={classes.headerTextContainer}>
+                <h3>Sign Up for My Newsletter</h3>
+                <p>
+                  Sign up to get access to our newsletter filled with
+                  inspiration, freebies, printables and more!
+                </p>
+              </div>
+            </div>
 
-    <section className={classes.imageRowContainer}>
-      <div className={classes.imageRow}>
-        <img src={picnicBasketPhoto} alt="Coralyn Grant Art" />
-      </div>
-    </section>
-  </div>
-);
+            <form className={classes.form} onSubmit={formSubmissionHandler}>
+              <div className={firstNameInputClasses}>
+                <div className={`${classes["form-control"]}`}>
+                  <label htmlFor="name"></label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    placeholder="Name:"
+                    onChange={firstNameChangedHandler}
+                    onBlur={firstNameBlurHandler}
+                    value={enteredFirstName}
+                  />
+                </div>
+                {firstNameInputHasError && (
+                  <p className={classes["error-text"]}>
+                    Please enter your first name
+                  </p>
+                )}
+                <div className={emailInputClasses}>
+                  <div className={`${classes["form-control"]}`}>
+                    <input
+                      type="email"
+                      id="email"
+                      onChange={emailChangeHandler}
+                      onBlur={emailBlurHandler}
+                      value={enteredEmail}
+                      placeholder="Email:"
+                    />
+                  </div>
+                  {emailInputHasError && (
+                    <p className={classes["error-text"]}>
+                      Please enter your email
+                    </p>
+                  )}
+                </div>
+              </div>
+              <div className={classes["form-actions"]}>
+                <button type="submit">Sign Up</button>
+              </div>
+            </form>
+          </div>
 
+          <div className={classes.imageRowContainer}>
+            <img src={joinNewsLetter} alt="Join Monthy Newsletter" />
+          </div>
+        </div>
+      </section>
+
+      {/* Row 5 */}
+      <section className={classes.bikeWimageRowContainer}>
+        <div>
+          <img src={bikeWFlowers} alt="Bike With Flowers" />
+        </div>
+      </section>
+
+      {/* Row 6 */}
+      <section>
+        <div
+          className={`${classes.homePhotoContainer} ${classes.photoStripSpacer}`}
+        >
+          <img
+            src={bottomPhotoStrip}
+            alt="bottom 4 Photo Strip"
+            className={classes.homePhoto}
+          />
+        </div>
+      </section>
+    </div>
+  );
 };
 
 export default Home;

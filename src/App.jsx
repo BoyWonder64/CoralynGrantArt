@@ -6,6 +6,16 @@
 
 // To start locally: npm run dev
 
+//index 
+/*
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+*/
+
 // Main pages present from Home
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";

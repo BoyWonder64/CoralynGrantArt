@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: Greeting;
   src: url(../../assets/Allison-Regular.ttf);
 }
@@ -15,7 +15,7 @@
 @font-face {
   font-family: CursiveGreeting;
   src: url(../../assets/Cathalia.otf);
-}
+} */
 
 html,
 body {
@@ -76,6 +76,8 @@ body {
   justify-content: center;
   align-items: center;
   flex: 1;
+  margin-top: 40px; 
+  
 }
 
 .homePageContainer {
@@ -83,7 +85,7 @@ body {
   justify-content: center;
   align-items: center;
   flex: 1;
-  padding-top: 40px;
+  margin-top: 40px; 
 }
 
 .homePhotoContainer img {
@@ -102,6 +104,16 @@ body {
   object-fit: cover;
 }
 
+.artBoardMag {
+  width: 250px !important ; 
+  height: auto;
+    margin-top: 40px; 
+}
+
+.moveUp {
+  margin-top: -30px; 
+}
+
 .formContainer {
   max-width: 50%;
   max-height: 15%;
@@ -112,7 +124,7 @@ body {
   align-items: center;
   text-align: center;
   background-color: #f7b8b3;
-  margin-top: 1%;
+  margin-top: 40px; 
 }
 
 .formContainer img {
@@ -172,12 +184,13 @@ body {
   align-items: center;
   gap: 2rem;
   padding: 1rem;
-  padding-top: 1%;
+  margin-top: 20px; 
 }
 
 .imageRowContainer img {
+  display: block;
   width: 350px;
-  height: auto;
+  max-height: 250px;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
 }
@@ -186,6 +199,48 @@ body {
   transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
+}
+
+.bikeWimageRowContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; 
+}
+
+.bikeWimageRowContainer img {
+  max-width: 75%;
+  max-height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.bikeWimageRowContainer > div {
+  text-align: center;
+}
+
+.bikeWimageRowContainer img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+
+.formImageRowContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  margin-top: 20px; 
+}
+
+.formImageRowContainer img {
+  display: block;
+  width: 350px;
+  max-height: 250px;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {

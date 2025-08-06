@@ -245,20 +245,14 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Row 3 */}
-
-      <div className={classes.imageRowContainer}>
-        <img
-          src={featureArtBoard}
-          alt="Art Board Photo Mag"
-          className={classes.moveUp}
-        />
+      <div className={classes.imageRow}>
+        <img src={featureArtBoard} alt="Left Image" className={classes.leftImage} />
         <a
           href="https://uad.education/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={ArtBoardMag} alt="Art Board Photo Mag" />
+          <img src={ArtBoardMag} alt="Right Image" className={classes.rightImage}/>
         </a>
       </div>
 
@@ -319,8 +313,8 @@ const Home = () => {
             </form>
           </div>
 
-          <div className={classes.imageRowContainer}>
-            <img src={joinNewsLetter} alt="Join Monthy Newsletter" />
+          <div>
+            <img src={joinNewsLetter} alt="Join Monthy Newsletter" className={classes.rightImage}/>
           </div>
         </div>
       </section>

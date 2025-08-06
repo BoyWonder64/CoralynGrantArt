@@ -7,6 +7,7 @@
   font-family: RobotoThin;
   src: url(../../assets/Roboto-Thin.ttf);
 }
+
 @font-face {
   font-family: RobotoRegular;
   src: url(../../assets/Roboto-Regular.ttf);
@@ -17,71 +18,45 @@
   src: url(../../assets/Cathalia.otf);
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow-x: hidden;
-}
-
-.mainPage {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  padding-top: 1%;
-}
-
+/* Home photo container */
 .homePhotoContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
-  margin-top: 40px; 
-  
-}
-
-.homePageContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  margin-top: 40px; 
+  margin-top: 40px;
 }
 
 .homePhotoContainer img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
 }
 
 .homePhotoContainer img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
 }
 
-.homePhoto {
-  max-width: 60%;
-  max-height: auto;
-  object-fit: cover;
-}
-
-
-/* Row 3 - Image Row Container */
+/* Image Row Container */
 .imageRowContainer {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 1rem; 
+  gap: 1rem;
   padding: 1rem;
   margin-top: 20px;
   width: 100%;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .imageRowContainer img {
-  width: 100%;
-  max-width: 350px; 
+  width: 50%;
+  max-width: 350px;
+  height: auto;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
 }
@@ -92,97 +67,77 @@ body {
   border-radius: 15px;
 }
 
-.formImageRowContainer {
+.imageRow {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-left: 10rem;
-   padding-right: 10rem;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 1%;
+  width: 100vw;
+  max-width: 1400px;
+  padding-right: 15%;
 }
 
-.formImageRowContainer img {
-  display: block;
-  width: 350px;
-  max-height: 250px;
+.leftImage {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
 }
 
-.formContainer {
-  background-color: #f5c7a5;
-  font-family: Roboto;
-  color:black;
-  padding: 1rem;
-  text-align: center;
+.rightImage {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
 }
 
-.formContainer img {
-  max-width: 25%;
+.leftImage:hover,
+.rightImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 15px;
 }
 
-.formHeader {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+/* Responsive tweaks */
+@media (max-width: 1200px) {
+  .imageRow {
+    flex-wrap: wrap;
+    width: 95vw;
+    max-width: none;
+  }
+
+  .leftImage,
+  .rightImage {
+    width: 90%;
+    max-width: none;
+    margin: 0 auto 1rem auto;
+    display: block;
+  }
 }
 
-.formHeader h3 {
-  font-size: 35px;
-}
-
-.formHeader p {
-  font-size: 25px;
-  font-family: Roboto;
-}
-
-.form input {
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 50px;
-  text-align: center;
-  align-items: center;
-  margin-top: 2%;
-}
-
-.form div {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  width: 100%; 
-}
-
-.form button {
-  background-color: #99ac6d;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-top: 2%;
-  font-size: 100%;
-  width: 105px;
-  height: 25px;
-}
-
-.form button:hover {
-  background-color: rgb(52, 163, 57);
-}
-
-
+/* Four image grid */
 .fourImageRowContainer {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  width: 60%; /* Make this the same width as the top image */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 80%;
   margin: 0 auto;
   margin-top: 40px;
 }
 
 .fourImageRowContainer a {
   display: block;
-  width: 23%; /* Maintain each image width */
+  width: 100%;
 }
 
 .fourImageRowContainer img {
-  width: 100%; /* Ensure the image fills the width of its container */
+  width: 100%;
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
@@ -193,7 +148,8 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-/* Row 5 - New Image Container */
+
+/* Single Image Row Container (Row 5) */
 .imageRowContainerSingle a {
   display: flex;
   justify-content: center;
@@ -204,7 +160,7 @@ body {
 }
 
 .imageRowContainerSingle img {
-  width: 75%; /* Adjusted width for better size */
+  width: 75%;
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
@@ -216,10 +172,205 @@ body {
   border-radius: 15px;
 }
 
+/* === ROW 4: Form + Image Container === */
+.formImageRowContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  gap: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
 
+.formImageRowContainer img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.formContainer {
+  background-color: #f5c7a5;
+  font-family: Roboto;
+  color: black;
+  padding: 3rem;
+  text-align: center;
+  flex: 1 1 60%;
+  max-width: 700px;
+  box-sizing: border-box;
+}
+
+.formContainer img {
+  max-width: 25%;
+}
+
+.formHeader {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.formHeader h3 {
+  font-size: 36px;
+}
+
+.formHeader p {
+  font-size: 22px;
+  font-family: Roboto;
+  margin: 0;
+}
+
+.form input {
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  text-align: center;
+  margin-top: 2%;
+  padding: 0.6rem 1rem;
+  width: 80%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form button {
+  background-color: #99ac6d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 2%;
+  font-size: 105%;
+  width: 130px;
+  height: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: rgb(52, 163, 57);
+}
+
+/* 4K and wider screens - bigger & spaced out */
+@media (min-width: 1920px) {
+  .formImageRowContainer {
+    max-width: 1900px;
+    gap: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .formContainer {
+    max-width: 900px;
+    padding: 4.5rem;
+  }
+
+  .formHeader h3 {
+    font-size: 48px;
+  }
+
+  .formHeader p {
+    font-size: 30px;
+  }
+
+  .form input {
+    font-size: 1.3rem;
+    max-width: 600px;
+    width: 85%;
+  }
+
+  .form button {
+    width: 160px;
+    height: 50px;
+    font-size: 120%;
+  }
+
+  .formImageRowContainer img {
+    max-width: 700px;
+    max-height: 550px;
+  }
+
+  .leftImage {
+  width: 250%;
+  max-width: 1000px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.rightImage {
+  width: 250%;
+  max-width: 1000px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+}
+
+/* Medium Screens (Tablet/Small Laptop) */
+@media (max-width: 1200px) {
+  .formImageRowContainer {
+    flex-direction: column;
+    max-width: 600px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 1.5rem;
+  }
+
+  .formContainer,
+  .formImageRowContainer img {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .formContainer {
+    padding: 2rem;
+  }
+
+  .formHeader h3 {
+    font-size: 30px;
+  }
+
+  .formHeader p {
+    font-size: 18px;
+  }
+
+  .form input {
+    width: 90%;
+    max-width: 350px;
+    font-size: 1.1rem;
+  }
+
+  .form button {
+    width: 130px;
+    height: 40px;
+    font-size: 105%;
+  }
+
+  .formImageRowContainer img {
+    max-width: 400px;
+    max-height: 350px;
+  }
+}
+
+/* Mobile Screens */
 @media (max-width: 768px) {
-  html,
-  body {
+  html, body {
     font-size: 14px;
   }
 
@@ -227,77 +378,47 @@ body {
     padding: 10px;
   }
 
-  .summary {
+  .formImageRowContainer {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%;
     gap: 1rem;
-    padding-left: 5%;
-    padding-right: 5%;
   }
 
-  .summary h2 {
-    font-size: 2rem;
-    margin-left: 0;
-    padding-bottom: 2%;
-  }
-
-  .p {
-    text-align: center;
-    font-size: 16px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .content {
-    max-width: 90%;
-    text-align: center;
-  }
-
-  .homePhotoContainer img {
-    max-width: 90%;
-    padding-left: 0;
+  .formContainer,
+  .formImageRowContainer img {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .formContainer {
-    max-width: 90%;
-    margin-top: 2%;
-    padding: 0.5rem;
-  }
-
-  .formHeader {
-    flex-direction: column;
-    gap: 1rem;
+    padding: 1.5rem;
   }
 
   .formHeader h3 {
-    font-size: 1.5rem;
+    font-size: 26px;
   }
 
   .formHeader p {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .form input {
-    width: 75%;
-    font-size: 0.9rem;
+    width: 100%;
+    font-size: 1rem;
   }
 
   .form button {
-    width: 55%;
-    height: 25%;
-    font-size: 1rem;
-    padding: 12px;
-  }
-
-  .imageRowContainer {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  .imageRowContainer img {
     width: 100%;
-    max-width: 300px;
+    max-width: 180px;
+    height: 40px;
+    font-size: 100%;
+  }
+
+  .formImageRowContainer img {
+    max-width: 100%;
+    max-height: 300px;
   }
 }

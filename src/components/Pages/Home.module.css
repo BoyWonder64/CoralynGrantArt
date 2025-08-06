@@ -1,3 +1,25 @@
+:root {
+  /* Container widths */
+  --container-max-width: 1400px;
+  --container-padding: clamp(1rem, 3vw, 3rem);
+
+  /* Image sizing */
+  --hero-image-width: clamp(300px, 80vw, 800px);
+  --large-image-width: clamp(250px, 45vw, 750px);
+  --medium-image-width: clamp(200px, 35vw, 500px);
+  --small-image-width: clamp(150px, 25vw, 350px);
+
+  /* Spacing */
+  --section-spacing: clamp(20px, 5vw, 40px);
+  --element-gap: clamp(1rem, 3vw, 2rem);
+  --grid-gap: clamp(0.5rem, 2vw, 1rem);
+
+  /* Typography */
+  --font-size-large: clamp(24px, 4vw, 48px);
+  --font-size-medium: clamp(18px, 3vw, 30px);
+  --font-size-small: clamp(16px, 2vw, 22px);
+}
+
 @font-face {
   font-family: Greeting;
   src: url(../../assets/Allison-Regular.ttf);
@@ -24,11 +46,13 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-  margin-top: 40px;
+  margin-top: var(--section-spacing);
+  padding: 0 var(--container-padding);
 }
 
 .homePhotoContainer img {
-  max-width: 100%;
+  max-width: var(--hero-image-width);
+  width: 100%;
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
@@ -40,58 +64,22 @@
   border-radius: 30px;
 }
 
-/* Image Row Container */
-.imageRowContainer {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
-  margin-top: 20px;
-  width: 100%;
-  flex-wrap: wrap;
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-.imageRowContainer img {
-  width: 50%;
-  max-width: 350px;
-  height: auto;
-  object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
-}
-
-.imageRowContainer img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-}
-
+/* Image Row */
 .imageRow {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: var(--element-gap);
   flex-wrap: nowrap;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding-top: 1%;
-  width: 100vw;
-  max-width: 1400px;
-  padding-right: 15%;
+  max-width: var(--container-max-width);
+  margin: var(--section-spacing) auto;
+  padding: 0 var(--container-padding);
 }
 
-.leftImage {
-  width: 100%;
-  max-width: 750px;
-  height: auto;
-  object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
-}
-
+.leftImage,
 .rightImage {
   width: 100%;
-  max-width: 750px;
+  max-width: var(--medium-image-width); /* Changed from --large-image-width */
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
@@ -100,44 +88,30 @@
 .leftImage:hover,
 .rightImage:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-}
-
-/* Responsive tweaks */
-@media (max-width: 1200px) {
-  .imageRow {
-    flex-wrap: wrap;
-    width: 95vw;
-    max-width: none;
-  }
-
-  .leftImage,
-  .rightImage {
-    width: 90%;
-    max-width: none;
-    margin: 0 auto 1rem auto;
-    display: block;
-  }
 }
 
 /* Four image grid */
 .fourImageRowContainer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 40px;
+  grid-template-columns: repeat(4, 1fr); /* Force 4 equal columns */
+  gap: var(--grid-gap);
+  width: min(
+    85%,
+    var(--container-max-width)
+  ); /* Slightly wider to fit 4 images */
+  margin: var(--section-spacing) auto;
+  padding: 0 var(--container-padding);
 }
 
 .fourImageRowContainer a {
   display: block;
-  width: 100%;
+  width: 100%; /* Use full width of grid cell */
 }
 
 .fourImageRowContainer img {
-  width: 100%;
+  width: 100%; /* Use full width of container */
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
@@ -149,17 +123,18 @@
   border-radius: 10px;
 }
 
-/* Single Image Row Container (Row 5) */
+/* Single Image Row Container */
 .imageRowContainerSingle a {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 40px;
-  padding: 1rem;
+  margin-top: var(--section-spacing);
+  padding: var(--container-padding);
 }
 
 .imageRowContainerSingle img {
+  max-width: var(--single-image-width);
   width: 75%;
   height: auto;
   object-fit: cover;
@@ -172,25 +147,24 @@
   border-radius: 15px;
 }
 
-/* === ROW 4: Form + Image Container === */
+/* Form + Image Container */
 .formImageRowContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  gap: 1rem;
-  max-width: 1400px;
-  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  gap: var(--element-gap);
+  max-width: var(--container-max-width);
+  margin: var(--section-spacing) auto;
   flex-wrap: nowrap;
 }
 
 .formImageRowContainer img {
   display: block;
   width: 100%;
-  max-width: 500px;
-  max-height: 400px;
+  max-width: var(--medium-image-width);
+  height: auto;
   object-fit: cover;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
@@ -200,11 +174,15 @@
   background-color: #f5c7a5;
   font-family: Roboto;
   color: black;
-  padding: 3rem;
+  padding: var(--container-padding);
   text-align: center;
   flex: 1 1 60%;
   max-width: 700px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
 }
 
 .formContainer img {
@@ -214,29 +192,41 @@
 .formHeader {
   display: flex;
   align-items: center;
+  justify-content: center; /* Centers the header content */
   flex-direction: row;
-  gap: 1rem;
+  gap: var(--grid-gap);
+  margin-bottom: 1rem; /* Add some space below header */
 }
 
 .formHeader h3 {
-  font-size: 36px;
+  font-size: var(--font-size-large);
 }
 
-.formHeader p {
-  font-size: 22px;
+.formContainer p {
+  font-size: var(--font-size-small);
   font-family: Roboto;
-  margin: 0;
+  margin: 0 0 1rem 0; /* Add bottom margin for spacing */
+  text-align: center;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem; /* Add consistent spacing between form elements */
 }
 
 .form input {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.3rem);
   border: 1px solid #ccc;
   border-radius: 50px;
   text-align: center;
   margin-top: 2%;
   padding: 0.6rem 1rem;
   width: 80%;
-  max-width: 400px;
+  max-width: clamp(300px, 50vw, 400px);
   margin-left: auto;
   margin-right: auto;
 }
@@ -254,9 +244,9 @@
   border: none;
   cursor: pointer;
   margin-top: 2%;
-  font-size: 105%;
-  width: 130px;
-  height: 40px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  width: clamp(100px, 20vw, 160px);
+  height: clamp(35px, 8vw, 50px);
   transition: background-color 0.3s ease;
 }
 
@@ -264,161 +254,38 @@
   background-color: rgb(52, 163, 57);
 }
 
-/* 4K and wider screens - bigger & spaced out */
-@media (min-width: 1920px) {
-  .formImageRowContainer {
-    max-width: 1900px;
-    gap: 3rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  .formContainer {
-    max-width: 900px;
-    padding: 4.5rem;
-  }
-
-  .formHeader h3 {
-    font-size: 48px;
-  }
-
-  .formHeader p {
-    font-size: 30px;
-  }
-
-  .form input {
-    font-size: 1.3rem;
-    max-width: 600px;
-    width: 85%;
-  }
-
-  .form button {
-    width: 160px;
-    height: 50px;
-    font-size: 120%;
-  }
-
-  .formImageRowContainer img {
-    max-width: 700px;
-    max-height: 550px;
-  }
-
-  .leftImage {
-  width: 250%;
-  max-width: 1000px;
-  height: auto;
-  object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
-}
-
-.rightImage {
-  width: 250%;
-  max-width: 1000px;
-  height: auto;
-  object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
-}
-
-}
-
-/* Medium Screens (Tablet/Small Laptop) */
+/* Responsive breakpoints - now much simpler */
 @media (max-width: 1200px) {
-  .formImageRowContainer {
-    flex-direction: column;
-    max-width: 600px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    gap: 1.5rem;
+  .imageRow {
+    flex-wrap: wrap;
   }
 
-  .formContainer,
-  .formImageRowContainer img {
-    flex: 1 1 100%;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .formContainer {
-    padding: 2rem;
-  }
-
-  .formHeader h3 {
-    font-size: 30px;
-  }
-
-  .formHeader p {
-    font-size: 18px;
-  }
-
-  .form input {
-    width: 90%;
-    max-width: 350px;
-    font-size: 1.1rem;
-  }
-
-  .form button {
-    width: 130px;
-    height: 40px;
-    font-size: 105%;
-  }
-
-  .formImageRowContainer img {
-    max-width: 400px;
-    max-height: 350px;
+  .fourImageRowContainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
-/* Mobile Screens */
 @media (max-width: 768px) {
-  html, body {
-    font-size: 14px;
-  }
-
-  .mainPage {
-    padding: 10px;
+  :root {
+    --container-padding: 1rem;
+    --element-gap: 1rem;
+    --grid-gap: 0.5rem;
   }
 
   .formImageRowContainer {
     flex-direction: column;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    max-width: 100%;
-    gap: 1rem;
   }
 
-  .formContainer,
-  .formImageRowContainer img {
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .formContainer {
-    padding: 1.5rem;
-  }
-
-  .formHeader h3 {
-    font-size: 26px;
-  }
-
-  .formHeader p {
-    font-size: 16px;
+  .fourImageRowContainer {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
   .form input {
     width: 100%;
-    font-size: 1rem;
   }
 
   .form button {
     width: 100%;
-    max-width: 180px;
-    height: 40px;
-    font-size: 100%;
-  }
-
-  .formImageRowContainer img {
-    max-width: 100%;
-    max-height: 300px;
+    max-width: 200px;
   }
 }

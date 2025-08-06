@@ -245,14 +245,23 @@ const Home = () => {
         </div>
       </section>
 
+      {/*Row 3 */}
       <div className={classes.imageRow}>
-        <img src={featureArtBoard} alt="Left Image" className={classes.leftImage} />
+        <img
+          src={featureArtBoard}
+          alt="Left Image"
+          className={classes.leftImage}
+        />
         <a
           href="https://uad.education/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={ArtBoardMag} alt="Right Image" className={classes.rightImage}/>
+          <img
+            src={ArtBoardMag}
+            alt="Right Image"
+            className={classes.rightImage}
+          />
         </a>
       </div>
 
@@ -264,12 +273,12 @@ const Home = () => {
               <img src={leafIllustration} alt="LeafIllustration" />
               <div className={classes.headerTextContainer}>
                 <h3>Sign Up for My Newsletter</h3>
-                <p>
-                  Sign up to get access to our newsletter filled with
-                  inspiration, freebies, printables and more!
-                </p>
               </div>
             </div>
+            <p>
+              Sign up to get access to our newsletter filled with inspiration,
+              freebies, printables and more!
+            </p>
 
             <form className={classes.form} onSubmit={formSubmissionHandler}>
               <div className={firstNameInputClasses}>
@@ -314,7 +323,11 @@ const Home = () => {
           </div>
 
           <div>
-            <img src={joinNewsLetter} alt="Join Monthy Newsletter" className={classes.rightImage}/>
+            <img
+              src={joinNewsLetter}
+              alt="Join Monthy Newsletter"
+              className={classes.rightImage}
+            />
           </div>
         </div>
       </section>

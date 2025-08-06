@@ -267,8 +267,10 @@ const Home = () => {
 
       {/* Row 4 */}
       <section>
-        <div className={classes.formImageRowContainer}>
+          
+        <div className={classes.imageRow}>
           <div className={classes.formContainer}>
+            
             <div className={classes.formHeader}>
               <img src={leafIllustration} alt="LeafIllustration" />
               <div className={classes.headerTextContainer}>
@@ -320,9 +322,9 @@ const Home = () => {
                 <button type="submit">Sign Up</button>
               </div>
             </form>
+            
           </div>
-
-          <div>
+        <div >
             <img
               src={joinNewsLetter}
               alt="Join Monthy Newsletter"
@@ -330,6 +332,7 @@ const Home = () => {
             />
           </div>
         </div>
+        
       </section>
 
       {/* Row 5 */}

@@ -19,24 +19,21 @@ import picnicBasketPhoto from "../../assets/HomePage/PicnicBasket.jpg";
 import useInput from "../../hooks/useInput";
 
 //New Page Photos
-import fourStripPhoto from "../../assets/HomePage/NewHomePage/4 photo strip.png";
+
 import ArtBoardMag from "../../assets/HomePage/NewHomePage/Artboard Mag Photo.png";
 import bakingStillLife from "../../assets/HomePage/NewHomePage/Baking Still Life Square.jpg";
 import bikeWFlowers from "../../assets/HomePage/NewHomePage/Bike W. Flowers.png";
-import bottomPhotoStrip from "../../assets/HomePage/NewHomePage/Bottom photo strip.png";
 import constructionCupcakes from "../../assets/HomePage/NewHomePage/Construction Cupcake Toppers.jpg";
 import embroidedHats from "../../assets/HomePage/NewHomePage/Embroidered Hats.jpg";
-import etsyLogo from "../../assets/HomePage/NewHomePage/EtsyLogo.png";
 import featureArtBoard from "../../assets/HomePage/NewHomePage/Featured in Artboard Mag.png";
-import flower150 from "../../assets/HomePage/NewHomePage/Flower only 150.png";
 import flowerPowerBanner from "../../assets/HomePage/NewHomePage/Flower Power Banner.jpg";
 import headshotnIntro from "../../assets/HomePage/NewHomePage/Headshot & Intro.png";
 import hollyHockPainting from "../../assets/HomePage/NewHomePage/Hollyhock Painting.png";
 import hollyHocks from "../../assets/HomePage/NewHomePage/Hollyhocks.png";
-import horizontal from "../../assets/HomePage/NewHomePage/Horizontal 150dpi.png";
 import joinNewsLetter from "../../assets/HomePage/NewHomePage/Join My Newsletter Text.png";
 import leafIllustration from "../../assets/HomePage/NewHomePage/Leaf Illustration.png";
 import redBird from "../../assets/HomePage/NewHomePage/redBird.jpeg";
+import strawberry from "../../assets/HomePage/NewHomePage/Strawberries.png";
 
 const Home = () => {
   const {
@@ -216,32 +213,55 @@ const Home = () => {
 
       {/* Row 2 */}
       <section>
-        <div
-          className={`${classes.homePhotoContainer} ${classes.photoStripSpacer}`}
-        >
-          <img
-            src={fourStripPhoto}
-            alt="4 Photo Strip"
-            className={classes.homePhoto}
-          />
+        <div className={classes.fourImageRowContainer}>
+          <a
+            href="https://www.etsy.com/listing/4337380251/celebrate-banner-birthday-banner-party"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={flowerPowerBanner} alt="Flower Banner" />
+          </a>
+          <a
+            href="https://www.instagram.com/reel/DLwCvQqAhda/?utm_source=ig_web_copy_link&igsh=MjEwemthM3BkbDVk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={hollyHockPainting} alt="Hollyhocks Paintings" />
+          </a>
+          <a
+            href="https://www.etsy.com/listing/4333536171/construction-party-dump-truck-party"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={constructionCupcakes} alt="Construction Cupcakes" />
+          </a>
+          <a
+            href="https://poppylane.us/graphic-design/digital-illustration"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={bakingStillLife} alt="Baking Construction" />
+          </a>
         </div>
       </section>
 
       {/* Row 3 */}
- 
-        <div className={classes.imageRowContainer}>
-          <img
-            src={featureArtBoard}
-            alt="Art Board Photo Mag"
-            className={classes.moveUp}
-          />
-          <img
-            src={ArtBoardMag}
-            alt="Art Board Photo Mag"
-            className={classes.artBoardMag}
-          />
-        </div>
-    
+
+      <div className={classes.imageRowContainer}>
+        <img
+          src={featureArtBoard}
+          alt="Art Board Photo Mag"
+          className={classes.moveUp}
+        />
+        <a
+          href="https://uad.education/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={ArtBoardMag} alt="Art Board Photo Mag" />
+        </a>
+      </div>
+
       {/* Row 4 */}
       <section>
         <div className={classes.formImageRowContainer}>
@@ -306,22 +326,49 @@ const Home = () => {
       </section>
 
       {/* Row 5 */}
-      <section className={classes.bikeWimageRowContainer}>
-        <div>
-          <img src={bikeWFlowers} alt="Bike With Flowers" />
+      <section>
+        <div className={classes.imageRowContainerSingle}>
+          <a
+            href="https://poppylane.us/graphic-design/digital-illustration"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={bikeWFlowers} alt="Bike with Flowers" />
+          </a>
         </div>
       </section>
 
       {/* Row 6 */}
       <section>
-        <div
-          className={`${classes.homePhotoContainer} ${classes.photoStripSpacer}`}
-        >
-          <img
-            src={bottomPhotoStrip}
-            alt="bottom 4 Photo Strip"
-            className={classes.homePhoto}
-          />
+        <div className={classes.fourImageRowContainer}>
+          <a
+            href="https://www.instagram.com/reel/DLwCvQqAhda/?utm_source=ig_web_copy_link&igsh=MjEwemthM3BkbDVk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={hollyHocks} alt="Happy Painting" />
+          </a>
+          <a
+            href="https://www.etsy.com/listing/4332893404/baby-shower-banner-baby-shower"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={strawberry} alt="Strawberries" />
+          </a>
+          <a
+            href="https://www.instagram.com/reel/DL3T1uESNlA/?utm_source=ig_web_copy_link&igsh=MWlnM3Y2eTdlbWZodQ=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={embroidedHats} alt="Hats" />
+          </a>
+          <a
+            href="https://poppylane.us/fine-art"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={redBird} alt="Like a Red Bird" />
+          </a>
         </div>
       </section>
     </div>

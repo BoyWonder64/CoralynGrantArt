@@ -9,7 +9,6 @@ import Brochure from "../../assets/GraphicDesign/NewPage/BrochureThumbnailFinal.
 import BedThumbnail from "../../assets/GraphicDesign/NewPage/BedThumbnailFinal.jpg";
 import HemlockInk from "../../assets/GraphicDesign/NewPage/HemlockInkThumbnail.jpg";
 import StickerSheet from "../../assets/GraphicDesign/NewPage/StickerSheetThumbnail.jpg";
-//import GableBox from "../../assets/GraphicDesign/NewPage/GableBoxThumbnail.jpg";
 import GableBox from "../../assets/GraphicDesign/NewPage/Box.png";
 
 import AnnualReport from "../../assets/GraphicDesign/NewPage/AnnualReportThumbnail.jpg";

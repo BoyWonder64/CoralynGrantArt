@@ -75,16 +75,7 @@ const NavBar = () => {
             </NavLink>
           </li>
 
-          {/* <li>
-            <NavLink
-              to="/freebies"
-              className={({ isActive }) =>
-                isActive ? classes.active : undefined
-              }
-            >
-              FREEBIES
-            </NavLink>
-          </li> */}
+
           <li>
             <NavLink
               to="/aboutme"

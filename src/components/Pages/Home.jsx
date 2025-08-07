@@ -11,7 +11,6 @@ import classes from "./Home.module.css";
 import venicePhoto from "../../assets/HomePage/VeniceSquare.jpg";
 
 import hollyHocksPhoto from "../../assets/HomePage/Hollyhocks.png";
-//import leafIllustration from "../../assets/HomePage/LeafIllustration.png"; //Duplicate
 
 import bakinglifePhoto from "../../assets/HomePage/BakingLife.jpg";
 import paintingPhoto from "../../assets/HomePage/PaintingPhoto.png";
@@ -325,12 +324,13 @@ const Home = () => {
             
           </div>
         <div >
-            <img
+       
+          </div>
+               <img
               src={joinNewsLetter}
               alt="Join Monthy Newsletter"
-              className={classes.rightImage}
+              className={classes.rightImageText}
             />
-          </div>
         </div>
         
       </section>

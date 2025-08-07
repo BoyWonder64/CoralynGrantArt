@@ -63,9 +63,14 @@ const AboutMe = () => {
       </div>
 
       <div className={classes.imageRow}>
-        <div>
-          <img src={Van} alt="Van Photo" className={classes.vanPhoto} />
-        </div>
+        <a
+          href="https://www.etsy.com/shop/poppylanedesignsus/?etsrc=sdt"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={Van} alt="Van Photo"
+          />
+        </a>
 
         <div className={classes.formContainer}>
           <div className={classes.formHeader}>

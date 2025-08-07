@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: Roboto;
   src: url(../../assets/Roboto-Thin.ttf);
 }
@@ -65,5 +65,31 @@
   .column {
     flex: 1 1 100%;
     max-width: 100%;
+  }
+} */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+
+img{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive styling for phones */
+@media (max-width: 600px) {
+  img {
+    width: 90%;
+  }
+
+  .container {
+    flex-direction: column; 
   }
 }

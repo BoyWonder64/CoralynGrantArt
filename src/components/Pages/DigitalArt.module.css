@@ -185,6 +185,6 @@ img{
   }
 
   .container {
-    flex-direction: column; /* Optional: stack elements vertically if you add more content */
+    flex-direction: column; 
   }
 }

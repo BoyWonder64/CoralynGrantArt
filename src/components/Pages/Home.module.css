@@ -235,7 +235,6 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
-
 @media (max-width: 768px) {
   :root {
     --container-padding: 1rem;
@@ -243,12 +242,42 @@
     --grid-gap: 0.5rem;
   }
 
-  .formImageRowContainer {
+  .imageRow {
     flex-direction: column;
+    align-items: center;
+    gap: var(--element-gap);
+  }
+
+  .leftImage,
+  .rightImage {
+    width: 90%;
+  }
+
+  .homePhotoContainer img {
+    width: 90%;
   }
 
   .fourImageRowContainer {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .imageRowContainerSingle img {
+    width: 100%;
+  }
+
+  .formImageRowContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--element-gap);
+  }
+
+  .rightImageText {
+    width: 90%;
+  }
+
+  .formContainer {
+    width: 90%;
   }
 
   .form input {

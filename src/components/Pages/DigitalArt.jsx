@@ -1,10 +1,14 @@
 import classes from "./DigitalArt.module.css";
 
-import bakingLifePhoto from "../../assets/HomePage/BakingLife.jpg";
-import picnicPhoto from "../../assets/HomePage/PicnicBasket.jpg";
-import vwBusPhoto from "../../assets/HomePage/VWBus.jpg";
-import utSticker from "../../assets/DigitalArt/UtahSticker.png";
-import beachSticker from "../../assets/DigitalArt/12x12beach.png";
+// import bakingLifePhoto from "../../assets/HomePage/BakingLife.jpg";
+// import picnicPhoto from "../../assets/HomePage/PicnicBasket.jpg";
+// import vwBusPhoto from "../../assets/HomePage/VWBus.jpg";
+// import utSticker from "../../assets/DigitalArt/UtahSticker.png";
+// import beachSticker from "../../assets/DigitalArt/12x12beach.png";
+
+import topPhoto from "../../assets/Illurstration/Illustration Page Top.png"
+import bottomPhoto from "../../assets/Illurstration/Illustration Page Bottom.png";
+
 
 function DigitalArt() {
   /*
@@ -14,8 +18,20 @@ function DigitalArt() {
 */
 
   return (
-    <div>
-      <div className={classes.row}>
+    <>
+      <div className={classes.container}>
+     
+        <img src={topPhoto} alt="Top Photo" />
+      </div>
+      <div className={classes.container}>
+        <img src={bottomPhoto} alt="Bottom Photo" />
+      </div>
+    </>
+  );
+}
+
+   {
+     /* <div className={classes.row}>
         <div className={classes.column}>
           <div className={classes.item}>
             <img src={beachSticker} alt="Paper Collections" />
@@ -52,9 +68,7 @@ function DigitalArt() {
             <label>Clip Art</label>
           </div>
         </div>
-      </div>
-    </div>
-  );
-}
+      </div> */
+   }
 
 export default DigitalArt;

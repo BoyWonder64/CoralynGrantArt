@@ -1,3 +1,4 @@
+
 .container {
   display: flex;
   justify-content: center;
@@ -5,23 +6,14 @@
   flex: 1;
 }
 
-img {
-  width: 75%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.vanPhoto {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-a {
+img{
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .formContainer {
   background-color: #f5c7a5;
@@ -30,8 +22,8 @@ a {
   padding: clamp(1rem, 2vw, 2rem);
   text-align: center;
   box-sizing: border-box;
-  width: 30%; /* Reduced from 35% */
-  align-self: flex-start;
+  width: 35%;
+  
 }
 
 .formContainer img {
@@ -51,18 +43,12 @@ a {
   font-size: var(--font-size-medium);
 }
 
-.formContainer {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5c7a5;
-  padding: clamp(1rem, 2vw, 2rem);
-  box-sizing: border-box;
+.formContainer p {
+  font-size: var(--font-size-small);
   font-family: Roboto;
-  color: black;
+  margin: 0 0 1rem 0;
   text-align: center;
+  width: 75%;
 }
 
 .form input {
@@ -71,8 +57,8 @@ a {
   text-align: center;
   margin-top: 2%;
   padding: 0.2rem 1rem;
-  width: 90%;
-  max-width: clamp(450px, 70vw, 800px);
+  width: 90%; 
+  max-width: clamp(450px, 70vw, 800px); 
   margin-left: auto;
   margin-right: auto;
 }
@@ -91,36 +77,53 @@ a {
   cursor: pointer;
   margin-top: 2%;
   font-size: clamp(1rem, 2vw, 1rem);
-  width: clamp(10px, 5vw, 160px);
-  height: clamp(30px, 4vw, 40px);
+  width: clamp(
+    10px,
+    5vw,
+    160px
+  ); 
+  height: clamp(
+    30px,
+    4vw,
+    40px
+  ); 
   transition: background-color 0.3s ease;
 }
+/* Responsive styling for phones */
+@media (max-width: 600px) {
+  img {
+    width: 90%;
+  }
+
+  .container {
+    flex-direction: column; 
+  }
+}
+
 
 .imageRow {
   display: flex;
   justify-content: center;
-  align-items: center; /* <-- this ensures vertical alignment */
-  gap: 2rem; /* Adjust spacing between van and form */
-  flex-wrap: wrap; /* Good for responsiveness */
+  align-items: flex-start; /* aligns top */
+  gap: 2rem; /* spacing between image and form */
   margin-top: 2rem;
 }
 
-.imageRow a {
-  width: 25%;
+.imageRow > div:first-child {
+  flex: 1; /* Van image container */
   display: flex;
   justify-content: center;
-  align-items: center;
-     transform: translate(0, -100px);  /* moves image up */
-
 }
 
-.imageRow a img {
-  width: 100%;
+.imageRow > div:first-child img {
+  max-width: 100%;
   height: auto;
-  display: block;
-  object-fit: contain;
+  border-radius: 8px; /* optional for style */
 }
 
+.imageRow > div:last-child {
+  flex: 1; /* Form container takes equal space */
+}
 
 /* Responsive for mobile */
 @media (max-width: 600px) {
@@ -129,9 +132,13 @@ a {
     align-items: center;
   }
 
-  .imageRow a,
+  .imageRow > div {
+    width: 90%; /* almost full width on mobile */
+    margin-bottom: 1.5rem;
+  }
+
   .formContainer {
-    width: 90%;
+    width: 100% !important; /* override desktop fixed width */
   }
 
   img {
@@ -139,8 +146,8 @@ a {
   }
 }
 
-.bottomText {
-  color: black;
+.bottomText{
+  color:black;
   font-size: 25px;
 }
 

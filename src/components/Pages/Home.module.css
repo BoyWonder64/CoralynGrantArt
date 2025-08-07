@@ -52,8 +52,7 @@
 }
 
 .homePhotoContainer img {
-  max-width: var(--hero-image-width);
-  width: 100%;
+  width: 65%;
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
@@ -72,18 +71,26 @@
   align-items: center;
   gap: var(--element-gap);
   flex-wrap: nowrap;
-  max-width: var(--container-max-width);
   margin: var(--section-spacing) auto;
-  padding: 0 var(--container-padding);
+  padding-top: 1%;
 }
 
 .leftImage,
 .rightImage {
-  width: 100%;
-  max-width: var(--medium-image-width); /* Changed from --large-image-width */
+  width: 35%;
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.rightImage{ /* This is the mag photo */
+  width: 100%;
+  height: auto;
+}
+
+
+.rightImageText{ /* This is the image next to the form */
+  width: 30%;
 }
 
 .leftImage:hover,
@@ -98,18 +105,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--grid-gap);
-  width: min(75%, var(--container-max-width));
   margin: var(--section-spacing) auto;
   padding: 0 var(--container-padding);
 }
 
-.fourImageRowContainer a {
-  display: block;
-  width: 100%;
-}
-
 .fourImageRowContainer img {
-  width: 85%;
+  width: 75%;
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
@@ -121,7 +122,7 @@
   border-radius: 10px;
 }
 
-/* Single Image Row Container */
+
 .imageRowContainerSingle a {
   display: flex;
   justify-content: center;
@@ -131,8 +132,7 @@
   padding: var(--container-padding);
 }
 
-.imageRowContainerSingle img {
-  max-width: var(--single-image-width);
+.imageRowContainerSingle img { 
   width: 75%;
   height: auto;
   object-fit: cover;
@@ -153,6 +153,8 @@
   padding: clamp(1rem, 2vw, 2rem);
   text-align: center;
   box-sizing: border-box;
+  width: 35%;
+  
 }
 
 .formContainer img {

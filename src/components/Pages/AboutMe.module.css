@@ -14,6 +14,14 @@ img{
   align-items: center;
 }
 
+.vanPhoto {
+width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    transform: translateY(-90px); /* Moves image up */
+}
+
 
 .formContainer {
   background-color: #f5c7a5;
@@ -22,8 +30,9 @@ img{
   padding: clamp(1rem, 2vw, 2rem);
   text-align: center;
   box-sizing: border-box;
-  width: 35%;
-  
+  width: 30%; /* Reduced from 35% */
+
+  align-self: flex-start;
 }
 
 .formContainer img {
@@ -100,30 +109,15 @@ img{
   }
 }
 
-
 .imageRow {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* aligns top */
-  gap: 2rem; /* spacing between image and form */
+  align-items: flex-start;
+  gap: 1rem; /* Reduced from 2rem to bring elements closer */
   margin-top: 2rem;
+    margin-top: 4rem;
 }
 
-.imageRow > div:first-child {
-  flex: 1; /* Van image container */
-  display: flex;
-  justify-content: center;
-}
-
-.imageRow > div:first-child img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px; /* optional for style */
-}
-
-.imageRow > div:last-child {
-  flex: 1; /* Form container takes equal space */
-}
 
 /* Responsive for mobile */
 @media (max-width: 600px) {

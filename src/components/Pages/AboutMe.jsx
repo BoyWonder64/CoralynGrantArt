@@ -64,7 +64,7 @@ const AboutMe = () => {
 
       <div className={classes.imageRow}>
         <div>
-          <img src={Van} alt="Van Photo" />
+          <img src={Van} alt="Van Photo" className={classes.vanPhoto} />
         </div>
 
         <div className={classes.formContainer}>
@@ -119,8 +119,6 @@ const AboutMe = () => {
           </form>
         </div>
       </div>
-      <br />
-      <br />
       <p className={classes.bottomText}>Want to say hello or collaborate?</p>
       <p className={classes.bottomText}>
         Email directly at{" "}

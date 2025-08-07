@@ -37,9 +37,28 @@ const NavBar = () => {
                 isActive ? classes.active : undefined
               }
             >
-              CRAFT & FABRIC
+              ILLUSTRATION
               <br />
-              {/* <span style={{ textAlign: "center", display: "block" }}> & FABRIC</span> */}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/fine-art"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
+              FINE ART
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/coming-soon"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
+              BLOG
             </NavLink>
           </li>
           <li>
@@ -50,23 +69,12 @@ const NavBar = () => {
               }
             >
               GRAPHIC DESIGN
-              <br />
               {/* <span style={{ textAlign: "center", display: "block" }}>
                 DESIGN
               </span> */}
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/fine-art"
-              className={({ isActive }) =>
-                isActive ? classes.active : undefined
-              }
-            >
-              PAINTINGS
-              <br />
-            </NavLink>
-          </li>
+
           {/* <li>
             <NavLink
               to="/freebies"
@@ -88,16 +96,16 @@ const NavBar = () => {
             </NavLink>
           </li>
 
-          {/* <li>
+          <li>
             <NavLink
-              to="/contact-me"
+              to="/coming-soon"
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
             >
-              CONTACT
+              SHOP
             </NavLink>
-          </li> */}
+          </li>
         </ul>
       </div>
     </>

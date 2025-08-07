@@ -6,7 +6,7 @@
 
 // To start locally: npm run dev
 
-//index 
+//index
 /*
 RewriteEngine On
 RewriteBase /
@@ -39,6 +39,7 @@ import HemlockInkPage from "./components/Pages/GraphicDesignLinkedPages/HemlockI
 import PatternDesign from "./components/Pages/GraphicDesignLinkedPages/PatternDesign";
 import ZinePage from "./components/Pages/GraphicDesignLinkedPages/ZinePage";
 
+import ComingSoon from "./components/ComingSoon/ComingSoon";
 
 /*Here is where we setup the paths for each of the pages
 the path name is from the Nav bar componet and the element is
@@ -60,6 +61,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "digital-art", element: <DigitalArtPage /> },
+      { path: "coming-soon", element: <ComingSoon /> },
 
       //About Me
       { path: "aboutme", element: <AboutMe /> },

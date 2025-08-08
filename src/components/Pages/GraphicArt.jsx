@@ -24,6 +24,7 @@ import Village from "../../assets/GraphicDesign/NewPage/WinterVillageThumbnail.j
 function GraphicArt() {
   const graphics = [
     {
+      //Row 1
       src: pizzaCrustFig,
       alt: "Crust",
       label: "Marco’s Artisan Pizza Crust Mix",
@@ -35,12 +36,7 @@ function GraphicArt() {
       label: "The Flower Peddler",
       link: "/graphic-design/digital-illustration",
     },
-    {
-      src: phoneCase,
-      alt: "Phone Case",
-      label: "iPhone Case Design",
-      link: "/graphic-design/pattern-design",
-    },
+
     {
       src: Brochure,
       alt: "Brochure",
@@ -48,26 +44,13 @@ function GraphicArt() {
       link: "/graphic-design/seating-branding",
     },
 
+    //Row 2
     {
-      src: BedThumbnail,
-      alt: "Bed",
-      label: "Apple Blossom Collection",
-      link: "/graphic-design/pattern-design",
+      src: PoppyLane,
+      alt: "Branding",
+      label: "Personal Branding",
+      link: "/graphic-design/poppylanebranding",
     },
-    {
-      src: HemlockInk,
-      alt: "Hemlock Ink",
-      label: "Hemlock Ink Branding",
-      link: "/graphic-design/hemlockink",
-    },
-    { src: StickerSheet, alt: "Stickers", label: "Sticker Sheet" },
-    {
-      src: GableBox,
-      alt: "Gable Box",
-      label: "Color My Dreams Pajama Box",
-      link: "/graphic-design/color-my-dream",
-    },
-
     {
       src: AnnualReport,
       alt: "Annual Report",
@@ -80,19 +63,28 @@ function GraphicArt() {
       label: "In The Making",
       link: "/graphic-design/digital-illustration",
     },
+
+    //Row 3
     {
-      src: PoppyLane,
-      alt: "Branding",
-      label: "Personal Branding",
-      link: "/graphic-design/poppylanebranding",
+      src: Village,
+      alt: "Village",
+      label: "German Christmas Village",
+      link: "/graphic-design/digital-illustration",
     },
     {
-      src: BabyShirt,
-      alt: "Baby Shirt",
-      label: "Apple Blossom Collection",
+      src: phoneCase,
+      alt: "Phone Case",
+      label: "iPhone Case Design",
       link: "/graphic-design/pattern-design",
     },
+    {
+      src: HemlockInk,
+      alt: "Hemlock Ink",
+      label: "Hemlock Ink Branding",
+      link: "/graphic-design/hemlockink",
+    },
 
+    //Row 4
     {
       src: Zine,
       alt: "Zine",
@@ -100,25 +92,37 @@ function GraphicArt() {
       link: "/graphic-design/zine",
     },
     {
-      src: Dress,
-      alt: "Dress",
+      src: GableBox,
+      alt: "Gable Box",
+      label: "Color My Dreams Pajama Box",
+      link: "/graphic-design/color-my-dream",
+    },
+    {
+      src: BedThumbnail,
+      alt: "Bed",
       label: "Apple Blossom Collection",
       link: "/graphic-design/pattern-design",
     },
-    { src: Barn, alt: "Barn", label: "3D Barn Box " },
-    {
-      src: Village,
-      alt: "Village",
-      label: "German Christmas Village",
-      link: "/graphic-design/digital-illustration",
-    },
+
+    // { src: StickerSheet, alt: "Stickers", label: "Sticker Sheet" },
+
+    // {
+    //   src: BabyShirt,
+    //   alt: "Baby Shirt",
+    //   label: "Apple Blossom Collection",
+    //   link: "/graphic-design/pattern-design",
+    // },
+
+    // {
+    //   src: Dress,
+    //   alt: "Dress",
+    //   label: "Apple Blossom Collection",
+    //   link: "/graphic-design/pattern-design",
+    // },
+    // { src: Barn, alt: "Barn", label: "3D Barn Box " },
   ];
 
-  const handleLinkClick = (e) => {
-    e.preventDefault();
-    const href = e.target.href;
-    window.location.href = href;
-  };
+
 
   return (
     <div className={classes.page}>

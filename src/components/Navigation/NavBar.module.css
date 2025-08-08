@@ -14,8 +14,6 @@
   src: url(../../assets/Roboto-Medium.ttf) format("truetype");
 }
 
-
-
 html,
 body {
   margin: 0;
@@ -28,8 +26,6 @@ body {
   font-family: Roboto-Medium;
 }
 
-
-
 .logoContainer {
   display: flex;
   justify-content: center;
@@ -39,16 +35,14 @@ body {
 
 .logo {
   max-width: 350px; /* Set a max width for the logo */
-  margin-left: 100px; /* Add margin to move the logo slightly to the right */
-
+  /* margin-left: 100px; Add margin to move the logo slightly to the right */
+  margin-right: 80px;
 }
-
 
 .logoContainer img {
   justify-content: flex-start;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
 }
-
 
 .logoContainer img:hover {
   transform: scale(1.1);
@@ -59,11 +53,11 @@ body {
 .menu {
   width: 100%;
   display: flex;
-  justify-content: space-between; /* Keep space between logo and nav items */
-  align-items: center; /* Align items vertically */
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
   margin-top: 20px;
-  padding: 0 50px; /* Adjusted padding for more space */
+  padding: 0 50px;
   background-color: #afbfaa;
   border-top: 6px solid #afbfaa;
   border-bottom: 6px solid #afbfaa;
@@ -72,10 +66,10 @@ body {
 .menu .nav {
   display: flex;
   padding-right: 15%;
-  gap: 50px; 
+  gap: 50px;
   justify-content: flex-end; /* Keep items aligned to the left */
   width: auto; /* Allow width to adjust based on content */
-  align-items: center; 
+  align-items: center;
   white-space: nowrap;
 }
 .menu .nav li {
@@ -112,7 +106,6 @@ li {
   display: inline;
 }
 
-
 .navImage {
   width: 50px; /* Adjust the size as needed */
   height: auto;
@@ -127,7 +120,7 @@ li {
   }
 
   .menu .nav {
-    flex-direction: column; 
+    flex-direction: column;
     gap: 10px;
     width: 100%; /* Full width for mobile */
   }

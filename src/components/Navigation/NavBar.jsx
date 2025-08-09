@@ -75,7 +75,6 @@ const NavBar = () => {
             </NavLink>
           </li>
 
-
           <li>
             <NavLink
               to="/aboutme"
@@ -89,7 +88,7 @@ const NavBar = () => {
 
           <li>
             <NavLink
-              to="/coming-soon"
+              to="https://www.etsy.com/shop/poppylanedesignsus/?etsrc=sdt"
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }

@@ -14,11 +14,6 @@ img{
   align-items: center;
 }
 
-/* .hoverText:hover{
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-} */
 
 .bottomText{
   color:black;
@@ -26,7 +21,7 @@ img{
 }
 
 .greenEmail {
-  color: #59a94d; /* or any shade of green you prefer */
+  color: #59a94d; 
 }
 
 :root {
@@ -79,38 +74,15 @@ img{
 
 
 .rightImageText{ /* This is the image next to the form */
-  width: 30%;
+  width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
 }
 
-.leftImage:hover,
-.rightImage:hover {
+.rightImageText:hover{
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
 }
-
-/* Four image grid */
-.fourImageRowContainer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--grid-gap);
-  margin: var(--section-spacing) auto;
-  padding: 0 var(--container-padding);
-}
-
-.fourImageRowContainer img {
-  width: 75%;
-  height: auto;
-  object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
-}
-
-.fourImageRowContainer img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-}
-
 
 .imageRowContainerSingle a {
   display: flex;
@@ -220,9 +192,6 @@ img{
     flex-wrap: wrap;
   }
 
-  .fourImageRowContainer {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
 }
 @media (max-width: 768px) {
   :root {
@@ -244,10 +213,6 @@ img{
 
   .homePhotoContainer img {
     width: 90%;
-  }
-
-  .fourImageRowContainer {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 
   .imageRowContainerSingle img {

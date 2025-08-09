@@ -80,11 +80,18 @@ const AboutMe = () => {
       {/* Row 4 */}
       <section>
         <div className={classes.imageRow}>
-          <img
-            src={Van}
-            alt="Join Monthy Newsletter"
-            className={classes.rightImageText}
-          />
+          <a
+            href="https://www.etsy.com/shop/poppylanedesignsus/?etsrc=sdt"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={Van}
+              alt="Join Monthy Newsletter"
+              className={classes.rightImageText}
+            />
+          </a>
+
           <div className={classes.formContainer}>
             <div className={classes.formHeader}>
               <img src={leafIllustration} alt="LeafIllustration" />

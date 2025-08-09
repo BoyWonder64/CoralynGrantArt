@@ -219,7 +219,7 @@
   background-color: rgb(52, 163, 57);
 }
 
-/* Responsive breakpoints - now much simpler */
+
 @media (max-width: 1200px) {
   .imageRow {
     flex-wrap: wrap;

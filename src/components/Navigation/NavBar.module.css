@@ -34,8 +34,7 @@ body {
 }
 
 .logo {
-  max-width: 350px; /* Set a max width for the logo */
-  /* margin-left: 100px; Add margin to move the logo slightly to the right */
+  max-width: 350px; 
   margin-right: 80px;
 }
 
@@ -67,8 +66,8 @@ body {
   display: flex;
   padding-right: 15%;
   gap: 50px;
-  justify-content: flex-end; /* Keep items aligned to the left */
-  width: auto; /* Allow width to adjust based on content */
+  justify-content: flex-end; 
+  width: auto;
   align-items: center;
   white-space: nowrap;
 }
@@ -107,41 +106,41 @@ li {
 }
 
 .navImage {
-  width: 50px; /* Adjust the size as needed */
+  width: 50px; 
   height: auto;
 }
 
 @media (max-width: 768px) {
   .menu {
     padding: 10px;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align items */
-    text-align: center; /* Center text */
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
   }
 
   .menu .nav {
     flex-direction: column;
     gap: 10px;
-    width: 100%; /* Full width for mobile */
+    width: 100%; 
   }
 
   .menu .nav li {
     display: block;
-    width: auto; /* Auto width to prevent stretching */
+    width: auto; 
   }
 
   .menu .nav li a {
-    padding: 10px; /* Increase padding for touch targets */
-    font-size: 16px; /* Slightly larger font size for readability */
-    display: block; /* Make link block-level for full clickable area */
+    padding: 10px; 
+    font-size: 16px; 
+    display: block; 
   }
 
   .logoContainer {
     margin: 10px 0;
-    justify-content: center; /* Center the logo */
+    justify-content: center;
   }
 
   .logo {
-    margin-left: 0; /* Remove left margin for centering */
+    margin-left: 0; 
   }
 }

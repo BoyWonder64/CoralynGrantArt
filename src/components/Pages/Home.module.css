@@ -9,7 +9,6 @@
   --medium-image-width: clamp(200px, 35vw, 500px);
   --small-image-width: clamp(150px, 25vw, 350px);
 
-
   /* Spacing */
   --section-spacing: clamp(20px, 5vw, 40px);
   --element-gap: clamp(1rem, 3vw, 2rem);
@@ -40,6 +39,17 @@
   font-family: CursiveGreeting;
   src: url(../../assets/Cathalia.otf);
 }
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../../assets/OpenSans_wght.ttf);
+}
+
+@font-face {
+  font-family: Vonique;
+  src: url(../../assets/Vonique43_D.otf);
+}
+
 
 /* Home photo container */
 .homePhotoContainer {
@@ -77,13 +87,14 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
 }
 
-.rightImage{ /* This is the mag photo */
-  width: 100%;
+.rightImage {
+  /* This is the mag photo */
+  width: 50%;
   height: auto;
 }
 
-
-.rightImageText{ /* This is the image next to the form */
+.rightImageText {
+  /* This is the image next to the form */
   width: 30%;
 }
 
@@ -116,7 +127,6 @@
   border-radius: 10px;
 }
 
-
 .imageRowContainerSingle a {
   display: flex;
   justify-content: center;
@@ -126,7 +136,7 @@
   padding: var(--container-padding);
 }
 
-.imageRowContainerSingle img { 
+.imageRowContainerSingle img {
   width: 75%;
   height: auto;
   object-fit: cover;
@@ -139,7 +149,6 @@
   border-radius: 15px;
 }
 
-
 .formContainer {
   background-color: #f5c7a5;
   font-family: Roboto;
@@ -148,7 +157,6 @@
   text-align: center;
   box-sizing: border-box;
   width: 35%;
-  
 }
 
 .formContainer img {
@@ -182,8 +190,8 @@
   text-align: center;
   margin-top: 2%;
   padding: 0.2rem 1rem;
-  width: 90%; 
-  max-width: clamp(450px, 70vw, 800px); 
+  width: 90%;
+  max-width: clamp(450px, 70vw, 800px);
   margin-left: auto;
   margin-right: auto;
 }
@@ -202,16 +210,8 @@
   cursor: pointer;
   margin-top: 2%;
   font-size: clamp(1rem, 2vw, 1rem);
-  width: clamp(
-    10px,
-    5vw,
-    160px
-  ); 
-  height: clamp(
-    30px,
-    4vw,
-    40px
-  ); 
+  width: clamp(10px, 5vw, 160px);
+  height: clamp(30px, 4vw, 40px);
   transition: background-color 0.3s ease;
 }
 
@@ -219,6 +219,253 @@
   background-color: rgb(52, 163, 57);
 }
 
+/* =============================================================== */
+/* =========================New Home Page========================= */
+/* =============================================================== */
+
+/* Shared wrapper width */
+.containerStandard {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  margin: 20px auto;
+  width: 90%; /* or a fixed max width */
+  max-width: 900px; /* ensures consistency */
+}
+
+
+.photoContainer {
+  position: relative; 
+  background-color: #afc089; 
+  padding-left: 10%; 
+  padding-right: 10%; 
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+  text-align: center; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center; 
+  width: fit-content;  /* shrink-wrap horizontally */
+
+}
+
+.photoContainerWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+
+/* Home photo container */
+.homePhotoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin-top: var(--section-spacing);
+  padding: 0 var(--container-padding);
+}
+
+
+.textContainer {
+  max-width: 80%; 
+  margin-bottom: 20px; 
+}
+
+.sectionTitle {
+  font-size: 2rem; 
+  margin: 0; 
+  font-weight: bold; 
+  color: black;
+  font-family: OpenSans;
+;
+}
+
+.sectionText {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5; 
+}
+
+
+.homePhoto {
+  max-width: 100%; 
+  height: auto;
+  border-radius: 8px; 
+}
+
+.imageRowSmall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; 
+  margin-top: 20px;
+}
+
+.imageRowSmall img {
+  width: 220px; 
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.imageRowSmall img:hover {
+  transform: scale(1.05);
+}
+
+.firstphotoContainer {
+  background-color: #ffffff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column; 
+  gap: 40px;
+  align-items: center;
+}
+
+.splitphotoContainer {
+  background-color: #f7ac80;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+
+/* Shared wrapper width */
+.containerStandard {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  margin: 20px auto;
+  width: 90%; /* or a fixed max width */
+  max-width: 900px; /* ensures consistency */
+}
+
+
+.rightImageContainer {
+  background-color: white;
+  /* Remove padding */
+  padding: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: inline-flex; /* shrink-wrap container tightly */
+  justify-content: center;
+  align-items: center;
+  width: fit-content; /* shrink to content size */
+  max-width: none; /* remove max-width */
+  border: 6px solid white; /* create white border instead of padding */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.rightImageContainer img {
+  display: block;
+  width: 220px; /* image size */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.rightImageContainer:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  border-color: white; /* keep border white on hover */
+}
+.topRow {
+  display: flex;
+  justify-content: center; /* center children horizontally */
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+  max-width: 900px; /* or any max width to contain both items */
+  margin: 0 auto; /* center the whole row */
+}
+
+.textLeft,
+.imageRotator {
+  flex: 0 0 45%; /* fix width roughly to 45% so combined is near 90% */
+  max-width: 500px;
+}
+
+.bottomImageContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.bottomImageContainer img {
+  width: 400px; /* adjust as needed */
+  height: auto;
+}
+
+.bottomImageContainer2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 5%;
+}
+
+.bottomImageContainer2 img {
+  width: 400px; /* adjust as needed */
+  height: auto;
+}
+
+
+.textLeft {
+  flex: 1; /* take available space */
+  max-width: 500px;
+  text-align: left;
+  font-size: 403px;
+}
+
+.imageRotator {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* push image to the right */
+  align-items: flex-start;
+  position: relative;
+  width: 350px;
+  height: 250px; /* match your image size */
+}
+
+.imageRotator img {
+  width: 350px;
+  height: auto;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.imageRotator img.active {
+  opacity: 1;
+}
+
+
+
+.crossfadeImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.crossfadeImage.active {
+  opacity: 1;
+  z-index: 1; /* ensures active image is on top */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 @media (max-width: 1200px) {
   .imageRow {

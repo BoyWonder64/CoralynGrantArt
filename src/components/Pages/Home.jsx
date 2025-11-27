@@ -1,5 +1,5 @@
 import classes from "./Home.module.css";
-
+import React, { useState, useEffect } from "react";
 /*
   In order to add a new photo, you will need to import the file 
   then you will need to copy and paste a div that has the classes.column
@@ -34,6 +34,31 @@ import leafIllustration from "../../assets/HomePage/NewHomePage/Leaf Illustratio
 import redBird from "../../assets/HomePage/NewHomePage/redBird.jpeg";
 import strawberry from "../../assets/HomePage/NewHomePage/Strawberries.png";
 
+/* New New Home page */
+
+import train from "../../assets/HomePage/NewNewHomePage/train.jpg";
+import bird from "../../assets/HomePage/NewNewHomePage/bird.jpg";
+import camera from "../../assets/HomePage/NewNewHomePage/camera.jpg";
+
+import wreath from "../../assets/HomePage/NewNewHomePage/wreath.jpg";
+import bike from "../../assets/HomePage/NewNewHomePage/bike.jpg";
+import baking from "../../assets/HomePage/NewNewHomePage/baking.jpg";
+
+import letsworktogether from "../../assets/HomePage/NewNewHomePage/Lets Work Together.jpg";
+import letsconnect from "../../assets/HomePage/NewNewHomePage/Lets Connect.jpg";
+
+import germanVillageMagazine from "../../assets/HomePage/NewNewHomePage/Magazine Cover.jpg";
+
+/* New New Home page Rotating */
+import annualReportThumbRotator from "../../assets/HomePage/NewNewHomePage/IMAGES FOR ROTATOR/Annual Report Thumbnail.jpg";
+import annualReportRotator from "../../assets/HomePage/NewNewHomePage/IMAGES FOR ROTATOR/Image Rotator1.Annual Report.jpg";
+import zineRotator from "../../assets/HomePage/NewNewHomePage/IMAGES FOR ROTATOR/Image Rotator2.Zine.jpg";
+import poppyRotator from "../../assets/HomePage/NewNewHomePage/IMAGES FOR ROTATOR//Image Rotator3.Poppy BC.jpg";
+import marcosRotator from "../../assets/HomePage/NewNewHomePage/IMAGES FOR ROTATOR/Image Rotator4.Marcos.jpg";
+import hemlockRotator from "../../assets/HomePage/NewNewHomePage/IMAGES FOR ROTATOR/Image Rotator5.Hemlock BC.jpg";
+import brochureRotator from "../../assets/HomePage/NewNewHomePage/IMAGES FOR ROTATOR/Image Rotator6.Brochure.jpg";
+import seatRotator from "../../assets/HomePage/NewNewHomePage/IMAGES FOR ROTATOR/Image Rotator7.The Seat BC.jpg";
+
 const Home = () => {
   const {
     value: enteredFirstName,
@@ -43,6 +68,25 @@ const Home = () => {
     inputBlurHandler: firstNameBlurHandler,
     reset: resetFirstNameInput,
   } = useInput((value) => value.trim() !== "");
+
+  const imageList = [
+    annualReportThumbRotator,
+    annualReportRotator,
+    zineRotator,
+    poppyRotator,
+    marcosRotator,
+    hemlockRotator,
+    brochureRotator,
+    seatRotator,
+  ];
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % imageList.length);
+    }, 4000); // 4 seconds
+    return () => clearInterval(interval);
+  }, []);
 
   const {
     value: enteredEmail,
@@ -211,65 +255,99 @@ const Home = () => {
       </section>
 
       {/* Row 2 */}
-      <section>
-        <div className={classes.fourImageRowContainer}>
-          <a
-            href="https://www.etsy.com/listing/4337380251/celebrate-banner-birthday-banner-party"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={flowerPowerBanner} alt="Flower Banner" />
-          </a>
-          <a
-            href="https://www.instagram.com/reel/DLwCvQqAhda/?utm_source=ig_web_copy_link&igsh=MjEwemthM3BkbDVk"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={hollyHockPainting} alt="Hollyhocks Paintings" />
-          </a>
-          <a
-            href="https://www.etsy.com/listing/4333536171/construction-party-dump-truck-party"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={constructionCupcakes} alt="Construction Cupcakes" />
-          </a>
-          <a
-            href="https://poppylane.us/graphic-design/digital-illustration"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={bakingStillLife} alt="Baking Construction" />
-          </a>
+      <section className={classes.firstphotoContainer}>
+        <div className={classes.topRow}>
+          <div className={classes.textLeft}>
+            <h2 className={classes.sectionTitle}>Graphic Design</h2>
+            <p className={classes.sectionText}>
+              I provide graphic design services that help small businesses show
+              up with confidence and clarity. Whether you're looking for a full
+              brand identity or support with marketing materials, my goal is to
+              help you get seen and connect with your audience.
+            </p>
+          </div>
+
+          <div className={classes.imageRotator}>
+            {imageList.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt="graphic work"
+                className={`${classes.crossfadeImage} ${
+                  index === currentImage ? classes.active : ""
+                }`}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className={classes.bottomImageContainer}>
+          <img src={letsworktogether} alt="letsworktogether" />
         </div>
       </section>
 
-      {/*Row 3 */}
-      <div className={classes.imageRow}>
-        <img
-          src={featureArtBoard}
-          alt="Left Image"
-          className={classes.leftImage}
-        />
-        <a
-          href="https://uad.education/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={ArtBoardMag}
-            alt="Right Image"
-            className={classes.rightImage}
-          />
-        </a>
+      {/* Row 3 */}
+      <div className={classes.containerStandard}>
+        <div className={classes.photoContainerWrapper}>
+          <section className={classes.photoContainer}>
+            <div className={classes.textContainer}>
+              <h2 className={classes.sectionTitle}>Art & Illustration</h2>
+              <p className={classes.sectionText}>
+                My art reflects my love for the everyday objects, the outdoors,
+                nature, and traveling.
+                <br /> What speaks to my heart hopefully resonates with yours.{" "}
+                <br />
+                Click on an image to view my work.
+              </p>
+            </div>
+
+            {/* NEW WRAPPER FOR IMAGES */}
+            <div className={classes.imageRowSmall}>
+              <img src={train} alt="train" />
+              <img src={bird} alt="bird" />
+              <img src={camera} alt="camera" />
+            </div>
+            <div className={classes.imageRowSmall}>
+              <img src={wreath} alt="wreath" />
+              <img src={bike} alt="bike" />
+              <img src={baking} alt="baking" />
+            </div>
+          </section>
+        </div>
+      </div>
+      {/* Row 4 */}
+      <div className={classes.containerStandard}>
+        <div className={classes.photoContainerWrapper}>
+          <section className={classes.splitphotoContainer}>
+            <div className={classes.topRow}>
+              <div className={classes.textLeft}>
+                <h2 className={classes.sectionTitle}>ARTBOARD MAGAZINE</h2>
+                <p className={classes.sectionText}>
+                  My German Christmas Village illustration is Featured on the
+                  Fall 2025 cover of Artboard Magazine
+                </p>
+              </div>
+
+              <div className={classes.rightImageContainer}>
+                <a href="https://uad.education/pages/artboard">
+                  <img
+                    src={germanVillageMagazine}
+                    alt="German Village Magazine"
+                  />
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
 
       {/* Row 4 */}
       <section>
-          
+        <div className={classes.bottomImageContainer2}>
+          <img src={letsconnect} alt="letsworktogether" />
+        </div>
         <div className={classes.imageRow}>
           <div className={classes.formContainer}>
-            
             <div className={classes.formHeader}>
               <img src={leafIllustration} alt="LeafIllustration" />
               <div className={classes.headerTextContainer}>
@@ -321,64 +399,8 @@ const Home = () => {
                 <button type="submit">Sign Up</button>
               </div>
             </form>
-            
           </div>
-        <div >
-       
-          </div>
-               <img
-              src={joinNewsLetter}
-              alt="Join Monthy Newsletter"
-              className={classes.rightImageText}
-            />
-        </div>
-        
-      </section>
-
-      {/* Row 5 */}
-      <section>
-        <div className={classes.imageRowContainerSingle}>
-          <a
-            href="https://poppylane.us/graphic-design/digital-illustration"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={bikeWFlowers} alt="Bike with Flowers" />
-          </a>
-        </div>
-      </section>
-
-      {/* Row 6 */}
-      <section>
-        <div className={classes.fourImageRowContainer}>
-          <a
-            href="https://www.instagram.com/reel/DLwCvQqAhda/?utm_source=ig_web_copy_link&igsh=MjEwemthM3BkbDVk"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={hollyHocks} alt="Happy Painting" />
-          </a>
-          <a
-            href="https://www.etsy.com/listing/4332893404/baby-shower-banner-baby-shower"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={strawberry} alt="Strawberries" />
-          </a>
-          <a
-            href="https://www.instagram.com/reel/DL3T1uESNlA/?utm_source=ig_web_copy_link&igsh=MWlnM3Y2eTdlbWZodQ=="
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={embroidedHats} alt="Hats" />
-          </a>
-          <a
-            href="https://poppylane.us/fine-art"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={redBird} alt="Like a Red Bird" />
-          </a>
+          <div></div>
         </div>
       </section>
     </div>

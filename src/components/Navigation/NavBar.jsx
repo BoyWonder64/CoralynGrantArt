@@ -53,7 +53,7 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink
-              to="/coming-soon"
+              to="https://poppylaneus.wordpress.com/"
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }

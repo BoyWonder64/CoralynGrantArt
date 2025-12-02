@@ -20,7 +20,7 @@
   --font-size-small: clamp(16px, 2vw, 22px);
 }
 
-@font-face {
+/* @font-face {
   font-family: Greeting;
   src: url(../../assets/Allison-Regular.ttf);
 }
@@ -48,6 +48,37 @@
 @font-face {
   font-family: Vonique;
   src: url(../../assets/Vonique43_D.otf);
+} */
+
+
+
+@font-face {
+  font-family: Raleway;
+  src: url(../../assets/HomePage/NewNewHomePage/Raleway-VariableFont_wght.ttf) format("truetype");
+}
+
+
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../../assets/HomePage/NewNewHomePage/OpenSans-VariableFont.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../../assets/HomePage/NewNewHomePage/Roboto-VariableFont_wdth\wght.ttf);
+}
+
+.clickableImage {
+  width: 400px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.clickableImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -232,21 +263,19 @@
   max-width: 900px; /* ensures consistency */
 }
 
-
 .photoContainer {
-  position: relative; 
-  background-color: #afc089; 
-  padding-left: 10%; 
-  padding-right: 10%; 
-  padding-top: 20px; 
-  padding-bottom: 20px; 
-  text-align: center; 
+  position: relative;
+  background-color: #afc089;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
   display: flex;
-  flex-direction: column; 
-  justify-content: flex-start; 
-  align-items: center; 
-  width: fit-content;  /* shrink-wrap horizontally */
-
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content; /* shrink-wrap horizontally */
 }
 
 .photoContainerWrapper {
@@ -254,7 +283,6 @@
   justify-content: center;
   margin: 20px 0;
 }
-
 
 /* Home photo container */
 .homePhotoContainer {
@@ -266,44 +294,42 @@
   padding: 0 var(--container-padding);
 }
 
-
 .textContainer {
-  max-width: 80%; 
-  margin-bottom: 20px; 
+  max-width: 80%;
+  margin-bottom: 20px;
 }
 
 .sectionTitle {
-  font-size: 2rem; 
-  margin: 0; 
-  font-weight: bold; 
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
   color: black;
-  font-family: OpenSans;
-;
+  font-family: Raleway;
 }
 
 .sectionText {
   font-size: 1rem;
   color: #333;
-  line-height: 1.5; 
+  line-height: 1.5;
+  font-family: Raleway;
 }
 
-
 .homePhoto {
-  max-width: 100%; 
+  max-width: 100%;
   height: auto;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .imageRowSmall {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem; 
+  gap: 1rem;
   margin-top: 20px;
 }
 
 .imageRowSmall img {
-  width: 220px; 
+  width: 220px;
   height: auto;
   object-fit: cover;
   transition: transform 0.2s ease;
@@ -317,7 +343,7 @@
   background-color: #ffffff;
   padding: 40px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   gap: 40px;
   align-items: center;
 }
@@ -331,7 +357,6 @@
   align-items: center;
 }
 
-
 /* Shared wrapper width */
 .containerStandard {
   display: flex;
@@ -341,13 +366,12 @@
   max-width: 900px; /* ensures consistency */
 }
 
-
 .rightImageContainer {
   background-color: white;
   /* Remove padding */
   padding: 0;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: inline-flex; /* shrink-wrap container tightly */
   justify-content: center;
   align-items: center;
@@ -410,7 +434,6 @@
   height: auto;
 }
 
-
 .textLeft {
   flex: 1; /* take available space */
   max-width: 500px;
@@ -439,8 +462,6 @@
 .imageRotator img.active {
   opacity: 1;
 }
-
-
 
 .crossfadeImage {
   position: absolute;

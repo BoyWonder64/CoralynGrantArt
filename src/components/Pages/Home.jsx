@@ -1,5 +1,6 @@
 import classes from "./Home.module.css";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; 
 /*
   In order to add a new photo, you will need to import the file 
   then you will need to copy and paste a div that has the classes.column
@@ -282,7 +283,13 @@ const Home = () => {
         </div>
 
         <div className={classes.bottomImageContainer}>
-          <img src={letsworktogether} alt="letsworktogether" />
+          <Link to="/contact">
+            <img
+              src={letsworktogether}
+              alt="lets work together"
+              className={classes.clickableImage}
+            />
+          </Link>
         </div>
       </section>
 
@@ -294,8 +301,8 @@ const Home = () => {
               <h2 className={classes.sectionTitle}>Art & Illustration</h2>
               <p className={classes.sectionText}>
                 My art reflects my love for the everyday objects, the outdoors,
-                nature, and traveling.
-                <br /> What speaks to my heart hopefully resonates with yours.{" "}
+                nature, and traveling. What speaks to my heart hopefully
+                resonates with yours.
                 <br />
                 Click on an image to view my work.
               </p>
@@ -303,14 +310,46 @@ const Home = () => {
 
             {/* NEW WRAPPER FOR IMAGES */}
             <div className={classes.imageRowSmall}>
-              <img src={train} alt="train" />
-              <img src={bird} alt="bird" />
-              <img src={camera} alt="camera" />
+              <Link to="/fine-art">
+                <img
+                  src={train}
+                  alt="I like trains"
+                  className={classes.clickableImage}
+                />
+              </Link>
+              <Link to="/fine-art">
+                <img
+                  src={bird}
+                  alt="bird is the word"
+                  className={classes.clickableImage}
+                />
+              </Link>
+              <Link to="/fine-art">
+                <img
+                  src={camera}
+                  alt="say cheese"
+                  className={classes.clickableImage}
+                />
+              </Link>
             </div>
             <div className={classes.imageRowSmall}>
-              <img src={wreath} alt="wreath" />
-              <img src={bike} alt="bike" />
-              <img src={baking} alt="baking" />
+              <Link to="/digital-art">
+                <img
+                  src={wreath}
+                  alt="wreath"
+                  className={classes.clickableImage}
+                />
+              </Link>
+              <Link to="/digital-art">
+                <img src={bike} alt="bike" className={classes.clickableImage} />
+              </Link>
+              <Link to="/digital-art">
+                <img
+                  src={baking}
+                  alt="baking"
+                  className={classes.clickableImage}
+                />
+              </Link>
             </div>
           </section>
         </div>
@@ -344,7 +383,13 @@ const Home = () => {
       {/* Row 4 */}
       <section>
         <div className={classes.bottomImageContainer2}>
-          <img src={letsconnect} alt="letsworktogether" />
+          <Link to="/contact">
+            <img
+              src={letsconnect}
+              alt="lets Connect"
+              className={classes.clickableImage}
+            />
+          </Link>
         </div>
         <div className={classes.imageRow}>
           <div className={classes.formContainer}>

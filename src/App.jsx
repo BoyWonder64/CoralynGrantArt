@@ -28,6 +28,7 @@ import GraphicArt from "./components/Pages/GraphicArt";
 import FineArtPage from "./components/Pages/FineArt";
 import Freebies from "./components/Pages/Freebies";
 import AboutMe from "./components/Pages/AboutMe";
+import Contact from "./components/Pages/Contact";
 
 // Pages linked from GraphicArtPage
 import PizzaCrustPage from "./components/Pages/GraphicDesignLinkedPages/PizzaCrustPage";
@@ -93,6 +94,7 @@ const router = createBrowserRouter([
       { path: "fine-art", element: <FineArtPage /> },
       { path: "freebies", element: <Freebies /> },
       { path: "contact-about", element: <NewsLetterForm /> },
+      {path: "contact", element: <Contact/>},
     ],
   },
 ]);

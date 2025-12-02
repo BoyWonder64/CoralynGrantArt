@@ -1,0 +1,245 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+
+img{
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bottomText{
+  color:black;
+  font-size: 25px;
+}
+
+.greenEmail {
+  color: #59a94d; 
+}
+
+:root {
+  /* Container widths */
+  --container-max-width: 1400px;
+  --container-padding: clamp(1rem, 3vw, 3rem);
+
+  /* Image sizing */
+  --hero-image-width: clamp(300px, 80vw, 800px);
+  --large-image-width: clamp(250px, 45vw, 750px);
+  --medium-image-width: clamp(200px, 35vw, 500px);
+  --small-image-width: clamp(150px, 25vw, 350px);
+
+
+  /* Spacing */
+  --section-spacing: clamp(20px, 5vw, 40px);
+  --element-gap: clamp(1rem, 3vw, 2rem);
+  --grid-gap: clamp(0.5rem, 2vw, 1rem);
+
+  /* Typography */
+  --font-size-large: clamp(24px, 4vw, 48px);
+  --font-size-medium: clamp(18px, 3vw, 30px);
+  --font-size-small: clamp(16px, 2vw, 22px);
+}
+
+
+/* Image Row */
+.imageRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--element-gap);
+  flex-wrap: nowrap;
+  margin: var(--section-spacing) auto;
+  padding-top: 1%;
+}
+
+.leftImage,
+.rightImage {
+  width: 35%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.rightImage{ /* This is the mag photo */
+  width: 100%;
+  height: auto;
+}
+
+
+.rightImageText{ /* This is the image next to the form */
+  width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.rightImageText:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.imageRowContainerSingle a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: var(--section-spacing);
+  padding: var(--container-padding);
+}
+
+.imageRowContainerSingle img { 
+  width: 75%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.imageRowContainerSingle img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+
+.formContainer {
+  background-color: #f5c7a5;
+  font-family: Roboto;
+  color: black;
+  padding: clamp(1rem, 2vw, 2rem);
+  text-align: center;
+  box-sizing: border-box;
+  width: 35%;
+  
+}
+
+.formContainer img {
+  width: 15%;
+}
+
+.formHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: var(--grid-gap);
+  margin-bottom: 1rem;
+}
+
+.formHeader h3 {
+  font-size: var(--font-size-medium);
+}
+
+.formContainer p {
+  font-size: var(--font-size-small);
+  font-family: Roboto;
+  margin: 0 0 1rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.form input {
+  font-size: clamp(0.1rem, 1vw, 1rem);
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-top: 2%;
+  padding: 0.2rem 1rem;
+  width: 90%; 
+  max-width: clamp(450px, 70vw, 800px); 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form button {
+  background-color: #99ac6d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 2%;
+  font-size: clamp(1rem, 2vw, 1rem);
+  width: clamp(
+    10px,
+    5vw,
+    160px
+  ); 
+  height: clamp(
+    30px,
+    4vw,
+    40px
+  ); 
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: rgb(52, 163, 57);
+}
+
+/* Responsive breakpoints - now much simpler */
+@media (max-width: 1200px) {
+  .imageRow {
+    flex-wrap: wrap;
+  }
+
+}
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 1rem;
+    --element-gap: 1rem;
+    --grid-gap: 0.5rem;
+  }
+
+  .imageRow {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--element-gap);
+  }
+
+  .leftImage,
+  .rightImage {
+    width: 90%;
+  }
+
+  .homePhotoContainer img {
+    width: 90%;
+  }
+
+  .imageRowContainerSingle img {
+    width: 100%;
+  }
+
+  .formImageRowContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--element-gap);
+  }
+
+  .rightImageText {
+    width: 90%;
+  }
+
+  .formContainer {
+    width: 90%;
+  }
+
+  .form input {
+    width: 100%;
+  }
+
+  .form button {
+    width: 100%;
+    max-width: 200px;
+  }
+}

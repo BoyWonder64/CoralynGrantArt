@@ -1,6 +1,6 @@
 import classes from "./Home.module.css";
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 /*
   In order to add a new photo, you will need to import the file 
   then you will need to copy and paste a div that has the classes.column
@@ -37,6 +37,8 @@ import strawberry from "../../assets/HomePage/NewHomePage/Strawberries.png";
 
 /* New New Home page */
 
+import introPhoto from "../../assets/HomePage/NewNewHomePage/My Photo & Intro.png";
+
 import train from "../../assets/HomePage/NewNewHomePage/train.jpg";
 import bird from "../../assets/HomePage/NewNewHomePage/bird.jpg";
 import camera from "../../assets/HomePage/NewNewHomePage/camera.jpg";
@@ -45,8 +47,8 @@ import wreath from "../../assets/HomePage/NewNewHomePage/wreath.jpg";
 import bike from "../../assets/HomePage/NewNewHomePage/bike.jpg";
 import baking from "../../assets/HomePage/NewNewHomePage/baking.jpg";
 
-import letsworktogether from "../../assets/HomePage/NewNewHomePage/Lets Work Together.jpg";
-import letsconnect from "../../assets/HomePage/NewNewHomePage/Lets Connect.jpg";
+import letsworktogether from "../../assets/HomePage/NewNewHomePage/Lets Work Together.png";
+import letsconnect from "../../assets/HomePage/NewNewHomePage/Lets Connect.png";
 
 import germanVillageMagazine from "../../assets/HomePage/NewNewHomePage/Magazine Cover.jpg";
 
@@ -145,166 +147,70 @@ const Home = () => {
     ? "form-control invalid"
     : "form-control";
 
-  // return (
-  //   <div className={classes.mainPage}>
-  //     <section className={classes.summary}>
-  //       <div className={classes.content}>
-  //         <h2>Hi There!</h2>
-  //         <p className={classes.p}>
-  //           I am Coralyn Grant, a graphic designer and fine artist. I combine my
-  //           love of travel, nature, and history into my artwork.
-  //           <br /> If you like what you see, sign up for my monthly newsletter
-  //           I’d love to hear from you!
-  //         </p>
-  //       </div>
-  //       <div className={classes.homePhotoContainer}>
-  //         <img
-  //           src={venicePhoto}
-  //           alt="home venice photo"
-  //           className={classes.homePhoto}
-  //         />
-  //       </div>
-  //     </section>
-  //     <section>
-  //       <div className={classes.imageRowContainer}>
-  //         <div className={classes.imageRowContainer}>
-  //           <img src={hollyHocksPhoto} alt="Coralyn Grant Art" />
-  //         </div>
-
-  //         <div className={classes.formContainer}>
-  //           <div className={classes.formHeader}>
-  //             <img src={leafIllustration} alt="LeafIllustration" />
-  //             <div className={classes.headerTextContainer}>
-  //               <h3>Sign Up for My Newsletter</h3>
-  //               <p>
-  //                 Sign up to get access to our newsletter filled with
-  //                 inspiration, freebies, printables and more!
-  //               </p>
-  //             </div>
-  //           </div>
-
-  //           <form className={classes.form} onSubmit={formSubmissionHandler}>
-  //             <div className={firstNameInputClasses}>
-  //               <div className={`${classes["form-control"]}`}>
-  //                 <label htmlFor="name"></label>
-  //                 <input
-  //                   type="text"
-  //                   id="firstName"
-  //                   placeholder="Name:"
-  //                   onChange={firstNameChangedHandler}
-  //                   onBlur={firstNameBlurHandler}
-  //                   value={enteredFirstName}
-  //                 />
-  //               </div>
-  //               {firstNameInputHasError && (
-  //                 <p className={classes["error-text"]}>
-  //                   Please enter your first name
-  //                 </p>
-  //               )}
-  //               <div className={emailInputClasses}>
-  //                 <div className={`${classes["form-control"]}`}>
-  //                   <input
-  //                     type="email"
-  //                     id="email"
-  //                     onChange={emailChangeHandler}
-  //                     onBlur={emailBlurHandler}
-  //                     value={enteredEmail}
-  //                     placeholder="Email:"
-  //                   />
-  //                 </div>
-  //                 {emailInputHasError && (
-  //                   <p className={classes["error-text"]}>
-  //                     Please enter your email
-  //                   </p>
-  //                 )}
-  //               </div>
-  //             </div>
-  //             <div className={classes["form-actions"]}>
-  //               <button type="submit">Sign Up</button>
-  //             </div>
-  //           </form>
-  //         </div>
-  //       </div>
-  //     </section>
-  //     <section>
-  //       <div className={classes.imageRowContainer}>
-  //         <div className={classes.imageRowContainer}>
-  //           <img src={bakinglifePhoto} alt="Form Image" />
-  //         </div>
-
-  //         <div className={classes.imageRowContainer}>
-  //           <img src={paintingPhoto} alt="Coralyn Grant Art" />
-  //         </div>
-
-  //         <div className={classes.imageRowContainer}>
-  //           <img src={picnicBasketPhoto} alt="Coralyn Grant Art" />
-  //         </div>
-  //       </div>
-  //     </section>
-  //   </div>
-  // );
-
   return (
-    <div className={classes.mainPage}>
+    <div>
       {/* Row 1 */}
-      <section className={classes.homePhotoContainer}>
-        <img
-          src={headshotnIntro}
-          alt="Headshot & Intro"
-          className={classes.homePhoto}
-        />
-      </section>
+      <div className={classes.fullWidthBackground}>
+        <section className={classes.homePhotoContainer}>
+          <img
+            src={introPhoto}
+            alt="Headshot & Intro"
+            className={classes.homePhoto}
+          />
+        </section>
+      </div>
 
       {/* Row 2 */}
-      <section className={classes.firstphotoContainer}>
-        <div className={classes.topRow}>
-          <div className={classes.textLeft}>
-            <h2 className={classes.sectionTitle}>Graphic Design</h2>
-            <p className={classes.sectionText}>
-              I provide graphic design services that help small businesses show
-              up with confidence and clarity. Whether you're looking for a full
-              brand identity or support with marketing materials, my goal is to
-              help you get seen and connect with your audience.
-            </p>
+      <section>
+        <div className={classes.fullWidthBackground2}>
+          <div className={classes.topRow}>
+            <div className={classes.textLeft}>
+              <p className={classes.sectionTitle}>GRAPHIC DESIGN</p>
+              <p className={classes.sectionText}>
+                I provide graphic design services that help small businesses
+                show up with confidence and clarity. Whether you're looking for
+                a full brand identity or support with marketing materials, my
+                goal is to help you get seen and connect with your audience.
+              </p>
+            </div>
+
+            <div className={classes.imageRotator}>
+              {imageList.map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt="graphic work"
+                  className={`${classes.crossfadeImage} ${
+                    index === currentImage ? classes.active : ""
+                  }`}
+                />
+              ))}
+            </div>
           </div>
 
-          <div className={classes.imageRotator}>
-            {imageList.map((img, index) => (
+          <div className={classes.bottomImageContainer}>
+            <Link to="/contact">
               <img
-                key={index}
-                src={img}
-                alt="graphic work"
-                className={`${classes.crossfadeImage} ${
-                  index === currentImage ? classes.active : ""
-                }`}
+                src={letsworktogether}
+                alt="lets work together"
+                className={classes.clickableImage}
               />
-            ))}
+            </Link>
           </div>
-        </div>
-
-        <div className={classes.bottomImageContainer}>
-          <Link to="/contact">
-            <img
-              src={letsworktogether}
-              alt="lets work together"
-              className={classes.clickableImage}
-            />
-          </Link>
         </div>
       </section>
 
       {/* Row 3 */}
-      <div className={classes.containerStandard}>
+      <div className={classes.fullWidthBackground3}>
         <div className={classes.photoContainerWrapper}>
+          {/* I removed containerStandard from here */}
           <section className={classes.photoContainer}>
             <div className={classes.textContainer}>
-              <h2 className={classes.sectionTitle}>Art & Illustration</h2>
-              <p className={classes.sectionText}>
+              <p className={classes.sectionTitle2}>ART & ILLUSTRATION</p>
+              <p className={classes.sectionText2}>
                 My art reflects my love for the everyday objects, the outdoors,
                 nature, and traveling. What speaks to my heart hopefully
-                resonates with yours.
-                <br />
-                Click on an image to view my work.
+                resonates with yours.<br/> Click on an image to view my work.
               </p>
             </div>
 
@@ -354,13 +260,14 @@ const Home = () => {
           </section>
         </div>
       </div>
+
       {/* Row 4 */}
-      <div className={classes.containerStandard}>
-        <div className={classes.photoContainerWrapper}>
-          <section className={classes.splitphotoContainer}>
+      <div className={classes.fullWidthBackground4}>
+        <div className={classes.containerStandard}>
+          <div className={classes.photoContainerWrapper}>
             <div className={classes.topRow}>
               <div className={classes.textLeft}>
-                <h2 className={classes.sectionTitle}>ARTBOARD MAGAZINE</h2>
+                <p className={classes.sectionTitle}>ARTBOARD MAGAZINE</p>
                 <p className={classes.sectionText}>
                   My German Christmas Village illustration is Featured on the
                   Fall 2025 cover of Artboard Magazine
@@ -376,11 +283,11 @@ const Home = () => {
                 </a>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </div>
 
-      {/* Row 4 */}
+      {/* Row 5 */}
       <section>
         <div className={classes.bottomImageContainer2}>
           <Link to="/contact">
@@ -391,6 +298,7 @@ const Home = () => {
             />
           </Link>
         </div>
+
         <div className={classes.imageRow}>
           <div className={classes.formContainer}>
             <div className={classes.formHeader}>

@@ -208,7 +208,7 @@ const Home = () => {
           <p className={classes.sectionText2}>
             {" "}
             My art reflects my love for the everyday objects, the outdoors,
-            nature, and traveling. What speaks to my heart hopefully resonates
+            nature, and traveling. <br/>What speaks to my heart hopefully resonates
             with yours. <br /> Click on an image to view my work.{" "}
           </p>{" "}
         </div>
@@ -309,7 +309,7 @@ const Home = () => {
               </div>
             </div>
             <p>
-              Sign up to get access to our newsletter filled with inspiration,
+              Sign up to get access to my newsletter filled with inspiration,
               freebies, printables and more!
             </p>
 

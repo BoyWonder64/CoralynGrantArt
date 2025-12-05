@@ -60,7 +60,7 @@
   line-height: 1.5;
   font-family: Raleway;
   text-align: left;
-  padding-top: 25px;
+  padding-top: 75px;
 }
 
 /* These two control the text fields on the screen */
@@ -70,6 +70,7 @@
   line-height: 1.5;
   font-family: Raleway;
   text-align: left;
+  padding-top: 75px;
 }
 
 .sectionText {
@@ -96,6 +97,7 @@
   font-family: Raleway;
   text-align: left;
   margin-top: -250px;
+  padding-top: 75px;
 }
 
 .sectionText3 {
@@ -105,7 +107,6 @@
   font-family: Raleway;
   text-align: left;
 }
-
 
 /* First Row - Intro*/
 /* Home photo container */
@@ -143,12 +144,12 @@
 }
 
 .bottomImageContainer img {
-  width: 400px; 
+  width: 400px;
   height: auto;
 }
 
 .textLeft {
-  flex: 1; 
+  flex: 1;
   max-width: 500px;
   text-align: left;
   font-size: 403px;
@@ -160,9 +161,9 @@
   justify-content: flex-end;
   align-items: flex-start;
   position: relative;
-  width: 450px; 
-  height: 350px; 
-  margin-top: -73px;
+  width: 450px;
+  height: 350px;
+  margin-top: -121px;
 }
 
 .imageRotator img {
@@ -238,20 +239,16 @@
 
 .textContainer {
   width: 85%;
-  text-align: left;
+  text-align: justify;
   margin-bottom: 20px;
-  padding-left: 160px;;
+  padding-left: 160px;
 }
 
 .textContainer p {
   width: 85%;
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
-  padding-left: 80px;;
-}
-
-.artLeft .sectionTitle2 {
-  text-align: left !important;
+  padding-left: 80px;
 }
 
 .imageRowSmall {
@@ -263,30 +260,27 @@
 }
 
 .imageRowSmall img {
-  /* Remove previous width and height here */
   width: 100%;
-  max-width: 350px; /* Ensure consistent max-width for all images */
-  height: 300px;  /* Fixed height */
-  object-fit: cover; /* Ensure images scale without distorting */
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
   transition: transform 0.2s ease;
 }
 
-/* Hover effect on images */
 .imageRowSmall img:hover {
-  transform: scale(1.05); /* Slight zoom effect */
-}
-
-/* Uniform sizing for images */
-.uniformImage {
-  width: 100%; /* Ensure images take full available width */
-  max-width: 350px; /* Adjust this value as needed */
-  height: 300px; /* Fixed height for all images */
-  object-fit: cover; /* Maintain aspect ratio */
-}
-
-/* Optional hover effect for all images */
-.uniformImage:hover {
   transform: scale(1.05); 
+}
+
+/* Uniform sizing for images in image row */
+.uniformImage {
+  width: 100%; 
+  max-width: 350px;
+  height: 300px; 
+  object-fit: cover; 
+}
+
+.uniformImage:hover {
+  transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -361,7 +355,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 5%;
+  padding-top: 25px;
 }
 
 .bottomImageContainer2 img {
@@ -404,6 +398,7 @@
   margin: 0 0 1rem 0;
   text-align: center;
   width: 100%;
+  color: #000000;
 }
 
 .form input {

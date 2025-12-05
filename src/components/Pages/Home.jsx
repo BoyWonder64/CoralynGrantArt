@@ -87,7 +87,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % imageList.length);
-    }, 4000); // 4 seconds
+    }, 2500); // 4 seconds
     return () => clearInterval(interval);
   }, []);
 

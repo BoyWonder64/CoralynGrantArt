@@ -14,14 +14,18 @@
   src: url(../../assets/Roboto-Medium.ttf) format("truetype");
 }
 
-html,
-body {
-  margin: 0;
+body, html {
+  margin: -10;
   padding: 0;
   height: 100%;
   overflow-x: hidden;
+
 }
 
+.headerContainer {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
 body {
   font-family: Roboto-Medium;
 }

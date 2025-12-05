@@ -263,12 +263,12 @@ const Home = () => {
 
       {/* Row 4 */}
       <div className={classes.fullWidthBackground4}>
-        <div className={classes.containerStandard}>
+       
           <div className={classes.photoContainerWrapper}>
             <div className={classes.topRow}>
               <div className={classes.textLeft}>
-                <p className={classes.sectionTitle}>ARTBOARD MAGAZINE</p>
-                <p className={classes.sectionText}>
+                <p className={classes.sectionTitle3}>ARTBOARD MAGAZINE</p>
+                <p className={classes.sectionText3}>
                   My German Christmas Village illustration is Featured on the
                   Fall 2025 cover of Artboard Magazine
                 </p>
@@ -279,12 +279,13 @@ const Home = () => {
                   <img
                     src={germanVillageMagazine}
                     alt="German Village Magazine"
+                    
                   />
                 </a>
               </div>
             </div>
           </div>
-        </div>
+    
       </div>
 
       {/* Row 5 */}

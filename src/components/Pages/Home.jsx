@@ -202,90 +202,90 @@ const Home = () => {
 
       {/* Row 3 */}
       <div className={classes.fullWidthBackground3}>
-        <div className={classes.photoContainerWrapper}>
-          {/* I removed containerStandard from here */}
-          <section className={classes.photoContainer}>
-            <div className={classes.textContainer}>
-              <p className={classes.sectionTitle2}>ART & ILLUSTRATION</p>
-              <p className={classes.sectionText2}>
-                My art reflects my love for the everyday objects, the outdoors,
-                nature, and traveling. What speaks to my heart hopefully
-                resonates with yours.<br/> Click on an image to view my work.
-              </p>
-            </div>
-
-            {/* NEW WRAPPER FOR IMAGES */}
-            <div className={classes.imageRowSmall}>
-              <Link to="/fine-art">
-                <img
-                  src={train}
-                  alt="I like trains"
-                  className={classes.clickableImage}
-                />
-              </Link>
-              <Link to="/fine-art">
-                <img
-                  src={bird}
-                  alt="bird is the word"
-                  className={classes.clickableImage}
-                />
-              </Link>
-              <Link to="/fine-art">
-                <img
-                  src={camera}
-                  alt="say cheese"
-                  className={classes.clickableImage}
-                />
-              </Link>
-            </div>
-            <div className={classes.imageRowSmall}>
-              <Link to="/digital-art">
-                <img
-                  src={wreath}
-                  alt="wreath"
-                  className={classes.clickableImage}
-                />
-              </Link>
-              <Link to="/digital-art">
-                <img src={bike} alt="bike" className={classes.clickableImage} />
-              </Link>
-              <Link to="/digital-art">
-                <img
-                  src={baking}
-                  alt="baking"
-                  className={classes.clickableImage}
-                />
-              </Link>
-            </div>
-          </section>
+        <div className={classes.textContainer + " " + classes.artLeft}>
+          {" "}
+          <p className={classes.sectionTitle2}>ART & ILLUSTRATION</p>{" "}
+          <p className={classes.sectionText2}>
+            {" "}
+            My art reflects my love for the everyday objects, the outdoors,
+            nature, and traveling. What speaks to my heart hopefully resonates
+            with yours. <br /> Click on an image to view my work.{" "}
+          </p>{" "}
+        </div>
+        <div
+          className={`${classes.imageRowSmall} ${classes.fullWidthBackground3}`}
+        >
+          <Link to="/fine-art">
+            <img
+              src={train}
+              alt="I like trains"
+              className={`${classes.clickableImage} ${classes.uniformImage}`} // Apply uniformImage here
+            />
+          </Link>
+          <Link to="/fine-art">
+            <img
+              src={bird}
+              alt="bird is the word"
+              className={`${classes.clickableImage} ${classes.uniformImage}`} // Apply uniformImage here
+            />
+          </Link>
+          <Link to="/fine-art">
+            <img
+              src={camera}
+              alt="say cheese"
+              className={`${classes.clickableImage} ${classes.uniformImage}`} // Apply uniformImage here
+            />
+          </Link>
+        </div>
+        <div
+          className={`${classes.imageRowSmall} ${classes.fullWidthBackground3}`}
+        >
+          <Link to="/digital-art">
+            <img
+              src={wreath}
+              alt="wreath"
+              className={`${classes.clickableImage} ${classes.uniformImage}`} // Apply uniformImage here
+            />
+          </Link>
+          <Link to="/digital-art">
+            <img
+              src={bike}
+              alt="bike"
+              className={`${classes.clickableImage} ${classes.uniformImage}`} // Apply uniformImage here
+            />
+          </Link>
+          <Link to="/digital-art">
+            <img
+              src={baking}
+              alt="baking"
+              className={`${classes.clickableImage} ${classes.uniformImage}`} // Apply uniformImage here
+            />
+          </Link>
         </div>
       </div>
 
       {/* Row 4 */}
       <div className={classes.fullWidthBackground4}>
-       
-          <div className={classes.photoContainerWrapper}>
-            <div className={classes.topRow}>
-              <div className={classes.textLeft}>
-                <p className={classes.sectionTitle3}>ARTBOARD MAGAZINE</p>
-                <p className={classes.sectionText3}>
-                  My German Christmas Village illustration is Featured on the
-                  Fall 2025 cover of Artboard Magazine
-                </p>
-              </div>
+        <div className={classes.photoContainerWrapper}>
+          <div className={classes.topRow}>
+            <div className={classes.textLeft}>
+              <p className={classes.sectionTitle3}>ARTBOARD MAGAZINE</p>
+              <p className={classes.sectionText3}>
+                My German Christmas Village illustration is Featured on the Fall
+                2025 cover of Artboard Magazine
+              </p>
+            </div>
 
-              <div className={classes.rightImageContainer}>
-                <a href="https://uad.education/pages/artboard">
-                  <img
-                    src={germanVillageMagazine}
-                    alt="German Village Magazine"
-                    
-                  />
-                </a>
-              </div>
+            <div className={classes.rightImageContainer}>
+              <a href="https://uad.education/pages/artboard">
+                <img
+                  src={germanVillageMagazine}
+                  alt="German Village Magazine"
+                />
+              </a>
             </div>
           </div>
-    
+        </div>
       </div>
 
       {/* Row 5 */}

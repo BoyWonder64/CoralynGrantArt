@@ -41,10 +41,7 @@
 .fullWidthBackground3 {
   width: 100%;
   background-color: #afc089;
-  padding: 0;
-  margin-top: -20px;
-  margin-bottom: 20px;
-  padding-bottom: -20px;
+  padding: 20px;
   line-height: 0;
 }
 
@@ -128,7 +125,6 @@
 }
 
 /* Graphic Design Rotator */
-
 .topRow {
   display: flex;
   justify-content: center;
@@ -147,12 +143,12 @@
 }
 
 .bottomImageContainer img {
-  width: 400px; /* adjust as needed */
+  width: 400px; 
   height: auto;
 }
 
 .textLeft {
-  flex: 1; /* take available space */
+  flex: 1; 
   max-width: 500px;
   text-align: left;
   font-size: 403px;
@@ -164,13 +160,13 @@
   justify-content: flex-end;
   align-items: flex-start;
   position: relative;
-  width: 450px; /* increased from 450px */
-  height: 350px; /* increased from 350px */
+  width: 450px; 
+  height: 350px; 
   margin-top: -73px;
 }
 
 .imageRotator img {
-  width: 550px; /* increased from 350px */
+  width: 550px;
   height: auto;
   object-fit: cover;
   opacity: 0;
@@ -198,7 +194,6 @@
 }
 
 /* Art and Illustration */
-
 .clickableImage {
   width: 400px;
   height: auto;
@@ -211,8 +206,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Row 3 and 4
-/* Shared wrapper width */
+/* Row 3 and 4 */
 .containerStandard {
   display: flex;
   justify-content: center;
@@ -244,9 +238,20 @@
 
 .textContainer {
   width: 85%;
-  text-align: right;
-
+  text-align: left;
   margin-bottom: 20px;
+  padding-left: 160px;;
+}
+
+.textContainer p {
+  width: 85%;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-left: 80px;;
+}
+
+.artLeft .sectionTitle2 {
+  text-align: left !important;
 }
 
 .imageRowSmall {
@@ -258,14 +263,31 @@
 }
 
 .imageRowSmall img {
-  width: 220px;
-  height: auto;
-  object-fit: cover;
+  /* Remove previous width and height here */
+  width: 100%;
+  max-width: 350px; /* Ensure consistent max-width for all images */
+  height: 300px;  /* Fixed height */
+  object-fit: cover; /* Ensure images scale without distorting */
   transition: transform 0.2s ease;
 }
 
+/* Hover effect on images */
 .imageRowSmall img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Uniform sizing for images */
+.uniformImage {
+  width: 100%; /* Ensure images take full available width */
+  max-width: 350px; /* Adjust this value as needed */
+  height: 300px; /* Fixed height for all images */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Optional hover effect for all images */
+.uniformImage:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes fadeIn {
@@ -428,191 +450,4 @@
   flex-wrap: nowrap;
   margin: var(--section-spacing) auto;
   padding-top: 1%;
-}
-
-@media (max-width: 768px) {
-  :root {
-    --container-padding: 1rem;
-    --element-gap: 1rem;
-    --grid-gap: 0.5rem;
-  }
-
-  /* GENERAL MOBILE LAYOUT */
-  body,
-  html {
-    overflow-x: hidden;
-  }
-
-  /* ------------------------------
-     HOME INTRO IMAGE
-  --------------------------------*/
-  .homePhotoContainer img {
-    width: 100% !important;
-    margin-top: 0 !important;
-  }
-
-  /* ------------------------------
-     TOP ROW (TEXT + ROTATOR)
-  --------------------------------*/
-  .topRow {
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    gap: 20px !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 auto !important;
-  }
-
-  .textLeft {
-    max-width: 100% !important;
-    width: 100% !important;
-    text-align: center !important;
-    font-size: 1.8rem !important;
-    flex: unset !important;
-    margin: 0 auto !important;
-  }
-  /* Center image container */
-  .rightImageContainer {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    margin: 0 auto !important;
-    width: 100% !important;
-  }
-
-  /* Center actual image */
-  .rightImageContainer img {
-    display: block !important;
-    margin: 0 auto !important;
-    width: 80% !important;
-    max-width: 300px !important;
-    height: auto !important;
-  }
-
-  /* ------------------------------
-     IMAGE ROTATOR - FULL FIX
-  --------------------------------*/
-  @media (max-width: 768px) {
-    .imageRotator {
-      width: 100% !important;
-      max-width: 340px !important;
-      margin: 0 auto !important;
-      padding: 0 !important;
-
-      display: flex !important;
-      justify-content: center !important;
-      align-items: center !important;
-
-      /* restore height from images */
-      height: auto !important;
-
-      /* ensure container can't collapse */
-      min-height: 180px !important;
-      position: relative !important;
-      overflow: hidden !important;
-    }
-
-    .imageRotator img,
-    .crossfadeImage {
-      width: 100% !important;
-      height: auto !important;
-      object-fit: cover !important;
-
-      /* absolutely positioned, but still frame-sized */
-      position: absolute !important;
-      top: 0 !important;
-      left: 0 !important;
-
-      opacity: 0 !important;
-      transition: opacity 1s ease-in-out !important;
-    }
-
-    /* ensure active image shows */
-    .imageRotator img.active,
-    .crossfadeImage.active {
-      opacity: 1 !important;
-      z-index: 2 !important;
-    }
-  }
-  /* ------------------------------
-   IMAGE ROW SMALL – MOBILE FIX
---------------------------------*/
-  .imageRowSmall {
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 15px !important;
-    width: 100% !important;
-    margin-top: 20px !important;
-  }
-
-  .imageRowSmall img {
-    width: 80% !important; /* smaller so it fits */
-    max-width: 260px !important;
-    height: auto !important;
-    object-fit: cover !important;
-  }
-  /* ------------------------------
-     ART / PHOTO SECTIONS
-  --------------------------------*/
-  .containerStandard {
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 1rem !important;
-  }
-
-  .rightImageContainer,
-  .photoContainer {
-    width: 100% !important;
-    justify-content: center !important;
-    align-items: center !important;
-  }
-
-  .rightImageContainer img {
-    width: 100% !important;
-    max-width: 300px !important;
-  }
-
-  /* ------------------------------
-     FORM SECTION
-  --------------------------------*/
-  .formContainer {
-    width: 100% !important;
-    margin: 0 auto !important;
-    padding: 1.5rem !important;
-  }
-
-  .formImageRowContainer {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: var(--element-gap) !important;
-  }
-
-  .form input {
-    width: 100% !important;
-    max-width: none !important;
-    margin: 10px 0 !important;
-  }
-
-  .form button {
-    width: 100% !important;
-    height: 45px !important;
-    font-size: 1rem !important;
-    max-width: 200px !important;
-    margin-top: 10px !important;
-  }
-
-  /* ------------------------------
-     BOTTOM IMAGE ("LET'S CONNECT")
-  --------------------------------*/
-  .bottomImageContainer2 img {
-    width: 100% !important;
-    max-width: 350px !important;
-    height: auto !important;
-  }
 }

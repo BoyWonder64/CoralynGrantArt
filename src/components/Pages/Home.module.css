@@ -57,7 +57,7 @@
 .sectionTitle {
   font-size: 2rem;
   color: #000000;
-  line-height: 1.5;
+  line-height: 1.2;
   font-family: Raleway;
   text-align: left;
   padding-top: 75px;
@@ -67,7 +67,7 @@
 .sectionTitle2 {
   font-size: 2rem;
   color: #000000;
-  line-height: 1.5;
+  line-height: 1.2;
   font-family: Raleway;
   text-align: left;
   padding-top: 75px;
@@ -76,7 +76,7 @@
 .sectionText {
   font-size: 25px;
   color: #000000;
-  line-height: 1.5;
+  line-height: 1.2;
   font-family: Raleway;
   text-align: left;
 }
@@ -85,7 +85,7 @@
 .sectionText2 {
   font-size: 25px;
   color: #000000;
-  line-height: 1.5;
+  line-height: 1.2;
   font-family: Raleway;
   text-align: center;
 }
@@ -93,7 +93,7 @@
 .sectionTitle3 {
   font-size: 2rem;
   color: #000000;
-  line-height: 1.5;
+  line-height: 1.2;
   font-family: Raleway;
   text-align: left;
   margin-top: -250px;
@@ -103,7 +103,7 @@
 .sectionText3 {
   font-size: 25px;
   color: #000000;
-  line-height: 1.5;
+  line-height: 1.2;
   font-family: Raleway;
   text-align: left;
 }
@@ -140,7 +140,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 55px;
   padding-bottom: 35px;
 }
 
@@ -164,7 +164,7 @@
   position: relative;
   width: 450px;
   height: 350px;
-  margin-top: -121px;
+  margin-top: -53px;
 }
 
 .imageRotator img {
@@ -269,15 +269,15 @@
 }
 
 .imageRowSmall img:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 /* Uniform sizing for images in image row */
 .uniformImage {
-  width: 100%; 
+  width: 100%;
   max-width: 350px;
-  height: 300px; 
-  object-fit: cover; 
+  height: 300px;
+  object-fit: cover;
 }
 
 .uniformImage:hover {
@@ -356,7 +356,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 25px;
+  padding-top: 50px;
 }
 
 .bottomImageContainer2 img {
